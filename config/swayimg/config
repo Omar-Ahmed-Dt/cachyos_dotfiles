@@ -1,0 +1,207 @@
+# ~/.config/swayimg/config
+################################
+# General
+################################
+[general]
+mode = viewer
+size = 1280,720
+position = auto
+overlay = no
+decoration = no
+
+################################
+# Image list
+################################
+[list]
+order = mtime
+reverse = no
+recursive = no
+all = no
+
+################################
+# Font (Gruvbox)
+################################
+[font]
+name = monospace
+size = 10
+color = #ebdbb2ff
+shadow = #1d2021ff
+background = #282828cc
+
+################################
+# Text overlay
+################################
+[info]
+show = yes
+padding = 10
+info_timeout = 0
+status_timeout = 3
+
+[info.viewer]
+top_left = +name,+filesize,+imagesize
+top_right = index
+bottom_left = scale
+bottom_right = status
+
+[info.slideshow]
+top_left = none
+top_right = index
+bottom_left = none
+bottom_right = status
+
+[info.gallery]
+top_left = none
+top_right = index
+bottom_left = name
+bottom_right = status
+
+################################
+# Viewer mode
+################################
+[viewer]
+window = #282828ff
+transparency = grid
+scale = optimal
+position = center
+antialiasing = mks13
+loop = no
+history = 10
+preload = 3
+
+################################
+# Slideshow mode
+################################
+[slideshow]
+time = 5
+window = #282828ff
+transparency = #282828ff
+scale = fit
+position = center
+antialiasing = mks13
+
+################################
+# Gallery mode
+################################
+[gallery]
+size = 110
+selected_scale = 1.10
+aspect = fill
+padding = 8
+select = #504945ff
+background = #3c3836ff
+border_color = #fabd2fff
+border_width = 2
+window = #282828ff
+cache = 500
+preload = yes
+pstore = yes
+antialiasing = mks13
+
+################################
+# Keybindings - Viewer (vim-style)
+################################
+[keys.viewer]
+F1 = none
+Shift+i = help
+h = prev_file
+l = next_file
+j = step_down 10
+k = step_up 10
+g = first_file
+Shift+g = last_file
+Space = next_file
+Shift+d = prev_dir
+d = next_dir
+Equal = zoom +10
+Plus = zoom +10
+Minus = zoom -10
+0 = zoom optimal
+Shift+w = none 
+z = none
+Shift+z = none
+bracketright = rotate_right
+bracketleft = rotate_left
+r = flip_horizontal
+Shift+r = flip_vertical
+f = none
+Return = mode gallery
+Tab = none 
+i = info
+a = none
+n = animation
+# Shift+o = prev_frame
+# o = next_frame
+s = skip_file
+Shift+Delete = none
+Delete = exec trash-put '%'; skip_file
+Escape = none
+q = exit
+ScrollUp = step_up 5
+ScrollDown = step_down 5
+ScrollLeft = step_right 5
+ScrollRight = step_left 5
+Ctrl+ScrollUp = zoom +10 mouse
+Ctrl+ScrollDown = zoom -10 mouse
+ScrollUp = prev_file
+ScrollDown = next_file
+MouseLeft = drag
+MouseRight = mode gallery
+y = exec wl-copy '%'
+Shift+y = exec wl-copy -t image/png < '%'
+w = exec /home/omar/scripts/set-wallpaper.sh '%' >/dev/null 2>&1
+
+################################
+# Keybindings - Slideshow
+################################
+[keys.slideshow]
+F1 = help
+h = prev_file
+l = next_file
+g = first_file
+Shift+g = last_file
+Space = pause
+f = none
+i = info
+Return = mode viewer
+Escape = mode viewer
+q = exit
+
+################################
+# Keybindings - Gallery (vim-style)
+################################
+[keys.gallery]
+F1 = none
+Shift+i = help
+h = step_left
+l = step_right
+k = step_up
+j = step_down
+g = first_file
+Shift+g = last_file
+Prior = page_up
+Next = page_down
+Ctrl+u = page_up
+Ctrl+d = page_down
+Return = mode viewer
+Tab = mode viewer
+f = none
+i = info
+a = antialiasing
+r = reload
+s = mode slideshow
+c = skip_file
+Equal = thumb +20
+Plus = thumb +20
+Minus = thumb -20
+Shift+Delete = none
+Delete = exec trash-put '%'; skip_file
+Escape = none
+q = exit
+ScrollUp = step_up
+ScrollDown = step_down
+Ctrl+ScrollUp = thumb +10
+Ctrl+ScrollDown = thumb -10
+MouseLeft = mode viewer
+y = exec wl-copy '%'
+Shift+y = exec wl-copy -t image/png < '%'
+w = exec /home/omar/scripts/set-wallpaper.sh '%' >/dev/null 2>&1

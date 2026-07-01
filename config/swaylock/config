@@ -1,0 +1,75 @@
+# Use the current screen's screenshot as background
+screenshots
+
+# Apply effects
+effect-blur=7x5
+effect-vignette=0.5:0.5
+
+# Clock and indicator settings
+clock
+indicator
+timestr="%H:%M"
+datestr="%a, %d %b"
+indicator-radius=100
+indicator-thickness=8
+ignore-empty-password
+show-failed-attempts
+
+# Gruvbox Dark Theme
+# Colors reference:
+#   bg       #282828    fg       #ebdbb2
+#   red      #cc241d    green    #98971a
+#   yellow   #d79921    blue     #458588
+#   orange   #d65d0e    aqua     #689d6a
+#   bright-red    #fb4934   bright-green  #b8bb26
+#   bright-yellow #fabd2f   bright-blue   #83a598
+#   bright-orange #fe8019   bright-aqua   #8ec07c
+
+# Background (dark gruvbox bg)
+color=282828ff
+
+# Ring: idle / cleared / verifying / wrong / caps-lock
+ring-color=504945ff
+ring-clear-color=689d6aff
+ring-ver-color=458588ff
+ring-wrong-color=cc241dff
+ring-caps-lock-color=d79921ff
+
+# Inside of the ring
+inside-color=1d2021ff
+inside-clear-color=282828ff
+inside-ver-color=282828ff
+inside-wrong-color=282828ff
+inside-caps-lock-color=282828ff
+
+# Line between ring and inside
+line-color=00000000
+line-clear-color=00000000
+line-ver-color=00000000
+line-wrong-color=00000000
+line-caps-lock-color=00000000
+
+# Key highlight when typing
+key-hl-color=b8bb26ff
+bs-hl-color=fb4934ff
+caps-lock-key-hl-color=fabd2fff
+caps-lock-bs-hl-color=fe8019ff
+
+# Text on the indicator
+text-color=ebdbb2ff
+text-clear-color=8ec07cff
+text-ver-color=83a598ff
+text-wrong-color=fb4934ff
+text-caps-lock-color=fabd2fff
+
+# Separator
+separator-color=00000000
+
+# Layout / keyboard indicator
+layout-bg-color=282828cc
+layout-border-color=504945ff
+layout-text-color=ebdbb2ff
+
+# Font
+font=monospace
+font-size=20

@@ -1,0 +1,257 @@
+# Read `man 5 sway` for a complete reference.
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+set $term kitty
+set $scripts ~/scripts
+set $screen_timeout 120
+set $lock_timeout 300
+set $total_timeout 420
+
+# Workspaces:
+set $WS1 "1:  "
+set $WS2 "2:  "
+set $WS3 "3:  "
+set $WS4 "4:  "
+set $WS5 "5:  "
+set $WS6 "6:  "
+set $WS7 "7:  "
+set $WS8 "8:  "
+set $WS9 "9:  "
+
+input type:keyboard {
+    xkb_layout us,ara
+    xkb_options grp:win_space_toggle,caps:escape,ctrl:swap_rwin_rctl
+    xkb_numlock enabled
+}
+
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+}
+
+# Your preferred application launcher
+# Note: pass the final command to swaymsg so that the resulting window can be opened
+# on the original workspace that the command was run on.
+# Recommends: rofi-wayland
+# set $rofi_cmd rofi \
+#         -terminal '$term'
+# set $menu $rofi_cmd -show drun -matching fuzzy -sorting-method fzf 
+
+### Key bindings
+bindsym $mod+Return exec $term
+bindsym $mod+c kill
+bindsym $mod+d exec fuzzel --placeholder "Application..."
+floating_modifier $mod normal
+bindsym $mod+Shift+r reload
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+bindsym $mod+i layout toggle split
+bindsym $mod+f fullscreen
+bindsym $mod+t floating toggle
+bindsym $mod+a focus parent
+bindsym $mod+z focus child
+bindgesture swipe:right workspace prev
+bindgesture swipe:left workspace next
+bindgesture swipe:down floating toggle
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
+bindsym $mod+1 workspace $WS1
+bindsym $mod+2 workspace $WS2
+bindsym $mod+3 workspace $WS3
+bindsym $mod+4 workspace $WS4
+bindsym $mod+5 workspace $WS5
+bindsym $mod+6 workspace $WS6
+bindsym $mod+7 workspace $WS7
+bindsym $mod+8 workspace $WS8
+bindsym $mod+9 workspace $WS9
+
+bindsym $mod+Shift+1 move container to workspace $WS1
+bindsym $mod+Shift+2 move container to workspace $WS2
+bindsym $mod+Shift+3 move container to workspace $WS3
+bindsym $mod+Shift+4 move container to workspace $WS4
+bindsym $mod+Shift+5 move container to workspace $WS5
+bindsym $mod+Shift+6 move container to workspace $WS6
+bindsym $mod+Shift+7 move container to workspace $WS7
+bindsym $mod+Shift+8 move container to workspace $WS8
+bindsym $mod+Shift+9 move container to workspace $WS9
+bindsym $mod+Tab focus prev
+
+workspace_auto_back_and_forth yes
+bindsym Mod1+Tab workspace back_and_forth
+
+bindsym $mod+s mode "resize"
+mode "resize" {
+        bindsym Shift+j resize shrink width 2 px or 2 ppt
+        bindsym k       resize grow height 2 px or 2 ppt
+        bindsym j       resize shrink height 2 px or 2 ppt
+        bindsym Shift+k resize grow width 2 px or 2 ppt
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+Shift+s          exec grim -g "$(slurp)" - | wl-copy && notify-send "Screenshot" "Area copied to clipboard"
+# bindsym $mod+b                exec flatpak run net.waterfox.waterfox
+bindsym $mod+b                exec waterfox 
+bindsym $mod+Shift+Return     exec thunar
+# bindsym $mod+p                exec obsidian
+bindsym $mod+Escape           exec $scripts/power.sh
+bindsym $mod+Shift+b          exec $scripts/browser.sh
+bindsym $mod+Right            exec $scripts/volume.sh up
+bindsym XF86AudioRaiseVolume  exec $scripts/volume.sh up
+bindsym $mod+Left             exec $scripts/volume.sh down
+bindsym XF86AudioLowerVolume  exec $scripts/volume.sh down
+bindsym XF86AudioMute         exec $scripts/volume.sh toggle
+bindsym XF86AudioMicMute      exec $scripts/mic.sh toggle
+bindsym Print                 exec $scripts/screenshot.sh
+bindsym $mod+m                exec thunderbird
+bindsym $mod+y                exec $scripts/ytdmenu.sh
+bindsym $mod+n                exec kitty -e nvim
+bindsym Shift+Return          exec kitty -e yazi
+bindsym ctrl+space            exec mpc toggle 
+bindsym ctrl+XF86AudioPrev    exec mpc prev
+bindsym ctrl+XF86AudioNext    exec mpc next
+bindsym ctrl+BackSpace        exec mpc stop
+bindsym $mod+o                exec $scripts/hub-scripts.sh
+# bindsym $mod+e                exec $scripts/ocr.sh
+bindsym $mod+e                exec $scripts/ocr_us.sh
+bindsym $mod+period           exec rofimoji 2> /dev/null
+bindsym $mod+v                exec $scripts/clip.sh 
+# ~/scripts/cliphist-fuzzel-img.sh https://github.com/sentriz/cliphist
+bindsym $mod+w                exec $scripts/websearch.sh
+bindsym XF86MonBrightnessUp   exec brightnessctl set 5%+
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym $mod+Ctrl+h move left
+bindsym $mod+Ctrl+l move right
+bindsym $mod+Ctrl+j move down
+bindsym $mod+Ctrl+k move up
+
+# Autostart
+exec_always dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec_always autotiling # which autotiling
+exec_always --no-startup-id wl-paste --type text --watch cliphist store
+exec_always --no-startup-id wl-paste --type image --watch cliphist store
+exec_always --no-startup-id wl-paste --primary --watch cliphist store
+# exec thunar --daemon &
+exec dunst
+exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
+# exec gammastep -O 3250
+exec gammastep -O 4000
+exec swaybg -i ~/.cache/wallpaper.jpg -m fill
+exec --no-startup-id dropbox-cli start -i
+# Wacom Tablet
+# exec_always systemctl --user restart wacom-setup.service
+# exec_always systemctl --user restart wacom-pad.service
+
+# pacman -S mate-polkit
+exec /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
+
+
+exec swayidle -w \
+    timeout $lock_timeout 'swaylock -f' \
+    timeout $total_timeout 'swaymsg "output * power off"' \
+              resume 'swaymsg "output * power on"' \
+    timeout $screen_timeout 'pgrep -xu "$USER" swaylock >/dev/null && swaymsg "output * power off"' \
+         resume 'pgrep -xu "$USER" swaylock >/dev/null && swaymsg "output * power on"' \
+    before-sleep 'swaylock -f' \
+    lock 'swaylock -f' \
+    unlock 'pkill -xu "$USER" -SIGUSR1 swaylock'
+
+# Gruvbox Theme
+set $bg         #1d2021
+set $bg_soft    #282828
+set $bg_alt     #32302f
+set $fg         #ebdbb2
+set $fg_dim     #a89984
+set $red        #cc241d
+set $green      #98971a
+set $yellow     #d79921
+set $blue       #458588
+set $purple     #b16286
+set $aqua       #689d68
+
+# border style
+gaps inner 3
+gaps outer 3
+default_border pixel 1
+default_floating_border normal
+smart_borders on
+focus_on_window_activation smart
+default_orientation horizontal
+
+bar {
+    swaybar_command waybar
+}
+
+client.focused          $blue   $bg_soft $fg     $yellow $blue
+client.unfocused        $bg_alt $bg      $fg_dim $bg_alt $bg_alt
+client.focused_inactive $bg_alt $bg      $fg_dim $bg_alt $bg_alt
+client.urgent           $red    $red     $fg     $red $red
+client.background       $bg
+
+
+# Rules
+for_window [app_id="mpv"] floating enable, move position center
+for_window [app_id="lxqt-policykit-agent"] {     floating enable     move position center }
+for_window [app_id="swayimg"] floating disable
+for_window [window_role="pop-up"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="utility"] floating enable
+for_window [window_type="toolbar"] floating enable
+for_window [window_type="menu"] floating enable
+for_window [window_role="alert"] floating enable
+for_window [window_type="splash"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="About"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [title="Settings"] floating enable
+for_window [title="Error"] floating enable
+for_window [title="Warning"] floating enable
+for_window [title="File Upload"] floating enable
+for_window [title="(?:Open|Save|Replace) (?:File|Files|Folder|Folders|As)"] floating enable
+for_window [title="Save As..."] floating enable
+for_window [title="File Operation Progress"] floating enable
+for_window [title="Confirm to replace files"] floating enable
+for_window [title="Choose an Application"] floating enable
+for_window [title="Removable medium is inserted"] floating enable
+for_window [window_role="GtkFileChooserDialog"] floating enable
+for_window [title="Picture in picture"] floating enable, sticky enable
+for_window [title="Picture-in-Picture"] floating enable, sticky enable
+for_window [title=".* is sharing your screen."] floating enable, sticky enable
+for_window [app_id="floating_shell_portrait"] floating enable, sticky enable
+for_window [app_id="floating_shell"] floating enable, sticky enable
+
+# Float known tools
+for_window [class="Blueman-manager"] floating enable
+for_window [class="Nm-connection-editor"] floating enable
+for_window [class="Pavucontrol"] floating enable
+for_window [class="Lxappearance"] floating enable
+# for_window [class="Thunar" title="File Operation Progress"] floating enable
+for_window [app_id="virt-manager"] floating enable
+for_window [class="vlc"] floating enable
+# for_window [app_id="thunar"] floating enable
+for_window [app_id="thunderbird" title=".*Reminder"] floating enable
+for_window [instance="around"] floating enable, sticky enable
+for_window [app_id="xsensors"] floating enable
+for_window [app_id="waydroid.*"] floating enable
+for_window [app_id="spotify-launcher"] floating enable
+for_window [class="Deluge"] floating enable
+for_window [class="Engrampa"] floating enable
+for_window [app_id="blueman-manager"] floating enable
+for_window [app_id="pavucontrol"] floating enable
+for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
+for_window [class="network-manager-gnome"] floating enable
+for_window [app_id="nm-connection-editor"] floating enable
+
+# Add an inhibit-idle rule so your screen doesn't lock during video playback:
+for_window [app_id="mpv"] inhibit_idle fullscreen
+# for_window [class="net.waterfox.waterfox"] inhibit_idle fullscreen
+
+

@@ -1,0 +1,41 @@
+# Available flavors — uncomment ONE pair to activate, comment out the rest
+
+[flavor]
+
+# Gruvbox Dark
+# dark = "gruvbox-dark"
+# light = "gruvbox-dark"
+
+# Dracula
+# dark = "dracula"
+# light = "dracula"
+
+# Catppuccin Mocha (dark, warm pastels)
+# dark = "catppuccin-mocha"
+# light = "catppuccin-mocha"
+
+# Catppuccin Macchiato (dark, slightly lighter than mocha)
+# dark = "catppuccin-macchiato"
+# light = "catppuccin-macchiato"
+
+# Catppuccin Frappe (medium dark, muted tones)
+# dark = "catppuccin-frappe"
+# light = "catppuccin-frappe"
+
+# ya pkg add dangooddd/kanagawa
+# dark = "kanagawa"
+
+# ya pkg add marcosvnmelo/kanagawa-dragon
+# dark = "kanagawa-dragon"
+
+# ya pkg add matt-dong-123/gruvbox-material
+dark = "gruvbox-material"
+
+# ya pack -a AdithyanA2005/nord
+# dark = "nord"
+
+# ya pkg add Chromium-3-Oxide/everforest-medium
+# dark = "everforest-medium"
+
+# ya pkg add AdithyanA2005/nord
+# dark = "synthwave84"

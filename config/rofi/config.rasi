@@ -1,0 +1,21 @@
+// command to show all themes: rofi-theme-selector
+// all themes: /usr/share/rofi/themes/
+
+configuration {
+    // font: "monospace 11";
+    font: "JetBrainsMono Nerd Font 11"; 
+    matching: "fuzzy";
+    sorting-method: "fzf";
+    tokenize: true;
+    case-sensitive: false;
+    normalize-match: true;
+}
+//
+// @theme "~/.config/rofi/themes/dtos-center.rasi"
+@theme "~/.config/rofi/themes/gruvbox-dark-soft.rasi"
+
+/* Fix listview visibility */
+listview {
+    lines: 15;
+    fixed-height: false;
+}

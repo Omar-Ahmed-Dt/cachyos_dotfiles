@@ -1,0 +1,11 @@
+augment-command.yazi
+clipboard.yazi
+copy-file-contents.yazi
+first-non-directory.yazi
+git-files.yazi
+jump-to-char.yazi
+open-with-cmd.yazi
+plugins.txt
+relative-motions.yazi
+smart-enter.yazi
+vcs-files.yazi

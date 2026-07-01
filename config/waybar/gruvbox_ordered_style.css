@@ -1,0 +1,242 @@
+* {
+  font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
+  font-size: 9.5px;
+  font-weight: 600;
+}
+
+window#waybar {
+  background: #282828;
+  border: none;
+}
+
+#workspaces button {
+  padding: 0 1px;
+  border-radius: 0px;
+  margin: 0px;
+}
+
+#workspaces button:hover {
+  background: #3c3836;
+}
+
+#workspaces button.focused {
+  background: #504945;
+  color: #a89984;
+}
+
+#workspaces button.urgent {
+  background: #cc241d;
+  color: #ebdbb2;
+}
+
+#custom-cpu,
+#custom-pacman,
+#custom-mpd,
+#clock,
+#pulseaudio,
+#backlight,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#custom-currently_playing,
+#custom-weather,
+#custom-uptime,
+#custom-nettraf,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd,
+#language,
+#power-profiles-daemon {
+  padding: 0 4px;
+  border-radius: 0px;
+  margin: 0px;
+}
+
+/* ── LEFT SIDE — ordered spectrum left → right ───────────────────────────────
+   Module order: mpd · power-profiles-daemon · idle_inhibitor · language
+
+   1  mpd                   red     #cc241d
+   2  power-profiles-daemon orange  #d65d0e
+   3  idle_inhibitor         yellow  #d79921
+   4  language               green   #98971a
+────────────────────────────────────────────────────────────────────────────── */
+
+#custom-mpd {
+  background: #cc241d;
+  color: #ebdbb2;
+}
+
+#power-profiles-daemon {
+  background: #d65d0e;
+  color: #282828;
+}
+
+#power-profiles-daemon.performance {
+  background: #d65d0e;
+  color: #282828;
+}
+
+#power-profiles-daemon.balanced {
+  background: #d65d0e;
+  color: #282828;
+}
+
+#power-profiles-daemon.power-saver {
+  background: #d65d0e;
+  color: #282828;
+}
+
+#idle_inhibitor {
+  background: #d79921;
+  color: #282828;
+}
+
+#idle_inhibitor.activated {
+  background: #fabd2f;
+  color: #282828;
+}
+
+#language {
+  background: #98971a;
+  color: #282828;
+}
+
+#scratchpad {
+  background: #3c3836;
+}
+
+#scratchpad.empty {
+  background: transparent;
+}
+
+/* ── RIGHT SIDE — ordered spectrum left → right ──────────────────────────────
+   Module order: weather · pacman · uptime · nettraf · battery · cpu · memory
+                 · backlight · pulseaudio · clock · tray
+
+   1  weather    red           #cc241d
+   2  pacman     orange        #d65d0e
+   3  uptime     yellow        #d79921
+   4  nettraf    green         #98971a
+   5  battery    aqua          #689d6a
+   6  cpu        blue          #458588
+   7  memory     purple        #b16286
+   8  backlight  bright-orange #fe8019
+   9  pulseaudio bright-yellow #fabd2f
+  10  clock      cream/fg      #ebdbb2
+  11  tray       bg1           #3c3836
+────────────────────────────────────────────────────────────────────────────── */
+
+#custom-weather {
+  background: #cc241d;
+  color: #ebdbb2;
+}
+
+#custom-pacman {
+  background: #d65d0e;
+  color: #282828;
+}
+
+#custom-uptime {
+  background: #d79921;
+  color: #282828;
+}
+
+#custom-nettraf {
+  background: #98971a;
+  color: #282828;
+}
+
+#battery {
+  background: #689d6a;
+  color: #282828;
+}
+
+#battery.charging,
+#battery.plugged {
+  background: #8ec07c;
+  color: #282828;
+}
+
+#battery.critical {
+  background: #cc241d;
+  color: #ebdbb2;
+}
+
+#custom-cpu {
+  background: #458588;
+  color: #ebdbb2;
+}
+
+#memory {
+  background: #b16286;
+  color: #282828;
+}
+
+#backlight {
+  background: #fe8019;
+  color: #282828;
+}
+
+#pulseaudio {
+  background: #fabd2f;
+  color: #282828;
+}
+
+#pulseaudio.muted {
+  background: #665c54;
+  color: #a89984;
+}
+
+#clock {
+  background: #ebdbb2;
+  color: #282828;
+}
+
+#tray {
+  background: #3c3836;
+}
+
+/* ── Misc modules ─────────────────────────────────────────────────────────── */
+
+#network {
+  background: #83a598;
+  color: #282828;
+}
+
+#network.disconnected {
+  background: #cc241d;
+  color: #ebdbb2;
+}
+
+#temperature {
+  background: #fe8019;
+  color: #282828;
+}
+
+#temperature.critical {
+  background: #fb4934;
+  color: #ebdbb2;
+}
+
+#cpu {
+  background: #458588;
+  color: #ebdbb2;
+}
+
+#mpd {
+  background: #689d6a;
+  color: #282828;
+}
+
+#mpd.paused {
+  background: #504945;
+  color: #a89984;
+}
+
+#mpd.stopped {
+  background: #3c3836;
+  color: #665c54;
+}

@@ -1,0 +1,298 @@
+/* ── Beautiful Gruvbox — floating pill bar ───────────────────────────────── */
+
+* {
+  font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
+  font-size: 11px;
+  font-weight: 600;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(29, 32, 33, 0.94);
+  border-radius: 12px;
+  margin: 6px 10px 0 10px;
+  border: 1px solid rgba(80, 73, 69, 0.55);
+}
+
+/* ── Workspaces ───────────────────────────────────────────────────────────── */
+
+#workspaces {
+  background: transparent;
+  margin: 0 2px;
+}
+
+#workspaces button {
+  padding: 0 7px;
+  border-radius: 8px;
+  margin: 3px 1px;
+  color: #928374;
+  background: transparent;
+  transition: all 0.15s ease;
+}
+
+#workspaces button:hover {
+  background: rgba(80, 73, 69, 0.55);
+  color: #ebdbb2;
+}
+
+#workspaces button.focused {
+  background: #504945;
+  color: #ebdbb2;
+}
+
+#workspaces button.urgent {
+  background: #cc241d;
+  color: #ebdbb2;
+}
+
+/* ── Shared module base ───────────────────────────────────────────────────── */
+
+#custom-cpu,
+#custom-pacman,
+#custom-mpd,
+#clock,
+#pulseaudio,
+#backlight,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#custom-weather,
+#custom-uptime,
+#custom-nettraf,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd,
+#language,
+#scratchpad,
+#power-profiles-daemon {
+  padding: 2px 10px;
+  border-radius: 8px;
+  margin: 3px 2px;
+  transition: background 0.15s ease;
+}
+
+/* ── LEFT SIDE — spectrum: mpd · power · idle · language ─────────────────── */
+
+#custom-mpd {
+  background: #cc241d;
+  color: #ebdbb2;
+}
+
+#custom-mpd:hover {
+  background: #fb4934;
+}
+
+#power-profiles-daemon,
+#power-profiles-daemon.performance,
+#power-profiles-daemon.balanced,
+#power-profiles-daemon.power-saver {
+  background: #d65d0e;
+  color: #1d2021;
+}
+
+#power-profiles-daemon:hover {
+  background: #fe8019;
+}
+
+#idle_inhibitor {
+  background: #d79921;
+  color: #1d2021;
+}
+
+#idle_inhibitor.activated {
+  background: #fabd2f;
+  color: #1d2021;
+}
+
+#idle_inhibitor:hover {
+  background: #fabd2f;
+}
+
+#language {
+  background: #98971a;
+  color: #1d2021;
+}
+
+#language:hover {
+  background: #b8bb26;
+}
+
+#scratchpad {
+  background: #3c3836;
+  color: #a89984;
+}
+
+#scratchpad.empty {
+  background: transparent;
+}
+
+/* ── CENTER — clock ───────────────────────────────────────────────────────── */
+
+#clock {
+  background: #ebdbb2;
+  color: #1d2021;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 2px 14px;
+}
+
+#clock:hover {
+  background: #d5c4a1;
+}
+
+/* ── RIGHT SIDE — spectrum: weather · pacman · uptime · nettraf · battery
+                             · cpu · memory · backlight · pulseaudio · tray ─ */
+
+#custom-weather {
+  background: #cc241d;
+  color: #ebdbb2;
+}
+
+#custom-weather:hover {
+  background: #fb4934;
+}
+
+#custom-pacman {
+  background: #d65d0e;
+  color: #1d2021;
+}
+
+#custom-pacman:hover {
+  background: #fe8019;
+}
+
+#custom-uptime {
+  background: #d79921;
+  color: #1d2021;
+}
+
+#custom-uptime:hover {
+  background: #fabd2f;
+}
+
+#custom-nettraf {
+  background: #98971a;
+  color: #1d2021;
+}
+
+#custom-nettraf:hover {
+  background: #b8bb26;
+}
+
+#battery {
+  background: #689d6a;
+  color: #1d2021;
+}
+
+#battery.charging,
+#battery.plugged {
+  background: #8ec07c;
+  color: #1d2021;
+}
+
+#battery.critical {
+  background: #cc241d;
+  color: #ebdbb2;
+}
+
+#battery.warning {
+  background: #d79921;
+  color: #1d2021;
+}
+
+#custom-cpu {
+  background: #458588;
+  color: #ebdbb2;
+}
+
+#custom-cpu:hover {
+  background: #83a598;
+}
+
+#memory {
+  background: #b16286;
+  color: #1d2021;
+}
+
+#memory:hover {
+  background: #d3869b;
+}
+
+#backlight {
+  background: #fe8019;
+  color: #1d2021;
+}
+
+#backlight:hover {
+  background: #fabd2f;
+}
+
+#pulseaudio {
+  background: #fabd2f;
+  color: #1d2021;
+}
+
+#pulseaudio.muted {
+  background: #504945;
+  color: #928374;
+}
+
+#pulseaudio:hover {
+  background: #d5c4a1;
+}
+
+#tray {
+  background: rgba(60, 56, 54, 0.7);
+  border-radius: 8px;
+}
+
+/* ── Misc ─────────────────────────────────────────────────────────────────── */
+
+#network {
+  background: #83a598;
+  color: #1d2021;
+}
+
+#network.disconnected {
+  background: #cc241d;
+  color: #ebdbb2;
+}
+
+#temperature {
+  background: #fe8019;
+  color: #1d2021;
+}
+
+#temperature.critical {
+  background: #fb4934;
+  color: #ebdbb2;
+}
+
+#cpu {
+  background: #458588;
+  color: #ebdbb2;
+}
+
+#mpd {
+  background: #689d6a;
+  color: #1d2021;
+}
+
+#mpd.paused {
+  background: #504945;
+  color: #928374;
+}
+
+#mpd.stopped {
+  background: #3c3836;
+  color: #665c54;
+}
+
+#mode {
+  background: #d79921;
+  color: #1d2021;
+  font-weight: 700;
+}

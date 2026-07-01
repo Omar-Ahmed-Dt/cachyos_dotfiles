@@ -1,0 +1,1773 @@
+ 
+New instance of bashtop version: 0.9.25 Pid: 2320988
+ 
+New instance of bashtop version: 0.9.25 Pid: 4133697
+ 
+New instance of bashtop version: 0.9.25 Pid: 379886
+ 
+New instance of bashtop version: 0.9.25 Pid: 416577
+stty: 'standard input': Inappropriate ioctl for device
+04:59:15 PM ERROR: On line 285 
+04:59:15 PM ERROR: On line 285 
+stty: 'standard input': Inappropriate ioctl for device
+04:59:15 PM ERROR: On line 288 
+/usr/bin/bashtop: line 291: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+/tmp/LO4guhGVZ4Oe/bashtop.psutil:103: DeprecationWarning: 'count' is passed as positional argument
+  name = re.sub( ".*" + rem_line + ".*:", "", line,1).lstrip()
+/usr/bin/bashtop: line 2856: ((: ==0: syntax error: operand expected (error token is "==0")
+/usr/bin/bashtop: line 2857: ((: <50: syntax error: operand expected (error token is "<50")
+/usr/bin/bashtop: line 2860: -2: substring expression < 0
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+04:59:16 PM ERROR: On line 659 
+04:59:16 PM ERROR: On line 659 
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+04:59:16 PM ERROR: On line 659 (MUTED!)
+04:59:16 PM ERROR: On line 659 (MUTED!)
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+ 
+New instance of bashtop version: 0.9.25 Pid: 417314
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+/tmp/AcwLDXAcbZtZ/bashtop.psutil:103: DeprecationWarning: 'count' is passed as positional argument
+  name = re.sub( ".*" + rem_line + ".*:", "", line,1).lstrip()
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
+stty: 'standard input': Inappropriate ioctl for device
+stty: 'standard input': Inappropriate ioctl for device
+/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")

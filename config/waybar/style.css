@@ -1,0 +1,257 @@
+/* ── Gruvbox Soft — floating pill bar ────────────────────────────────────── */
+
+/* @define-color module_text #ebdbb2; */
+/* @define-color module_text #EEEEEE; */
+/* @define-color module_text #fbf1c7; */
+@define-color module_text #fbf1c7;
+
+* {
+  font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
+  font-size: 10px;
+  font-weight: 600;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgb(50, 48, 47);
+  border-radius: 12px;
+  margin: 4px 8px 0 8px;
+  border: 1px solid rgb(124, 111, 100);
+}
+
+/* ── Workspaces ───────────────────────────────────────────────────────────── */
+
+#workspaces {
+  background: transparent;
+  margin: 0 2px;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  border-radius: 6px;
+  margin: 2px 1px;
+  color: #7c6f64;
+  background: transparent;
+}
+
+#workspaces button.focused {
+  background: #504945;
+  color: #d5c4a1;
+}
+
+#workspaces button.urgent {
+  background: #9d0006;
+  color: @module_text;
+}
+
+/* ── Shared module base ───────────────────────────────────────────────────── */
+
+#custom-cpu,
+#custom-pacman,
+#custom-mpd,
+#clock,
+#pulseaudio,
+#backlight,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#custom-weather,
+#custom-uptime,
+#custom-nettraf,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd,
+#language,
+#scratchpad,
+#power-profiles-daemon {
+  padding: 1px 7px;
+  border-radius: 6px;
+  margin: 2px 1px;
+}
+
+/* ── LEFT SIDE — spectrum: mpd · power · idle · language ─────────────────── */
+
+#custom-mpd {
+  background: #9d0006;
+  color: @module_text;
+}
+
+#power-profiles-daemon,
+#power-profiles-daemon.performance,
+#power-profiles-daemon.balanced,
+#power-profiles-daemon.power-saver {
+  background: #af3a03;
+  color: @module_text;
+  /* color: #EEEEEE; */
+}
+
+#idle_inhibitor {
+  background: #b57614;
+  color: #1d2021;
+  /* color: #EEEEEE; */
+}
+
+#idle_inhibitor.activated {
+  background: #d79921;
+  color: @module_text;
+}
+
+#language {
+  background: #79740e;
+  color: @module_text;
+  /* color: #EEEEEE; */
+}
+
+#scratchpad {
+  background: #3c3836;
+  color: #a89984;
+}
+
+#scratchpad.empty {
+  background: transparent;
+}
+
+/* ── CENTER — clock ───────────────────────────────────────────────────────── */
+
+#clock {
+  background: #665c54;
+  color: @module_text;
+  /* color: #EEEEEE; */
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 1px 10px;
+}
+
+/* ── RIGHT SIDE — spectrum: weather · pacman · uptime · nettraf · battery
+                             · cpu · memory · backlight · pulseaudio · tray ─ */
+
+#custom-weather {
+  background: #9d0006;
+  color: @module_text;
+  /* color: #EEEEEE; */
+}
+
+#custom-pacman {
+  background: #af3a03;
+  color: @module_text;
+  /* color: #EEEEEE; */
+}
+
+#custom-uptime {
+  background: #b57614;
+  color: @module_text;
+  /* color: #EEEEEE; */
+}
+
+#custom-nettraf {
+  background: #79740e;
+  color: @module_text;
+  /* color: #EEEEEE; */
+}
+
+#battery {
+  background: #427b58;
+  color: @module_text;
+  /* color: #EEEEEE; */
+}
+
+#battery.charging,
+#battery.plugged {
+  background: #689d6a;
+  color: #1d2021;
+}
+
+#battery.critical {
+  background: #9d0006;
+  color: @module_text;
+}
+
+#battery.warning {
+  background: #b57614;
+  color: @module_text;
+}
+
+#custom-cpu {
+  background: #076678;
+  color: @module_text;
+  /* color: #EEEEEE; */
+}
+
+#memory {
+  background: #8f3f71;
+  color: @module_text;
+  /* color: #EEEEEE; */
+}
+
+#backlight {
+  background: #af3a03;
+  color: @module_text;
+  /* color: #EEEEEE; */
+}
+
+#pulseaudio {
+  background: #b57614;
+  color: @module_text;
+  /* color: #EEEEEE; */
+}
+
+#pulseaudio.muted {
+  background: #3c3836;
+  color: #7c6f64;
+}
+
+#tray {
+  background: rgb(60, 56, 54);
+  border-radius: 8px;
+}
+
+/* ── Misc ─────────────────────────────────────────────────────────────────── */
+
+#network {
+  background: #076678;
+  color: @module_text;
+}
+
+#network.disconnected {
+  background: #9d0006;
+  color: @module_text;
+}
+
+#temperature {
+  background: #af3a03;
+  color: @module_text;
+}
+
+#temperature.critical {
+  background: #9d0006;
+  color: @module_text;
+}
+
+#cpu {
+  background: #076678;
+  color: @module_text;
+}
+
+#mpd {
+  background: #427b58;
+  color: @module_text;
+}
+
+#mpd.paused {
+  background: #504945;
+  color: #928374;
+}
+
+#mpd.stopped {
+  background: #3c3836;
+  color: #665c54;
+}
+
+#mode {
+  background: #b57614;
+  color: @module_text;
+  font-weight: 700;
+}

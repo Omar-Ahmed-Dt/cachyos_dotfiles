@@ -1,0 +1,14 @@
+catppuccin-frappe.yazi
+catppuccin-latte.yazi
+catppuccin-macchiato.yazi
+catppuccin-mocha.yazi
+dracula.yazi
+everforest-medium.yazi
+flavors.txt
+gruvbox-dark.yazi
+gruvbox-material.yazi
+kanagawa-dragon.yazi
+kanagawa.yazi
+nord.yazi
+scripts
+synthwave84.yazi

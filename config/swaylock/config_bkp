@@ -1,0 +1,18 @@
+# Use the current screen's screenshot as background
+screenshots
+
+# Apply effects
+effect-blur=7x5
+effect-vignette=0.5:0.5
+
+# Clock and indicator settings
+clock
+indicator
+timestr="%H:%M"
+datestr="%a, %d %b"
+indicator-radius=100
+indicator-thickness=8
+ignore-empty-password
+
+# Optional: show a message if attempts fail
+show-failed-attempts
