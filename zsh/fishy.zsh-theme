@@ -37,16 +37,26 @@ _git_repo_depth() {
 }
 
 # ===============================
-# Colors
+# Gruvbox colors
 # ===============================
-local user_color='green'
-[[ $UID -eq 0 ]] && user_color='red'
+local gb_fg="#ebdbb2"
+local gb_gray="#928374"
+local gb_red="#fb4934"
+local gb_green="#b8bb26"
+local gb_yellow="#fabd2f"
+local gb_blue="#83a598"
+local gb_purple="#d3869b"
+local gb_aqua="#8ec07c"
+local gb_orange="#fe8019"
+
+local user_color="$gb_green"
+[[ $UID -eq 0 ]] && user_color="$gb_red"
 
 # ===============================
-# Git prompt config (oh-my-zsh)
+# Git prompt config oh-my-zsh
 # ===============================
-ZSH_THEME_GIT_PROMPT_PREFIX=" "
-ZSH_THEME_GIT_PROMPT_SUFFIX=""
+ZSH_THEME_GIT_PROMPT_PREFIX=" %F{$gb_orange} %F{$gb_yellow}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%f "
 ZSH_THEME_GIT_PROMPT_DIRTY=""
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
@@ -54,20 +64,19 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 # LEFT PROMPT
 # path + depth + branch + symbol
 # ===============================
-PROMPT='%{$fg[$user_color]%}$(_fishy_collapsed_wd)%{$reset_color%} \
-%{$fg_bold[cyan]%}$(_git_repo_depth)%{$reset_color%}\
-%{$fg_bold[yellow]%}$(git_prompt_info)%{$reset_color%}\
-%(!.#.>) '
+PROMPT='%F{$user_color}$(_fishy_collapsed_wd)%f \
+%B%F{$gb_aqua}$(_git_repo_depth)%f%b\
+%B%F{$gb_yellow}$(git_prompt_info)%f%b\
+%F{$gb_fg}%(!.#. )%f '
 
 # ===============================
 # CONTINUATION PROMPT
 # ===============================
-PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
+PROMPT2='%F{$gb_red}\ %f'
 
 # ===============================
 # RIGHT PROMPT
 # exit status only
 # ===============================
-local return_status="%{$fg_bold[red]%}%(?..%?)%{$reset_color%}"
+local return_status="%B%F{$gb_red}%(?..%?)%f%b"
 RPROMPT='${return_status}'
-
