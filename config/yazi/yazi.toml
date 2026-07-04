@@ -7,16 +7,16 @@ sort_dir_first = true
 sort_translit  = false
 linemode       = "size"
 show_hidden    = false
-show_symlink   = false
+show_symlink   = true
 mouse_events   = [ "click", "scroll" ]
 status = "{cwd}"
 
 [preview]
 wrap            = "no"
 tab_size        = 2
-# max_width       = 1000
-# max_height      = 1500
-cache_dir       = ""
+max_width       = 1000
+max_height      = 1500
+cache_dir       = "/home/omar/.cache/yazi"
 image_filter    = "triangle"
 image_delay     = 30
 image_quality   = 75
