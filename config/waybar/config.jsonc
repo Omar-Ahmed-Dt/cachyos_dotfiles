@@ -1,3 +1,6 @@
+// icons: 
+// https://cheatography.com/davechild/cheat-sheets/font-awesome/
+
 {
     "layer": "top",
     "position": "top",
@@ -18,7 +21,7 @@
     "modules-right": [
         "custom/weather",
         "custom/pacman",
-        "custom/uptime",
+        // "custom/uptime",
         "custom/nettraf",
         "battery",
         "custom/cpu",
@@ -69,12 +72,16 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "memory": {
-        "format": " {used}G",
+        // "format": " {used}G",
+        "format": " {used}G",
         "tooltip": false
     },
     "backlight": {
-        "format": "{icon} {percent}%",
-        "format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"]
+        "format": "  {percent}%",
+        // "format": "{icon} {percent}%",
+        // "format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"]
+        // "format-icons": [" ", " ", " ", " ", ""]
+        // "format-icons": [" ", " ", " ", " ", " "]
     },
     "battery": {
         "states": {
@@ -130,11 +137,11 @@
         "interval": 2,
         "tooltip": false
     },
-    "custom/uptime": {
-        "exec": "~/scripts/uptime.sh",
-        "interval": 60,
-        "tooltip": false
-    },
+    // "custom/uptime": {
+    //     "exec": "~/scripts/uptime.sh",
+    //     "interval": 60,
+    //     "tooltip": false
+    // },
     "custom/weather": {
         "exec": "~/scripts/weather.sh",
         "interval": 3600,

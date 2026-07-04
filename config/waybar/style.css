@@ -30,13 +30,15 @@ window#waybar {
   padding: 0 5px;
   border-radius: 6px;
   margin: 2px 1px;
-  color: #7c6f64;
+  /* color: #7c6f64; */
+  color: #d5c4a1;
   background: transparent;
 }
 
 #workspaces button.focused {
   background: #504945;
-  color: #d5c4a1;
+  /* color: #d5c4a1; */
+  color: #eeeeee;
 }
 
 #workspaces button.urgent {
@@ -129,22 +131,23 @@ window#waybar {
                              · cpu · memory · backlight · pulseaudio · tray ─ */
 
 #custom-weather {
-  background: #9d0006;
-  color: @module_text;
-  /* color: #EEEEEE; */
-}
-
-#custom-pacman {
+  /* background: #9d0006; */
   background: #af3a03;
   color: @module_text;
   /* color: #EEEEEE; */
 }
 
-#custom-uptime {
+#custom-pacman {
+  /* background: #af3a03; */
   background: #b57614;
   color: @module_text;
   /* color: #EEEEEE; */
 }
+
+/* #custom-uptime { */
+/*   background: #b57614; */
+/*   color: @module_text; */
+/* } */
 
 #custom-nettraf {
   background: #79740e;
