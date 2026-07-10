@@ -1,3 +1,5 @@
+require("smart-enter"):setup({ open_multi = true })
+
 require("copy-file-contents"):setup({
 	append_char = "\n",
 	notification = true,

@@ -1,41 +1,48 @@
 #!/usr/bin/env sh
 
-set -eu
-
 multiple="$1"
 directory="$2"
 save="$3"
 path="$4"
 out="$5"
+debug="$6"
 
-# Choose your terminal.
-terminal="kitty"
-yazi_cmd="yazi"
+set -e
 
-# Start from HOME when the application provides no valid location.
-if [ -z "$path" ]; then
-	path="$HOME"
+if [ "$debug" = 1 ]; then
+    set -x
+fi
+
+cmd="yazi"
+termcmd="${TERMCMD:-kitty --title 'termfilechooser'}"
+
+if [ -z "$path" ] || [ ! -e "$path" ]; then
+    path="$HOME"
 fi
 
 if [ "$save" = "1" ]; then
-	# Save-file dialog.
-	set -- --chooser-file="$out" "$path"
+    set -- --chooser-file="$out" "$path"
 elif [ "$directory" = "1" ]; then
-	# Directory chooser.
-	cwd_out="${out}.cwd"
-	set -- --chooser-file="$out" --cwd-file="$cwd_out" "$path"
+    set -- --chooser-file="$out" --cwd-file="$out.1" "$path"
 elif [ "$multiple" = "1" ]; then
-	# Multiple-file chooser.
-	set -- --chooser-file="$out" "$path"
+    set -- --chooser-file="$out" "$path"
 else
-	# Single-file chooser.
-	set -- --chooser-file="$out" "$path"
+    set -- --chooser-file="$out" "$path"
 fi
 
-"$terminal" -e "$yazi_cmd" "$@"
+command="$termcmd $cmd"
+for arg in "$@"; do
+    escaped=$(printf "%s" "$arg" | sed 's/"/\\"/g')
+    command="$command \"$escaped\""
+done
 
-# For directory selection, return Yazi's final working directory.
-if [ "$directory" = "1" ] && [ -s "${out}.cwd" ]; then
-	cat "${out}.cwd" > "$out"
-	rm -f "${out}.cwd"
+sh -c "$command"
+
+if [ "$directory" = "1" ]; then
+    if [ ! -s "$out" ] && [ -s "$out.1" ]; then
+        cat "$out.1" > "$out"
+        rm "$out.1"
+    else
+        rm -f "$out.1"
+    fi
 fi
