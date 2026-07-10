@@ -2,7 +2,7 @@
 
 [flavor]
 
-# Gruvbox Dark
+# ya pkg add bennyyip/gruvbox-dark
 # dark = "gruvbox-dark"
 # light = "gruvbox-dark"
 
@@ -39,3 +39,28 @@ dark = "gruvbox-material"
 
 # ya pkg add AdithyanA2005/nord
 # dark = "synthwave84"
+
+# ya pkg add identityapproved/lain
+# dark = "lain"
+
+# ya pkg add melindachang/kanagawa-paper
+# dark = "kanagawa-paper"
+
+[git]
+unknown       = { fg = "gray", bold = true }
+modified      = { fg = "yellow", bold = true }
+added         = { fg = "green", bold = true }
+untracked     = { fg = "blue", bold = true }
+ignored       = { fg = "darkgray", bold = true }
+deleted       = { fg = "red", bold = true }
+updated       = { fg = "cyan", bold = true }
+clean         = { fg = "green", bold = true }
+# unknown_sign   = "?"
+modified_sign  = "M"
+added_sign     = "A"
+untracked_sign = "U"
+ignored_sign   = "I"
+deleted_sign   = "D"
+updated_sign   = "C"
+clean_sign     = "✔"
+

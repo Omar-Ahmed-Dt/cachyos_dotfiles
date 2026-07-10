@@ -4,19 +4,19 @@ keymap = [
     { on = ["k"],       run = "arrow -1",                    desc = "Move cursor up" },
     { on = ["j"],       run = "arrow 1",                     desc = "Move cursor down" },
     { on = ["h"],       run = "leave",                       desc = "Go to parent" },
-    { on = ["l"],       run = "plugin --sync smart-enter",   desc = "Enter dir / open file" },
-    { on = ["<Enter>"], run = "plugin --sync smart-enter",   desc = "Enter dir / open file" },
+    { on = ["l"],       run = "plugin smart-enter", desc = "Enter dir / open file" },
+    { on = ["<Enter>"], run = "plugin smart-enter", desc = "Enter dir / open file" },
+    { on = ["<Right>"], run = "plugin smart-enter", desc = "Enter dir / open file" },
 
     # Arrow keys
     { on = ["<Up>"],    run = "arrow -1",                    desc = "Move cursor up" },
     { on = ["<Down>"],  run = "arrow 1",                     desc = "Move cursor down" },
     { on = ["<Left>"],  run = "leave",                       desc = "Go to parent" },
-    { on = ["<Right>"], run = "plugin --sync smart-enter",   desc = "Enter dir / open file" },
 
     # Jump
-    { on = ["g","g"],   run = "arrow -99999999",             desc = "Top" },
+    { on = ["g"],   run = "arrow -99999999",             desc = "Top" },
     { on = ["G"],       run = "arrow 99999999",              desc = "Bottom" },
-    { on = ["'"],       run = "plugin augment-command -- first_file", desc = "Jump to first file" },
+    { on = ["'"], run = "plugin augment-command.first-file", desc = "Jump to first file" },
     { on = [ "<C-u>" ], run = "arrow -50%",                  desc = "Move up half page" },
     { on = [ "<C-d>" ], run = "arrow 50%",                   desc = "Move down half page" },
 
@@ -34,7 +34,6 @@ keymap = [
     { on = ["b", "f"], run = "cd ~/ffmpeg",                       desc = "Go to FFmpeg" },
     { on = ["b", "w"], run = "cd ~/wallpapers",                   desc = "Go to Wallpapers" },
     { on = ["b", "p"], run = "cd ~/Pictures",                     desc = "Go to Pictures" },
-    # { on = ["b", "p"], run = "cd ~/pins", desc = "Go to Pins" },
     { on = ["b", "M"], run = "cd ~/Music",                        desc = "Go to Music" },
     { on = ["b", "v"], run = "cd ~/Videos",                       desc = "Go to Videos" },
     { on = ["b", "y"], run = "cd ~/Documents/youtube/",           desc = "Go to My YouTube Videos" },
@@ -62,21 +61,19 @@ keymap = [
     { on = ["a", "f"], run = "create",       desc = "Create file" },
     { on = ["a", "d"], run = "create --dir", desc = "Create directory" },
 
-    # ── (c + key) ───────────────────────────────────────────────────────────
-    { on = [ "c", "p" ], run = "copy path",                                    desc = "Copy the file path" },
-    { on = [ "c", "d" ], run = "copy dirname",                                 desc = "Copy the directory path" },
-    { on = [ "c", "f" ], run = "copy filename",                                desc = "Copy the filename" },
+    { on = ["c", "p"], run = "copy path",                                      desc = "Copy the file path" },
+    { on = ["c", "d"], run = "copy dirname",                                   desc = "Copy the directory path" },
+    { on = ["c", "f"], run = "copy filename",                                  desc = "Copy the filename" },
     { on = ["c", "c"],   run = "plugin copy-file-contents",                    desc = "Copy contents of file" },
-    { on = ["c", "v"],   run = "shell '~/scripts/tomp4.sh \"$@\"'",            desc = "convert to mp4" },
-    { on = ["c", "y"], run = [ "yank", "plugin clipboard -- --action=copy" ],  desc = "Yank + copy to clipboard" },
-    { on = ["c", "Y"], run = [ 'plugin clipboard -- --action=paste' ],          desc = "Paste from clipboard" },
+    { on = ["c", "y"], run = [ "plugin clipboard -- --action=copy" ],          desc = "Copy to clipboard" },
+    { on = ["c", "Y"], run = [ 'plugin clipboard -- --action=paste' ],         desc = "Paste from clipboard" },
 
     # ── Search & Filter ──────────────────────────────────────────────────────────
-    { on = ["f"], run = "find --smart",          desc = "find within current directory" },
-    { on = ["n"], run = "find_arrow",            desc = "Next match" },
-    { on = ["N"], run = "find_arrow --previous", desc = "Prev match" },
-    { on = ["/"], run = "filter --smart",        desc = "Filter" },
-    { on = ["F"], run = "search --via=fd",       desc = "find recursively into suddirectories" },
+    { on = ["/", "/"], run = "find --smart",          desc = "Find within current directory" },
+    { on = ["n"], run = "find_arrow",                 desc = "Next match" },
+    { on = ["N"], run = "find_arrow --previous",      desc = "Prev match" },
+    { on = ["/", "f"], run = "filter --smart",        desc = "Filter" },
+    { on = ["/", "r"], run = "search --via=fd",       desc = "Find recursively into suddirectories" },
 
     # ── Sort (t + key) ───────────────────────────────────────────────────────────
     { on = ["t", "a"], run = "sort alphabetical --reverse=no",  desc = "Sort A → Z" },
@@ -92,28 +89,54 @@ keymap = [
     { on = ["L"], run = "tab_switch 1 --relative",  desc = "Next tab" },
 
     # Switch between tabs (create tabs first with T)
-    { on = "1", run = "tab_switch 0", desc = "Switch to first tab" },
-    { on = "2", run = "tab_switch 1", desc = "Switch to second tab" },
-    { on = "3", run = "tab_switch 2", desc = "Switch to third tab" },
-    { on = "4", run = "tab_switch 3", desc = "Switch to fourth tab" },
+    # { on = "1", run = "tab_switch 0", desc = "Switch to first tab" },
+    # { on = "2", run = "tab_switch 1", desc = "Switch to second tab" },
+    # { on = "3", run = "tab_switch 2", desc = "Switch to third tab" },
+    # { on = "4", run = "tab_switch 3", desc = "Switch to fourth tab" },
+
+    { on = "1", run = "plugin smart-switch 0", desc = "Switch or create first tab" },
+    { on = "2", run = "plugin smart-switch 1", desc = "Switch or create second tab" },
+    { on = "3", run = "plugin smart-switch 2", desc = "Switch or create third tab" },
+    { on = "4", run = "plugin smart-switch 3", desc = "Switch or create fourth tab" },
 
     # ── Plugins ──────────────────────────────────────────────────────────────────
-    { on = "Z",        run = "plugin fzf",                   desc = "Jump to a file via fzf" },
-    { on = "z",        run = "plugin zoxide",                desc = "Jump to a directory via zoxide" },
+    { on = "E",        run = "plugin fzf",                   desc = "Jump to a file via fzf" },
+    { on = "e",        run = "plugin zoxide",                desc = "Jump to a directory via zoxide" },
     #  Only files with Git changes (modified, untracked, staged)
-    { on = ["g","m"],  run = "plugin vcs-files",             desc = "Show Git file changes" },
+    # { on = ["g","m"],  run = "plugin vcs-files",             desc = "Show Git file changes" },
     # All files tracked by the repo
-    { on = ["g", "a"], run = "plugin git-files",             desc = "Show all Git files" },
-    { on = "u",        run = "plugin jump-to-char",          desc = "Jump to char" },
+    { on = ["o", "a"], run = "plugin git-files",             desc = "Show all Git files" },
+    # ya pkg add ciarandg/cd-git-root
+    { on = ["o", "r"], run = "plugin cd-git-root",           desc = "Go to git repo root" },
+    { on = "f",        run = "plugin jump-to-char",          desc = "Jump to char" },
     # ya pkg add dedukun/relative-motions
     { on = "m",        run = "plugin relative-motions",      desc = "Trigger a new relative motion" },
+    # ya pkg add yazi-rs/plugins:zoom
+    { on = "=",        run = "plugin zoom 1",                desc = "Zoom in hovered file" },
+    { on = "-",        run = "plugin zoom -1",               desc = "Zoom out hovered file" },
+    { on = "z",        run = "plugin what-size",             desc = "Calc size of selection or cwd" },
 
     # ── Shell & Misc ─────────────────────────────────────────────────────────────
     { on = ["s"],  run = 'shell "$SHELL" --block --confirm', desc = "Open shell in the current directory" },
     { on = ["S"],  run = 'suspend',                          desc = "suspend" },
     { on = ["o", "o"],    run = '''shell 'swayimg -g' --confirm''', desc = "Open swayimg" },
-    { on = ["o", "d"],    run = "shell -- ripdrag %s -x 2>/dev/null &", desc = "pick up" },
+    # { on = ["o", "p"],    run = "shell -- ripdrag %s -x 2>/dev/null &", desc = "pick up" },
+    {
+        on = [ "o", "p" ],
+        run = '''
+          shell -- if [ "$#" -eq 1 ]; then
+            dragon-drop --and-exit --on-top "$@"
+          else
+            dragon-drop --on-top "$@"
+          fi
+        ''',
+        desc = "Pick up",
+    },
     { on = ["o", "c"],    run = "plugin open-with-cmd", desc = "Open with custom command" },
+    # hovered file
+    { on = ["o", "v"], run = "shell -- ~/scripts/tomp4.sh %h",                 desc = "Convert hovered to mp4" },
+    # selected files
+    { on = ["o", "V"], run = "shell -- ~/scripts/tomp4.sh %s",                 desc = "Convert selected to mp4" },
     { on = ["."],  run = "hidden toggle",                    desc = "Toggle hidden files" },
     { on = ["~"],  run = "help",                             desc = "Open help" },
     { on = "w",    run = "tasks:show",                       desc = "Open task manager" },
@@ -130,7 +153,7 @@ keymap = [
     { on = [ "j" ],     run = "arrow 1",       desc = "Move down" },
     { on = [ "<C-u>" ], run = "arrow -50%",    desc = "Move up half page" },
     { on = [ "<C-d>" ], run = "arrow 50%",     desc = "Move down half page" },
-    { on = [ "g", "g" ], run = "arrow -99999999", desc = "Go to top" },
+    { on = [ "g" ], run = "arrow -99999999", desc = "Go to top" },
     { on = [ "G" ],     run = "arrow 99999999", desc = "Go to bottom" },
-    { on = "/",         run = "filter",         desc = "Filter help items" },
+    { on = ["/"], run = "filter --smart",        desc = "Filter" },
 ]
