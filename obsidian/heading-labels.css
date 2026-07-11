@@ -1,0 +1,31 @@
+/* Reading view */
+.markdown-rendered h1::before { content: "H1"; }
+.markdown-rendered h2::before { content: "H2"; }
+.markdown-rendered h3::before { content: "H3"; }
+.markdown-rendered h4::before { content: "H4"; }
+.markdown-rendered h5::before { content: "H5"; }
+.markdown-rendered h6::before { content: "H6"; }
+
+/* Live Preview (editing view) — headings are line-based */
+.HyperMD-header-1::before { content: "H1"; }
+.HyperMD-header-2::before { content: "H2"; }
+.HyperMD-header-3::before { content: "H3"; }
+.HyperMD-header-4::before { content: "H4"; }
+.HyperMD-header-5::before { content: "H5"; }
+.HyperMD-header-6::before { content: "H6"; }
+
+/* shared badge styling */
+.markdown-rendered h1::before, .markdown-rendered h2::before,
+.markdown-rendered h3::before, .markdown-rendered h4::before,
+.markdown-rendered h5::before, .markdown-rendered h6::before,
+[class*="HyperMD-header-"]::before {
+  display: inline-block;
+  margin-right: 0.5em;
+  padding: 0 0.35em;
+  font-size: 0.6em;
+  font-weight: 600;
+  vertical-align: middle;
+  border-radius: 4px;
+  background: var(--background-modifier-border);
+  color: var(--text-muted);
+}

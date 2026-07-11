@@ -1,4 +1,4 @@
-# #!/bin/bash
+#!/bin/bash
 for file in "$@"; do
     base_name="${file%.*}"
     output_file="${base_name}.mp4"

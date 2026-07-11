@@ -1,39 +1,41 @@
-#!/bin/bash 
+#!/bin/bash
 
+gitdir="$HOME/Documents/GitHub/cachyos_dotfiles"
+config="$gitdir/config"
 
-pacman -Qeq > ~/Documents/GitHub/cachyos_dotfiles/pkgs.txt
-cd ~/.config/
-cp -r zathura htop paru dmscripts pcmanfm yay mimeapps.list dunst /home/omar/Documents/GitHub/cachyos_dotfiles/config/
+pacman -Qeq > "$gitdir/pkgs.txt"
 
-cd /home/omar/Documents/GitHub/dotfiles/config/dmscripts
-rm dmnote
-cp -r /home/omar/scripts/ /home/omar/Documents/GitHub/dotfiles/
-cp ~/.config/ncmpcpp/config ~/Documents/GitHub/dotfiles/config/ncmpcpp
-cp ~/.config/ncmpcpp/bindings ~/Documents/GitHub/dotfiles/config/ncmpcpp
-cp ~/.config/mpd/mpd.conf ~/Documents/GitHub/dotfiles/config/mpd
-cp -r ~/.config/kitty/kitty.conf ~/Documents/GitHub/dotfiles/config/kitty
+cd "$HOME/.config" || exit
 
-cp -r ~/.zshrc ~/Documents/GitHub/dotfiles/zsh/zshrc
-cp -r ~/.oh-my-zsh/custom/themes/zeta.zsh-theme ~/Documents/GitHub/dotfiles/zsh/
-cp -r ~/.oh-my-zsh/custom/themes/*.zsh-theme ~/Documents/GitHub/dotfiles/zsh/
-cp ~/.nnn_env.zsh ~/Documents/GitHub/dotfiles/zsh/nnn_env.zsh
+cp -r fuzzel rofi zathura htop dmscripts pcmanfm yay mimeapps.list dunst \
+xdg-desktop-portal xdg-desktop-portal-termfilechooser imv sway swayimg \
+swaylock gtk-3.0 gtk-4.0 waybar "$config/"
 
-cp -r ~/.Xresources ~/Documents/GitHub/dotfiles/Xresources
-## cp ~/.cache/wall/wallpaper.jpg ~/Documents/GitHub/dotfiles/workflow/
-cp ~/.config/khal/config ~/Documents/GitHub/dotfiles/config/khal/
-cp -r ~/.config/ytfzf/* ~/Documents/GitHub/dotfiles/config/ytfzf/
-cp -r ~/.config/vis/* ~/Documents/GitHub/dotfiles/config/vis/
-rm ~/Documents/GitHub/dotfiles/config/vis/vis.log
-# cp -r /home/omar/.config/conky/ ~/Documents/GitHub/dotfiles/config/
-cp ~/.config/picom.conf ~/Documents/GitHub/dotfiles/config/
-cp ~/.config/mpv/mpv.conf   ~/Documents/GitHub/dotfiles/config/mpv/
-cp ~/.config/mpv/input.conf ~/Documents/GitHub/dotfiles/config/mpv/
-cp -r ~/.config/nvim/lua/  ~/Documents/GitHub/dotfiles/config/nvim/
-cp -r ~/.config/flameshot/ ~/Documents/GitHub/dotfiles/config/ 
-cp ~/github/bslock/config.def.h ~/Documents/GitHub/dotfiles/config/bslock/
-# cp -r /home/omar/.config/nnn/plugins/* ~/Documents/GitHub/dotfiles/config/nnn/plugins/
-cp -r /home/omar/.config/yazi/*.toml ~/Documents/GitHub/dotfiles/config/yazi/
-cp -r /home/omar/.config/alacritty/*.toml ~/Documents/GitHub/dotfiles/config/alacritty/
-cp -r /home/omar/.config/alacritty/custom_themes/ ~/Documents/GitHub/dotfiles/config/alacritty/
-cp -r /home/omar/.config/ncpamixer.conf ~/Documents/GitHub/dotfiles/config/
-cp -r /home/omar/.config/rofi/ ~/Documents/GitHub/dotfiles/config/
+rm -f "$config/dmscripts/dmnote"
+
+cp -r "$HOME/scripts" "$gitdir/"
+
+cp "$HOME/.config/ncmpcpp/config" "$config/ncmpcpp/"
+cp "$HOME/.config/ncmpcpp/bindings" "$config/ncmpcpp/"
+
+cp "$HOME/.config/mpd/mpd.conf" "$config/mpd/"
+cp "$HOME/.config/kitty/kitty.conf" "$config/kitty/"
+
+cp "$HOME/.zshrc" "$gitdir/zsh/zshrc"
+cp "$HOME/.oh-my-zsh/custom/themes/fishy.zsh-theme" "$gitdir/zsh/"
+
+cp "$HOME/.config/mpv/mpv.conf" "$config/mpv/"
+cp "$HOME/.config/mpv/input.conf" "$config/mpv/"
+
+cp -r "$HOME/.config/nvim/lua" "$config/nvim/"
+
+cp "$HOME/.config/yazi/"*.toml "$config/yazi/"
+cp "$HOME/.config/yazi/init.lua" "$config/yazi/"
+
+find "$HOME/.config/yazi/flavors" -maxdepth 1 -type d -name "*.yazi" -printf "%f\n" > "$config/yazi/flavors/flavors.txt"
+
+find "$HOME/.config/yazi/plugins" -maxdepth 1 -type d -name "*.yazi" -printf "%f\n" > "$config/yazi/plugins/plugins.txt"
+
+cp /home/omar/Dropbox/obsidian/.obsidian/snippets/* $gitdir/obsidian/
+
+echo "Backup done."

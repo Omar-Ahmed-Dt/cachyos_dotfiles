@@ -1,0 +1,36 @@
+[Default Applications]
+x-scheme-handler/freetube=FreeTube.desktop
+image/png=org.xfce.ristretto.desktop
+image/jpeg=org.xfce.ristretto.desktop
+application/pdf=org.pwmt.zathura-djvu.desktop
+x-scheme-handler/claude-cli=claude-code-url-handler.desktop
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
+text/markdown=userapp-kitty -e nvim-DE0S62.desktop
+text/html=userapp-Waterfox-U34Y22.desktop
+x-scheme-handler/http=userapp-Waterfox-U34Y22.desktop
+x-scheme-handler/https=userapp-Waterfox-U34Y22.desktop
+x-scheme-handler/chrome=userapp-Waterfox-U34Y22.desktop
+application/x-extension-htm=userapp-Waterfox-U34Y22.desktop
+application/x-extension-html=userapp-Waterfox-U34Y22.desktop
+application/x-extension-shtml=userapp-Waterfox-U34Y22.desktop
+application/xhtml+xml=userapp-Waterfox-U34Y22.desktop
+application/x-extension-xhtml=userapp-Waterfox-U34Y22.desktop
+application/x-extension-xht=userapp-Waterfox-U34Y22.desktop
+inode/directory=thunar.desktop
+
+[Added Associations]
+image/png=org.xfce.ristretto.desktop;gimp.desktop;swayimg.desktop;userapp-kitty -e swayimg-L6TQM3.desktop;
+image/jpeg=userapp-kitty -e swayimg-L6TQM3.desktop;org.xfce.ristretto.desktop;
+application/pdf=okularApplication_pdf.desktop;org.pwmt.zathura-djvu.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
+text/markdown=nvim.desktop;userapp-kitty -e nvim-DE0S62.desktop;
+text/html=net.waterfox.waterfox.desktop;userapp-Waterfox-U34Y22.desktop;
+x-scheme-handler/http=userapp-Waterfox-U34Y22.desktop;
+x-scheme-handler/https=userapp-Waterfox-U34Y22.desktop;
+x-scheme-handler/chrome=userapp-Waterfox-U34Y22.desktop;
+application/x-extension-htm=userapp-Waterfox-U34Y22.desktop;
+application/x-extension-html=userapp-Waterfox-U34Y22.desktop;
+application/x-extension-shtml=userapp-Waterfox-U34Y22.desktop;
+application/xhtml+xml=userapp-Waterfox-U34Y22.desktop;
+application/x-extension-xhtml=userapp-Waterfox-U34Y22.desktop;
+application/x-extension-xht=userapp-Waterfox-U34Y22.desktop;

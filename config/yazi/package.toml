@@ -117,3 +117,8 @@ hash = "992f7d08d6093732621ff49022ef6053"
 use = "melindachang/kanagawa-paper"
 rev = "7f3cd1d"
 hash = "3f84eceb475a9d1c1ea911d93a1d1898"
+
+[[flavor.deps]]
+use = "malick-tammal/monokai"
+rev = "57be034"
+hash = "9fbb5104646853a933446746b88118a6"

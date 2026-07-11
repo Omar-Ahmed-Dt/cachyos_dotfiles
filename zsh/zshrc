@@ -26,9 +26,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 # path to custom themes: /home/omar/.oh-my-zsh/custom/themes
-# ZSH_THEME="fishy"
+ZSH_THEME="fishy"
 # ZSH_THEME="gruvbox-fishy"
-ZSH_THEME="gruvbox-minimal"
+# ZSH_THEME="gruvbox-minimal"
 # ZSH_THEME="gruvbox-retro"
 # ZSH_THEME="zeta"
 
@@ -212,7 +212,6 @@ alias gv='cd .config/nvim'
 alias tf="terraform"
 # alias glow='glow -l'
 # alias y='yazi'
-alias v='nvim'
 alias gd='cd ~/Documents/GitHub/'
 alias np='ncmpcpp'
 alias xk='wlprop | jq -r '.pid' | xargs kill -9'
@@ -241,6 +240,14 @@ alias cd='z'      # zoxide pkg
 # ??() {
 #   tgpt "$*"
 # }
+
+v() {
+  if [[ "$1" == "." ]]; then
+    nvim -c "Yazi cwd"
+  else
+    nvim "$@"
+  fi
+}
 
 rm() {
   trash-put -ir "$@"

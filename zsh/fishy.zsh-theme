@@ -9,6 +9,7 @@ setopt PROMPT_SUBST
 _fishy_collapsed_wd() {
   local i pwd
   pwd=("${(s:/:)PWD/#$HOME/~}")
+
   if (( $#pwd > 1 )); then
     for i in {1..$(($#pwd-1))}; do
       if [[ "$pwd[$i]" = .* ]]; then
@@ -18,6 +19,7 @@ _fishy_collapsed_wd() {
       fi
     done
   fi
+
   echo "${(j:/:)pwd}"
 }
 
@@ -26,6 +28,7 @@ _fishy_collapsed_wd() {
 # ===============================
 _git_repo_depth() {
   local root cwd relpath parts
+
   root=$(git rev-parse --show-toplevel 2>/dev/null) || return
   cwd=$PWD
   relpath=${cwd#$root/}
@@ -55,24 +58,24 @@ local user_color="$gb_green"
 # ===============================
 # Git prompt config oh-my-zsh
 # ===============================
-ZSH_THEME_GIT_PROMPT_PREFIX=" %F{$gb_orange} %F{$gb_yellow}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%f "
+ZSH_THEME_GIT_PROMPT_PREFIX=" %B%F{$gb_orange} %F{$gb_yellow}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%f%b "
 ZSH_THEME_GIT_PROMPT_DIRTY=""
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 # ===============================
 # LEFT PROMPT
-# path + depth + branch + symbol
+# bold path + depth + branch + symbol
 # ===============================
-PROMPT='%F{$user_color}$(_fishy_collapsed_wd)%f \
+PROMPT='%B%F{$user_color}$(_fishy_collapsed_wd)%f%b \
 %B%F{$gb_aqua}$(_git_repo_depth)%f%b\
 %B%F{$gb_yellow}$(git_prompt_info)%f%b\
-%F{$gb_fg}%(!.#. )%f '
+%B%F{$gb_fg}%(!.#. )%f%b '
 
 # ===============================
 # CONTINUATION PROMPT
 # ===============================
-PROMPT2='%F{$gb_red}\ %f'
+PROMPT2='%B%F{$gb_red}\ %f%b'
 
 # ===============================
 # RIGHT PROMPT

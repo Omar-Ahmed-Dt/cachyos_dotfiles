@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# DMENU="dmenu -i -c -l 30 -p"
+DMENU="rofi -i -p"
+RMENU="rofi -dmenu -i"
+FMENU="fzf"
+DMBROWSER="net.waterfox.waterfox"
+#DMBROWSER="qutebrowser"
+
+DMTERM="kitty -e"
+
+#DMEDITOR="nvim"
+DMEDITOR="nvim"
+
+# dm-note
+note_dir="${HOME}/.config/dmscripts/dmnote"
+

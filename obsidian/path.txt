@@ -1,5 +1,0 @@
-# path:
-/home/omar/Dropbox/Apps/obsidian/.obsidian/snippets/
-
-# from obsidian: Settings > Appearance > CSS snippets
-

@@ -45,18 +45,18 @@ Status:children_add(function()
 end, 500, Status.RIGHT)
 
 -- Show username and hostname on the left side of the header.
-Header:children_add(function()
-	if ya.target_family() ~= "unix" then
-		return ui.Line({})
-	end
-
-	local username = ya.user_name() or "unknown"
-	local hostname = ya.host_name() or "unknown"
-
-	return ui.Line({
-		ui.Span(username .. "@" .. hostname .. " "):fg("blue"),
-	})
-end, 500, Header.LEFT)
+-- Header:children_add(function()
+-- 	if ya.target_family() ~= "unix" then
+-- 		return ui.Line({})
+-- 	end
+--
+-- 	local username = ya.user_name() or "unknown"
+-- 	local hostname = ya.host_name() or "unknown"
+--
+-- 	return ui.Line({
+-- 		ui.Span(username .. "@" .. hostname .. " "):fg("blue"),
+-- 	})
+-- end, 500, Header.LEFT)
 
 -- Show symlink in status bar
 Status:children_add(function(self)
@@ -67,3 +67,4 @@ Status:children_add(function(self)
 		return ""
 	end
 end, 3300, Status.LEFT)
+

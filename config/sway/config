@@ -163,6 +163,17 @@ exec swayidle -w \
     lock 'swaylock -f' \
     unlock 'pkill -xu "$USER" -SIGUSR1 swaylock'
 
+# exec swayidle -w \
+#     timeout $lock_timeout 'swaylock -f' \
+#     timeout $total_timeout 'swaymsg "output * power off"' \
+#               resume 'swaymsg "output * power on"' \
+#     timeout $screen_timeout 'pgrep -xu "$USER" swaylock >/dev/null && swaymsg "output * power off"' \
+#          resume 'pgrep -xu "$USER" swaylock >/dev/null && swaymsg "output * power on"' \
+#     before-sleep 'swaylock -f' \
+#     after-resume 'pkill -RTMIN+8 waybar; pkill -RTMIN+9 waybar' \
+#     lock 'swaylock -f' \
+#     unlock 'pkill -xu "$USER" -SIGUSR1 swaylock'
+
 # Gruvbox Theme
 set $bg         #1d2021
 set $bg_soft    #282828

@@ -7,6 +7,8 @@ keymap = [
     { on = ["l"],       run = "plugin smart-enter", desc = "Enter dir / open file" },
     { on = ["<Enter>"], run = "plugin smart-enter", desc = "Enter dir / open file" },
     { on = ["<Right>"], run = "plugin smart-enter", desc = "Enter dir / open file" },
+    { on = ["K"],       run = "plugin parent-arrow -1",                   desc = "Move cursor up in parent Directory" },
+    { on = ["J"],       run = "plugin parent-arrow 1",                    desc = "Move cursor down in parent Directory" },
 
     # Arrow keys
     { on = ["<Up>"],    run = "arrow -1",                    desc = "Move cursor up" },
@@ -36,8 +38,8 @@ keymap = [
     { on = ["b", "p"], run = "cd ~/Pictures",                     desc = "Go to Pictures" },
     { on = ["b", "M"], run = "cd ~/Music",                        desc = "Go to Music" },
     { on = ["b", "v"], run = "cd ~/Videos",                       desc = "Go to Videos" },
-    { on = ["b", "y"], run = "cd ~/Documents/youtube/",           desc = "Go to My YouTube Videos" },
-    { on = ["b", "Y"], run = "cd ~/youtube-dl",                   desc = "Go to YouTube DL" },
+    { on = ["b", "Y"], run = "cd ~/Documents/youtube/",           desc = "Go to My YouTube Videos" },
+    { on = ["b", "y"], run = "cd ~/youtube-dl",                   desc = "Go to YouTube DL" },
     { on = ["b", "S"], run = "cd ~/screenshots",                  desc = "Go to Screenshots" },
     { on = ["b", "r"], run = "cd ~/rnote",                        desc = "Go to rnote" },
     { on = ["b", "C"], run = "cd ~/cv",                           desc = "Go to cv" },
@@ -108,6 +110,7 @@ keymap = [
     { on = ["o", "a"], run = "plugin git-files",             desc = "Show all Git files" },
     # ya pkg add ciarandg/cd-git-root
     { on = ["o", "r"], run = "plugin cd-git-root",           desc = "Go to git repo root" },
+    # { on = ["o", "r"], run = 'shell -- ya emit cd "$(git rev-parse --show-toplevel)"',           desc = "Go to git repo root" },
     { on = "f",        run = "plugin jump-to-char",          desc = "Jump to char" },
     # ya pkg add dedukun/relative-motions
     { on = "m",        run = "plugin relative-motions",      desc = "Trigger a new relative motion" },
@@ -118,9 +121,9 @@ keymap = [
 
     # ── Shell & Misc ─────────────────────────────────────────────────────────────
     { on = ["s"],  run = 'shell "$SHELL" --block --confirm', desc = "Open shell in the current directory" },
-    { on = ["S"],  run = 'suspend',                          desc = "suspend" },
+    { on = ["S"], run = 'shell --orphan --confirm -- kitty --working-directory "$PWD" -e "$SHELL"', desc = "Open shell in separate terminal" },
+    { on = ["B"],  run = 'suspend', desc = "suspend" },
     { on = ["o", "o"],    run = '''shell 'swayimg -g' --confirm''', desc = "Open swayimg" },
-    # { on = ["o", "p"],    run = "shell -- ripdrag %s -x 2>/dev/null &", desc = "pick up" },
     {
         on = [ "o", "p" ],
         run = '''

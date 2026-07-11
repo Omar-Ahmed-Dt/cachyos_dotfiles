@@ -3,7 +3,7 @@
 [flavor]
 
 # ya pkg add bennyyip/gruvbox-dark
-# dark = "gruvbox-dark"
+dark = "gruvbox-dark"
 # light = "gruvbox-dark"
 
 # Dracula
@@ -29,7 +29,7 @@
 # dark = "kanagawa-dragon"
 
 # ya pkg add matt-dong-123/gruvbox-material
-dark = "gruvbox-material"
+# dark = "gruvbox-material"
 
 # ya pack -a AdithyanA2005/nord
 # dark = "nord"
@@ -45,6 +45,9 @@ dark = "gruvbox-material"
 
 # ya pkg add melindachang/kanagawa-paper
 # dark = "kanagawa-paper"
+
+# ya pkg add malick-tammal/monokai
+# dark = "monokai"
 
 [git]
 unknown       = { fg = "gray", bold = true }
