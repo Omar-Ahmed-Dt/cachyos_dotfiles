@@ -17,27 +17,29 @@ pacman -Qeq > "$gitdir/pkgs.txt"
 
 cd "$HOME/.config" || exit
 
+# ~/.config/<Apps>
 cp -r fuzzel rofi zathura htop pcmanfm yay mimeapps.list dunst \
 xdg-desktop-portal xdg-desktop-portal-termfilechooser imv sway swayimg \
 swaylock gtk-3.0 gtk-4.0 waybar "$config/"
 
+# Bash Scripts
+copy_to_dir "$HOME/scripts/" "$gitdir/"
 
-cp -r "$HOME/scripts" "$gitdir/"
-
-copy_to_dir "$HOME/.config/dmscripts/config" "$config/dmscripts/"
-
-copy_to_dir "$HOME/.config/ncmpcpp/config" "$config/ncmpcpp/"
-cp "$HOME/.config/ncmpcpp/bindings" "$config/ncmpcpp/"
+# Media
+copy_to_dir "$HOME/.config/ncmpcpp/bindings" "$HOME/.config/ncmpcpp/config" "$config/ncmpcpp/"
 
 copy_to_dir "$HOME/.config/mpd/mpd.conf" "$config/mpd/"
+
+copy_to_dir "$HOME/.config/mpv/input.conf" "$HOME/.config/mpv/mpv.conf" "$config/mpv/"
+
+# Terminal
 copy_to_dir "$HOME/.config/kitty/kitty.conf" "$config/kitty/"
 
+# Zsh
 copy_to_dir "$HOME/.oh-my-zsh/custom/themes/fishy.zsh-theme" "$gitdir/zsh/"
 cp "$HOME/.zshrc" "$gitdir/zsh/zshrc"
 
-copy_to_dir "$HOME/.config/mpv/mpv.conf" "$config/mpv/"
-cp "$HOME/.config/mpv/input.conf" "$config/mpv/"
-
+# Nvim
 copy_to_dir "$HOME/.config/nvim/lua" "$config/nvim/"
 
 # Yazi configs
