@@ -1,2 +1,1 @@
-# /etc/sudoers.d/
 %wheel ALL=(ALL:ALL) NOPASSWD:ALL

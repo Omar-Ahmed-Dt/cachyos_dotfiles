@@ -1,5 +1,3 @@
-# /etc/default/grub
-#
 # GRUB boot loader configuration
 
 GRUB_DEFAULT=0
@@ -7,7 +5,7 @@ GRUB_TIMEOUT='1'
 GRUB_DISTRIBUTOR='CachyOS'
 # GRUB_CMDLINE_LINUX_DEFAULT='nowatchdog nvme_load=YES zswap.enabled=0 splash resume=UUID=ec336c9d-1ff1-4e17-aee4-6da8c54d0e7a loglevel=3'
 # GRUB_CMDLINE_LINUX_DEFAULT='nowatchdog nvme_load=YES zswap.enabled=0 resume=UUID=ec336c9d-1ff1-4e17-aee4-6da8c54d0e7a loglevel=3'
-GRUB_CMDLINE_LINUX_DEFAULT='nowatchdog nvme_load=YES zswap.enabled=0 resume=<> loglevel=3 nvidia.NVreg_PreserveVideoMemoryAllocations=1 nvidia.NVreg_TemporaryFilePath=/var/tmp nvidia_drm.modeset=1'
+GRUB_CMDLINE_LINUX_DEFAULT='nowatchdog nvme_load=YES zswap.enabled=0 resume=UUID=ec336c9d-1ff1-4e17-aee4-6da8c54d0e7a loglevel=3 nvidia.NVreg_PreserveVideoMemoryAllocations=1 nvidia.NVreg_TemporaryFilePath=/var/tmp nvidia_drm.modeset=1'
 GRUB_CMDLINE_LINUX=""
 
 # Preload both GPT and MBR modules so that they are not missed

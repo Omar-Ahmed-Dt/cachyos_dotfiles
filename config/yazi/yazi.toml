@@ -8,7 +8,7 @@ sort_translit  = false
 linemode       = "size"
 show_hidden    = false
 show_symlink   = true
-mouse_events   = [ "click", "scroll" ]
+mouse_events   = [ "click", "scroll" , "drag"]
 status = "{cwd}"
 
 [preview]

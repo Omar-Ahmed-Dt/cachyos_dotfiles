@@ -105,7 +105,7 @@ keymap = [
     { on = "E",        run = "plugin fzf",                   desc = "Jump to a file via fzf" },
     { on = "e",        run = "plugin zoxide",                desc = "Jump to a directory via zoxide" },
     #  Only files with Git changes (modified, untracked, staged)
-    # { on = ["g","m"],  run = "plugin vcs-files",             desc = "Show Git file changes" },
+    # { on = ["o","m"],  run = "plugin vcs-files",             desc = "Show Git file changes" },
     # All files tracked by the repo
     { on = ["o", "a"], run = "plugin git-files",             desc = "Show all Git files" },
     # ya pkg add ciarandg/cd-git-root
