@@ -23,61 +23,76 @@ image_quality   = 75
 ueberzug_scale  = 1
 ueberzug_offset = [ 0, 0, 0, 0 ]
 
+# [opener]
+# image = [
+#     # { run = 'env -u SWAYSOCK swayimg "$@"', orphan = true },
+#     { run = 'swayimg "$@"', orphan = true },
+# ]
+#
+# media = [
+#     { run = 'mpv --player-operation-mode=pseudo-gui "$@"', orphan = true }
+# ]
+#
+# text = [
+#     # { run = 'nvim "$@"', block = true },
+#     # { run = 'kitty --detach nvim "$@"', orphan = true }
+#     { run = "nvim %s", block = true, desc = "Edit with nvim", for = "unix" },
+# ]
+#
+# pdf = [
+#     { run = 'zathura "$@"', orphan = true }
+# ]
+#
+# office = [
+#     { run = 'libreoffice "$@"', orphan = true }
+# ]
+#
+# rnote = [
+#    # run this command: flatpak override --user com.github.flxzt.rnote --filesystem=home 
+#    { run = 'flatpak run com.github.flxzt.rnote "$@"', orphan = true }
+#    # { run = 'rnote "$@"', orphan = true }
+# ]
+#
+# extract = [ 
+#     { run = "ya pub extract --list %s", desc = "Extract here" }
+# ]
+#
+# [open]
+# rules = [
+#     { mime = "image/*", use = "image" },
+#     { mime = "video/*", use = "media" },
+#     { mime = "audio/*", use = "media" },
+#
+#     # Empty or text files open in nvim
+#     { url = "*.sh", use = "text" },
+#     { url = "*.txt", use = "text" },
+#     { url = "*.md", use = "text" },
+#     { url = "*.toml", use = "text" },
+#     { url = "*.conf", use = "text" },
+#     { url = "bulk-rename.txt", use = "text" },
+#     { mime = "inode/x-empty", use = "text" },
+#     { mime = "text/*", use = "text" },
+#     { mime = "application/json", use = "text" },
+#     { mime = "application/pdf", use = "pdf" },
+#     { url = "*.rnote", use = "rnote" },
+#     { url = "*.odt", use = "office" },
+#
+#     { mime = "application/{zip,rar,7z*,tar,xz,zstd,gzip,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", use = [ "extract", "reveal" ] },
+# ]
+
 [opener]
-image = [
-    # { run = 'env -u SWAYSOCK swayimg "$@"', orphan = true },
-    { run = 'swayimg "$@"', orphan = true },
-]
-
-media = [
-    { run = 'mpv --player-operation-mode=pseudo-gui "$@"', orphan = true }
-]
-
-text = [
-    # { run = 'nvim "$@"', block = true },
-    # { run = 'kitty --detach nvim "$@"', orphan = true }
-    { run = "nvim %s", block = true, desc = "Edit with nvim", for = "unix" },
-]
-
-pdf = [
-    { run = 'zathura "$@"', orphan = true }
-]
-
-office = [
-    { run = 'libreoffice "$@"', orphan = true }
-]
-
-rnote = [
-   # run this command: flatpak override --user com.github.flxzt.rnote --filesystem=home 
-   { run = 'flatpak run com.github.flxzt.rnote "$@"', orphan = true }
-   # { run = 'rnote "$@"', orphan = true }
-]
-
-extract = [ 
-    { run = "ya pub extract --list %s", desc = "Extract here" }
+smart = [
+    {
+        run   = '"$HOME/scripts/openfile.sh" %s',
+        block = true,
+        desc  = "Smart open",
+        for   = "unix"
+    },
 ]
 
 [open]
 rules = [
-    { mime = "image/*", use = "image" },
-    { mime = "video/*", use = "media" },
-    { mime = "audio/*", use = "media" },
-
-    # Empty or text files open in nvim
-    { url = "*.sh", use = "text" },
-    { url = "*.txt", use = "text" },
-    { url = "*.md", use = "text" },
-    { url = "*.toml", use = "text" },
-    { url = "*.conf", use = "text" },
-    { url = "bulk-rename.txt", use = "text" },
-    { mime = "inode/x-empty", use = "text" },
-    { mime = "text/*", use = "text" },
-    { mime = "application/json", use = "text" },
-    { mime = "application/pdf", use = "pdf" },
-    { url = "*.rnote", use = "rnote" },
-    { url = "*.odt", use = "office" },
-
-    { mime = "application/{zip,rar,7z*,tar,xz,zstd,gzip,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", use = [ "extract", "reveal" ] },
+    { url = "*", use = "smart" },
 ]
 
 [tasks]

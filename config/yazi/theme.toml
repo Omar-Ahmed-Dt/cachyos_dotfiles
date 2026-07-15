@@ -3,7 +3,7 @@
 [flavor]
 
 # ya pkg add bennyyip/gruvbox-dark
-# dark = "gruvbox-dark"
+dark = "gruvbox-dark"
 # light = "gruvbox-dark"
 
 # Dracula
@@ -29,7 +29,7 @@
 # dark = "kanagawa-dragon"
 
 # ya pkg add matt-dong-123/gruvbox-material
-dark = "gruvbox-material"
+# dark = "gruvbox-material"
 
 # ya pack -a AdithyanA2005/nord
 # dark = "nord"
@@ -67,3 +67,36 @@ deleted_sign   = "D"
 updated_sign   = "C"
 clean_sign     = "✔"
 
+[status]
+overall   = {}
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+
+[icon]
+
+append_exts = [
+	{ name = "blend1", text = "󰂫", fg = "#ea7600" },
+]
+
+dirs  = []
+
+conds = [
+	# Special files
+	{ if = "orphan", text = "" },
+
+	{ if = "block", text = "" },
+	{ if = "char", text = "" },
+	{ if = "fifo", text = "" },
+	{ if = "sock", text = "" },
+	{ if = "sticky", text = "" },
+	{ if = "dummy", text = "" },
+
+	# Fallback
+	{ if = "dir",  text = "󰝰", fg = "lightyellow" },
+	{ if = "exec", text = "" },
+	# { if = "!dir", text = "" },
+    { if = "!dir", text = "" },
+]
+
+[mgr]
+cwd = { fg = "lightyellow", bold = true }

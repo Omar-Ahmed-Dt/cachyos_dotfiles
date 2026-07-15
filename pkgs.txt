@@ -149,6 +149,7 @@ kooha
 kube-linter
 kubectl
 kubectl-kubesec
+lazygit
 less
 lib32-nvidia-580xx-utils
 lib32-opencl-nvidia-580xx

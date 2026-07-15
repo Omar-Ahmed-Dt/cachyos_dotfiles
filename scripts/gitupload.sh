@@ -55,7 +55,7 @@ find "$HOME/.config/yazi/plugins" -maxdepth 1 -type d -name "*.yazi" -printf "%f
 # obsidian
 copy_to_dir $HOME/Dropbox/obsidian/.obsidian/snippets/* $gitdir/obsidian/
 
-# sigle files
+# system files
 mkdir -p "$gitdir/system"
 doas cp /etc/sudoers.d/10-installer \
         /etc/doas.conf \
@@ -68,3 +68,4 @@ doas cp /etc/sudoers.d/10-installer \
 doas chown -R "$USER:$USER" "$gitdir/system"
 
 echo "... Backup done ..."
+

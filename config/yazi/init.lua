@@ -68,3 +68,10 @@ Status:children_add(function(self)
 	end
 end, 3300, Status.LEFT)
 
+-- Show username and hostname in header
+-- Header:children_add(function()
+-- 	if ya.target_family() ~= "unix" then
+-- 		return ui.Line {}
+-- 	end
+-- 	return ui.Line { ui.Span(ya.user_name() .. "@" .. ya.host_name()):fg("lightgreen"):bold(), ui.Span(":") }
+-- end, 500, Header.LEFT)
