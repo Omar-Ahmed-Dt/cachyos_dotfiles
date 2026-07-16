@@ -63,12 +63,13 @@ keymap = [
     { on = ["a", "f"], run = "create",       desc = "Create file" },
     { on = ["a", "d"], run = "create --dir", desc = "Create directory" },
 
-    { on = ["c", "p"], run = "copy path",                                      desc = "Copy the file path" },
-    { on = ["c", "d"], run = "copy dirname",                                   desc = "Copy the directory path" },
-    { on = ["c", "f"], run = "copy filename",                                  desc = "Copy the filename" },
-    { on = ["c", "c"],   run = "plugin copy-file-contents",                    desc = "Copy contents of file" },
-    { on = ["c", "y"], run = [ "plugin clipboard -- --action=copy" ],          desc = "Copy to clipboard" },
-    { on = ["c", "Y"], run = [ 'plugin clipboard -- --action=paste' ],         desc = "Paste from clipboard" },
+    { on = ["c", "F"], run = "copy path",                                                                   desc = "Copy the file path" },
+    { on = ["c", "d"], run = "copy dirname",                                                                desc = "Copy the directory path" },
+    { on = ["c", "f"], run = "copy filename",                                                               desc = "Copy the file name" },
+    { on = ["c", "c"], run = "plugin copy-file-contents",                                                   desc = "Copy contents of file" },
+    { on = ["c", "y"], run = ["yank", "plugin clipboard -- --action=copy --notify-unknown-display-server"], desc = "Copy files to system clipboard" },
+    { on = ["c", "p"], run = "shell -- ~/scripts/paste-image.sh",                                           desc = "Paste clipboard image" },
+    # { on = ["c", "p"], run = "plugin clipboard -- --action=paste --notify-unknown-display-server",          desc = "Paste files from system clipboard" },
 
     # ── Search & Filter ──────────────────────────────────────────────────────────
     { on = ["/", "/"], run = "find --smart",          desc = "Find within current directory" },
@@ -137,18 +138,23 @@ keymap = [
     },
     { on = ["o", "c"],    run = "plugin open-with-cmd", desc = "Open with custom command" },
     # hovered file
-    # { on = ["o", "v"], run = "shell -- ~/scripts/tomp4.sh %h",                 desc = "Convert hovered to mp4" },
-    { on = ["o", "v"], run = "shell --block -- ~/scripts/tomp4.sh %h",                 desc = "Convert hovered to mp4" },
+    { on = ["o", "v"], run = "shell -- ~/scripts/tomp4.sh %h",                 desc ="Convert file to mp4" },
+    # { on = ["o", "v"], run = "shell --block -- ~/scripts/tomp4.sh %h",                 desc = "Convert hovered to mp4" },
     # selected files
-    { on = ["o", "V"], run = "shell --block -- ~/scripts/tomp4.sh %s",                 desc = "Convert selected to mp4" },
+    { on = ["o", "V"], run = "shell -- ~/scripts/tomp4.sh %s",                 desc = "Convert selected files to mp4" },
     { on = ["o", "g"], run = "shell --block -- lazygit", desc = "Open lazygit" },
     { on = ["."],  run = "hidden toggle",                    desc = "Toggle hidden files" },
     { on = ["~"],  run = "help",                             desc = "Open help" },
-    { on = "w",    run = "tasks:show",                       desc = "Open task manager" },
     { on = "<Esc>", run = ["escape --all", "unyank"], desc = "Cancel / unyank" },
     { on = ["Q"],  run = "quit",                             desc = "Exit the process" },
     { on = ["q"],  run = "close",                            desc = "Close current tab, or quit if last" },
-
+    { on = "w",    run = "tasks:show",                       desc = "Open task manager" },
+    # { on = "C",    run = "plugin ouch",                      desc = "Compress with ouch" },
+    # The plugin uses zip format by default, if you would like to set 7z as default format, you can use:
+    { on = "C",    run = "plugin ouch 7z",                      desc = "Compress with ouch" },
+    # ya pkg add boydaihungst/restore
+    { on = ["u", "u"], run = "plugin restore", desc = "Restore last deleted" },
+    { on = [ "u", "U" ], run = "plugin restore -- --interactive", desc = "Restore deleted (Interactive)" },
 ]
 
 [help]

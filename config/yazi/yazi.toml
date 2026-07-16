@@ -178,3 +178,9 @@ group = "git"
 url   = "*/"
 run   = "git"
 group = "git"
+
+# ya pkg add ndtoan96/ouch
+# and install ouch using pacman
+[[plugin.prepend_previewers]]
+mime = "application/{*zip,tar,bzip2,7z*,rar,xz,zstd,java-archive}"
+run  = "ouch"

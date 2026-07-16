@@ -1,6 +1,7 @@
 cd-git-root.yazi
 git.yazi
 augment-command.yazi
+ouch.yazi
 clipboard.yazi
 first-non-directory.yazi
 what-size.yazi
@@ -12,6 +13,7 @@ smart-enter.yazi
 parent-arrow.yazi
 jump-to-char.yazi
 zoom.yazi
+restore.yazi
 vcs-files.yazi
 copy-file-contents.yazi
 full-border.yazi

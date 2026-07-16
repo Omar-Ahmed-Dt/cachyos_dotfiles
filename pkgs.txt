@@ -5,6 +5,7 @@ alacritty
 alsa-firmware
 alsa-plugins
 alsa-utils
+android-file-transfer
 ani-cli-arabic
 audacity
 audacity-plugins
@@ -227,6 +228,7 @@ opencl-nvidia-580xx
 opendoas
 openssh
 os-prober
+ouch
 pacman-contrib
 pamac-aur
 papirus-icon-theme
