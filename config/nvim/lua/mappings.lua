@@ -38,17 +38,7 @@ map("n", "<C-c>", "<cmd>%y+<CR>", { desc = "general copy whole file" })
 --   })
 -- end, { desc = "open nvimtree in current file dir" })
 
-map("n", "<leader>e", function()
-  local api = require("nvim-tree.api")
-
-  if api.tree.is_visible() then
-    api.tree.close()
-  else
-    api.tree.open({
-      path = vim.fn.expand("%:p:h"),
-    })
-  end
-end, { desc = "toggle nvimtree in current file dir" })
+map("n", "<leader>e", "<cmd>Yazi<cr>", { desc = "open yazi at current file" })
 
 --
 

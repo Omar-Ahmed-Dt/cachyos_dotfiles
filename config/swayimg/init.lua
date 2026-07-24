@@ -8,6 +8,7 @@ swayimg.set_mode("viewer")
 swayimg.enable_antialiasing(true)
 swayimg.enable_decoration(false)
 swayimg.enable_overlay(false)
+swayimg.set_dnd_button("MouseMiddle")  -- free up MouseRight (default DND button) for mode switching
 
 --------------------------------------------------------------------------------
 -- Image list
@@ -123,12 +124,46 @@ local function toggle_info()
   end
 end
 
+-- Status text: quick auto-hiding feedback (e.g. "Path copied") vs. the
+-- Shift-I help overlay, which must stay up until toggled off explicitly.
+-- NOTE: swayimg.text.set_status("") clears the message internally but does
+-- NOT trigger a redraw, so the old text just lingers on screen. To hide
+-- reliably we instead re-arm a normal (non-empty) status with a near-zero
+-- timeout, which does redraw both when set and when its timer expires.
+local STATUS_TIMEOUT = 3 -- seconds, matches set_status_timeout() below
+local help_visible = false
+
+local function flash_status(msg)
+  help_visible = false
+  swayimg.text.set_status_timeout(STATUS_TIMEOUT)
+  swayimg.text.set_status(msg)
+end
+
+local function hide_help()
+  if help_visible then
+    help_visible = false
+    swayimg.text.set_status_timeout(0.001) -- near-instant auto-hide, forces a redraw
+    swayimg.text.set_status(" ")
+    swayimg.text.set_status_timeout(STATUS_TIMEOUT)
+  end
+end
+
+local function toggle_help(text)
+  if help_visible then
+    hide_help()
+  else
+    help_visible = true
+    swayimg.text.set_status_timeout(0) -- 0 = never auto-hide
+    swayimg.text.set_status(text)
+  end
+end
+
 --------------------------------------------------------------------------------
 -- Keybindings — Viewer (vim-style)
 --------------------------------------------------------------------------------
 -- Navigation (vdir_t: first, last, next, prev, next_dir, prev_dir, random)
-swayimg.viewer.on_key("h",       function() swayimg.viewer.switch_image("prev")     end)
-swayimg.viewer.on_key("l",       function() swayimg.viewer.switch_image("next")     end)
+swayimg.viewer.on_key("n",       function() swayimg.viewer.switch_image("next")     end)
+swayimg.viewer.on_key("p",       function() swayimg.viewer.switch_image("prev")     end)
 swayimg.viewer.on_key("Space",   function() swayimg.viewer.switch_image("next")     end)
 swayimg.viewer.on_key("g",       function() swayimg.viewer.switch_image("first")    end)
 swayimg.viewer.on_key("Shift-g", function() swayimg.viewer.switch_image("last")     end)
@@ -138,11 +173,13 @@ swayimg.viewer.on_key("Shift-d", function() swayimg.viewer.switch_image("prev_di
 -- Panning
 swayimg.viewer.on_key("j",       function() viewer_step(0, -0.1)                   end)
 swayimg.viewer.on_key("k",       function() viewer_step(0,  0.1)                   end)
+swayimg.viewer.on_key("h",       function() viewer_step( 0.1, 0)                   end)
+swayimg.viewer.on_key("l",       function() viewer_step(-0.1, 0)                   end)
 
 -- Zoom
 swayimg.viewer.on_key("equal",   function() viewer_zoom( 0.1, false)               end)
 swayimg.viewer.on_key("plus",    function() viewer_zoom( 0.1, false)               end)
-swayimg.viewer.on_key("minus",   function() viewer_zoom(-0.1, false)               end)
+-- swayimg.viewer.on_key("minus",   function() viewer_zoom(-0.1, false)               end)
 swayimg.viewer.on_key("0",       function() swayimg.viewer.set_fix_scale("optimal") end)
 
 -- Rotate (rotation_t: 90, 180, 270)
@@ -159,14 +196,15 @@ swayimg.viewer.on_key("Return",  function() swayimg.set_mode("gallery")         
 -- Info, help & animation
 swayimg.viewer.on_key("i",       function() toggle_info()                           end)
 swayimg.viewer.on_key("Shift-i", function()
-  swayimg.text.set_status(
-    "h/l: prev/next  j/k: pan  d/D: next/prev dir\n" ..
+  toggle_help(
+    "n/p: next/prev  h/l/j/k: pan  d/D: next/prev dir\n" ..
     "[/]: rotate  r/R: flip H/V  =/−: zoom  0: optimal\n" ..
-    "Return: gallery  n: next frame  s: skip  Del: trash\n" ..
-    "y: copy path  Shift-y: copy img  w: wallpaper  q: quit"
+    "Return/q: gallery  s: skip  Del: trash\n" ..
+    "Shift-y: copy path  y: copy img  w: wallpaper"
   )
 end)
-swayimg.viewer.on_key("n",       function() swayimg.viewer.next_frame()             end)
+-- swayimg.viewer.on_key("Shift-n", function() swayimg.viewer.next_frame()             end)
+-- swayimg.viewer.on_key("Shift-p", function() swayimg.viewer.prev_frame()             end)
 
 -- Skip (remove from list without deleting file)
 swayimg.viewer.on_key("s", function()
@@ -182,28 +220,29 @@ swayimg.viewer.on_key("Delete", function()
 end)
 
 -- Copy path to clipboard
-swayimg.viewer.on_key("y", function()
+swayimg.viewer.on_key("Shift-y", function()
   local image = swayimg.viewer.get_image()
   os.execute("wl-copy '" .. image.path .. "'")
-  swayimg.text.set_status("Path copied")
+  flash_status("Path copied")
 end)
 
 -- Copy image to clipboard
-swayimg.viewer.on_key("Shift-y", function()
+swayimg.viewer.on_key("y", function()
   local image = swayimg.viewer.get_image()
   os.execute("wl-copy -t image/png < '" .. image.path .. "'")
-  swayimg.text.set_status("Image copied")
+  flash_status("Image copied")
 end)
 
 -- Set wallpaper
 swayimg.viewer.on_key("w", function()
   local image = swayimg.viewer.get_image()
   os.execute("/home/omar/scripts/set-wallpaper.sh '" .. image.path .. "' >/dev/null 2>&1")
-  swayimg.text.set_status("Wallpaper set")
+  flash_status("Wallpaper set")
 end)
 
 -- Exit
-swayimg.viewer.on_key("q", function() swayimg.exit() end)
+swayimg.viewer.on_key("q", function() swayimg.set_mode("gallery") end)
+swayimg.viewer.on_key("Escape", function() hide_help() end)
 
 -- Mouse — Viewer
 swayimg.viewer.on_mouse("ScrollUp",        function() swayimg.viewer.switch_image("prev") end)
@@ -223,7 +262,7 @@ swayimg.slideshow.on_key("g",       function() swayimg.slideshow.switch_image("f
 swayimg.slideshow.on_key("Shift-g", function() swayimg.slideshow.switch_image("last")  end)
 swayimg.slideshow.on_key("i",       function() toggle_info()                           end)
 swayimg.slideshow.on_key("Return",  function() swayimg.set_mode("viewer")              end)
-swayimg.slideshow.on_key("Escape",  function() swayimg.set_mode("viewer")              end)
+swayimg.slideshow.on_key("Escape",  function() hide_help() end)
 swayimg.slideshow.on_key("q",       function() swayimg.exit()                          end)
 
 --------------------------------------------------------------------------------
@@ -243,16 +282,16 @@ swayimg.gallery.on_key("Ctrl-d",  function() swayimg.gallery.switch_image("pgdow
 
 -- Open / mode switch
 swayimg.gallery.on_key("Return",  function() swayimg.set_mode("viewer")              end)
-swayimg.gallery.on_key("Tab",     function() swayimg.set_mode("viewer")              end)
+-- swayimg.gallery.on_key("Tab",     function() swayimg.set_mode("viewer")              end)
 
 -- Info, help & modes
 swayimg.gallery.on_key("i",       function() toggle_info()                           end)
 swayimg.gallery.on_key("Shift-i", function()
-  swayimg.text.set_status(
+  toggle_help(
     "h/l/j/k: navigate  g/G: first/last  Ctrl-u/d: page\n" ..
-    "Return/Tab: viewer  Shift-s: slideshow  a: antialiasing\n" ..
+    "Return: viewer  Shift-s: slideshow  a: antialiasing\n" ..
     "r: reload in viewer  s: skip  Del: trash  =/−: thumb size\n" ..
-    "y: copy path  Shift-y: copy img  w: wallpaper  q: quit"
+    "Shift-y: copy path  y: copy img  w: wallpaper  q: quit"
   )
 end)
 swayimg.gallery.on_key("Shift-s", function() swayimg.set_mode("slideshow")           end)
@@ -289,28 +328,29 @@ swayimg.gallery.on_key("Delete", function()
 end)
 
 -- Copy path to clipboard
-swayimg.gallery.on_key("y", function()
+swayimg.gallery.on_key("Shift-y", function()
   local image = swayimg.gallery.get_image()
   os.execute("wl-copy '" .. image.path .. "'")
-  swayimg.text.set_status("Path copied")
+  flash_status("Path copied")
 end)
 
 -- Copy image to clipboard
-swayimg.gallery.on_key("Shift-y", function()
+swayimg.gallery.on_key("y", function()
   local image = swayimg.gallery.get_image()
   os.execute("wl-copy -t image/png < '" .. image.path .. "'")
-  swayimg.text.set_status("Image copied")
+  flash_status("Image copied")
 end)
 
 -- Set wallpaper
 swayimg.gallery.on_key("w", function()
   local image = swayimg.gallery.get_image()
   os.execute("/home/omar/scripts/set-wallpaper.sh '" .. image.path .. "' >/dev/null 2>&1")
-  swayimg.text.set_status("Wallpaper set")
+  flash_status("Wallpaper set")
 end)
 
 -- Exit
 swayimg.gallery.on_key("q", function() swayimg.exit() end)
+swayimg.gallery.on_key("Escape", function() hide_help() end)
 
 -- Mouse — Gallery
 swayimg.gallery.on_mouse("ScrollUp",        function() swayimg.gallery.switch_image("up")   end)

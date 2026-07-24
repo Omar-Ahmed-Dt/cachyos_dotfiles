@@ -5,23 +5,7 @@ return {
   dependencies = {
     { "nvim-lua/plenary.nvim", lazy = true },
   },
-  keys = {
-    -- {
-    --   "<leader>y",
-    --   "<cmd>Yazi<cr>",
-    --   desc = "Open yazi at current file",
-    -- },
-    {
-      "<leader>y",
-      "<cmd>Yazi<cr>",
-      desc = "Open yazi at current file",
-    },
-    {
-      "<leader>Y",
-      "<cmd>Yazi toggle<cr>",
-      desc = "Resume last yazi session",
-    },
-  },
+  keys = {},
   opts = {
     open_for_directories = true,
     keymaps = {
@@ -29,7 +13,7 @@ return {
     },
   },
   init = function()
-    -- Disable netrw so yazi handles directories
+    vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
   end,
 }

@@ -63,9 +63,9 @@ keymap = [
     { on = ["a", "f"], run = "create",       desc = "Create file" },
     { on = ["a", "d"], run = "create --dir", desc = "Create directory" },
 
+    { on = ["c", "f"], run = "copy filename",                                                               desc = "Copy the file name" },
     { on = ["c", "F"], run = "copy path",                                                                   desc = "Copy the file path" },
     { on = ["c", "d"], run = "copy dirname",                                                                desc = "Copy the directory path" },
-    { on = ["c", "f"], run = "copy filename",                                                               desc = "Copy the file name" },
     { on = ["c", "c"], run = "plugin copy-file-contents",                                                   desc = "Copy contents of file" },
     { on = ["c", "y"], run = ["yank", "plugin clipboard -- --action=copy --notify-unknown-display-server"], desc = "Copy files to system clipboard" },
     { on = ["c", "p"], run = "shell -- ~/scripts/paste-image.sh",                                           desc = "Paste clipboard image" },
@@ -124,7 +124,7 @@ keymap = [
     { on = ["s"],  run = 'shell "$SHELL" --block --confirm', desc = "Open shell in the current directory" },
     { on = ["S"], run = 'shell --orphan --confirm -- kitty --working-directory "$PWD" -e "$SHELL"', desc = "Open shell in separate terminal" },
     { on = ["B"],  run = 'suspend', desc = "suspend" },
-    { on = ["o", "o"],    run = '''shell 'swayimg -g' --confirm''', desc = "Open swayimg" },
+    { on = ["o", "o"],    run = '''shell 'swayimg -g' --confirm --orphan''' , desc = "Open swayimg" },
     {
         on = [ "o", "p" ],
         run = '''

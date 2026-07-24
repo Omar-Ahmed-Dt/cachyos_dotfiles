@@ -28,7 +28,7 @@ M.base46 = {
 M.ui = {
     -- top bar(tabufline)
     tabufline = {
-        order = { "treeOffset", "buffers", "tabs" },  -- removed "btns"
+        order = { "buffers", "tabs" },
    },
 
     statusline = {
@@ -41,7 +41,7 @@ M.ui = {
       modules = nil,
     },
     nvimtree = {
-        enabled = true,
+        enabled = false,
     }
 }
 
