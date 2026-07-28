@@ -33,7 +33,7 @@ copy_to_dir "$HOME/.config/mpd/mpd.conf" "$config/mpd/"
 copy_to_dir "$HOME/.config/mpv/input.conf" "$HOME/.config/mpv/mpv.conf" "$config/mpv/"
 
 # Terminal
-copy_to_dir "$HOME/.config/kitty/kitty.conf" "$config/kitty/"
+copy_to_dir "$HOME/.config/kitty/" "$config/"
 
 # Zsh
 copy_to_dir "$HOME/.oh-my-zsh/custom/themes/fishy.zsh-theme" "$gitdir/zsh/"

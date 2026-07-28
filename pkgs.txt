@@ -148,6 +148,7 @@ kdenlive
 kitty
 kooha
 kube-linter
+kubebuilder
 kubectl
 kubectl-kubesec
 lazygit
