@@ -25,6 +25,19 @@ return {
         ft = { "go", "gomod" },
         build = ':lua require("go.install").update_all_sync()',
     },
+    -- Go debugging (delve)
+    {
+        "mfussenegger/nvim-dap",
+        ft = { "go" },
+        dependencies = {
+            "rcarriga/nvim-dap-ui",
+            "nvim-neotest/nvim-nio",
+            "theHamsta/nvim-dap-virtual-text",
+        },
+        config = function()
+            require("configs.dap")
+        end,
+    },
     -- Autocompletion (nvim-cmp already in NVChad, just extend)
     {
         "hrsh7th/cmp-nvim-lsp",
@@ -60,7 +73,7 @@ return {
         "nvim-treesitter/nvim-treesitter",
         opts = {
             ensure_installed = {
-                "lua", "json", "http", "bash", "terraform", "hcl",
+                "lua", "json", "http", "bash", "terraform", "hcl", "go", "gomod",
             },
         },
     },

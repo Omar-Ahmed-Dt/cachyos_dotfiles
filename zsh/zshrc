@@ -12,6 +12,7 @@ fi
 # PATH and VAR
 # -------------------------------------------------------
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 export XDG_CONFIG_HOME="$HOME/.config"
 export MANPAGER="nvim +Man!"
 

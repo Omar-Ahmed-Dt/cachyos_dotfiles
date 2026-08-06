@@ -18,7 +18,7 @@ pacman -Qeq > "$gitdir/pkgs.txt"
 cd "$HOME/.config" || exit
 
 # ~/.config/<Apps>
-cp -r fuzzel rofi zathura htop pcmanfm yay mimeapps.list dunst \
+cp -r fuzzel rofi zathura htop pcmanfm yay mimeapps.list swaync \
 xdg-desktop-portal xdg-desktop-portal-termfilechooser imv sway swayimg \
 swaylock gtk-3.0 gtk-4.0 waybar "$config/"
 

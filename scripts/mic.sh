@@ -1,41 +1,34 @@
-#!/bin/bash
-# Usage:
-#   mic.sh toggle
-#   mic.sh up
-#   mic.sh down
-#
-# Bind in sxhkd and send signal 17 to i3blocks.
+#!/usr/bin/env bash
 
 SRC="@DEFAULT_AUDIO_SOURCE@"
-STEP="5%"
 
 case "$1" in
-  toggle|mute)
-    # toggle mute on default source
-    wpctl set-mute "$SRC" toggle > /dev/null
-    ;;
-  up)
-    # increase mic gain
-    wpctl set-volume "$SRC" "$STEP"+ > /dev/null
-    ;;
-  down)
-    # decrease mic gain
-    wpctl set-volume "$SRC" "$STEP"- > /dev/null
-    ;;
-  *)
-    echo "Usage: $0 {toggle|up|down}"
-    exit 1
-    ;;
+    up)     wpctl set-volume -l 1.0 "$SRC" 5%+ ;;
+    down)   wpctl set-volume "$SRC" 5%- ;;
+    toggle) wpctl set-mute "$SRC" toggle ;;
 esac
 
-# Read back current mic state
-info=$(wpctl get-volume "$SRC" 2>/dev/null)
-if [ $? -eq 0 ]; then
-    vol=$(awk '{print $2}' <<< "$info")
-    pct=$(printf "%.0f" "$(echo "$vol * 100" | bc -l)")
-    if grep -q '\[MUTED\]' <<< "$info"; then
-        notify-send -u low -t 1000 -r 997 "🎙️ Mic: muted"
-    else
-        notify-send -u low -t 1000 -r 997 "🎙️ Mic: ${pct}%"
-    fi
+INFO=$(wpctl get-volume "$SRC")
+
+if [[ "$INFO" == *"[MUTED]"* ]]; then
+    notify-send \
+        --app-name="Microphone" \
+        --urgency=low \
+        --expire-time=1000 \
+        --transient \
+        --icon="microphone-sensitivity-muted-symbolic" \
+        --hint="string:synchronous:microphone" \
+        "Microphone muted"
+else
+    PERCENT=$(awk '{printf "%.0f", $2 * 100}' <<< "$INFO")
+
+    notify-send \
+        --app-name="Microphone" \
+        --urgency=low \
+        --expire-time=1000 \
+        --transient \
+        --icon="microphone-sensitivity-high-symbolic" \
+        --hint="int:value:${PERCENT}" \
+        --hint="string:synchronous:microphone" \
+        "Microphone: ${PERCENT}%"
 fi

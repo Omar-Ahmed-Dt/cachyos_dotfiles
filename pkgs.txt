@@ -74,7 +74,6 @@ dragon-drop
 dropbox
 dropbox-cli
 duf
-dunst
 dust
 dysk
 e2fsprogs
@@ -113,6 +112,7 @@ glances
 go
 google-chrome
 google-cloud-cli
+gopls
 gromit-mpx
 grub
 grub-hook
@@ -224,6 +224,7 @@ obs-studio-browser
 obsidian
 octopi
 okular
+onlyoffice-bin
 openai-codex
 opencl-nvidia-580xx
 opendoas
@@ -284,6 +285,8 @@ swaybg
 swayidle
 swayimg
 swaylock-effects
+swaync
+swayosd
 switcheroo-control
 swtpm
 syft
@@ -328,6 +331,7 @@ virt-manager
 virtualbox
 virtualbox-host-dkms
 vlc-plugins-all
+vscodium
 vulkan-icd-loader
 vulkan-intel
 wacomtablet

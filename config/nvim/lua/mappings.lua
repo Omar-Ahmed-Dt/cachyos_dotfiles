@@ -115,7 +115,15 @@ map(
 )
 
 -- terminal
-map("t", "<C-j>", "<C-\\><C-N>", { desc = "terminal escape terminal mode" })
+-- escape terminal mode with the native <C-\><C-n> (no custom mapping needed)
+
+-- <C-i> shares the same keycode as <Tab>, which normally goes to next buffer;
+-- disable it in terminal buffers so it doesn't swap the terminal out for a file
+vim.api.nvim_create_autocmd("TermOpen", {
+  callback = function(args)
+    map("n", "<C-i>", "<Nop>", { buffer = args.buf, desc = "disable buffer-next in terminal" })
+  end,
+})
 
 -- new terminals
 -- map("n", "<leader>h", function()
@@ -136,7 +144,7 @@ end, { desc = "terminal toggleable vertical term" })
 -- end, { desc = "terminal toggleable horizontal term" })
 --
 -- from a file: change dir to file's dir, then toggle term
-map("n", "<A-h>", function()
+map("n", "<C-\\>", function()
   local dir = vim.fn.expand("%:p:h")
   if dir ~= "" and vim.fn.isdirectory(dir) == 1 then
     vim.cmd("lcd " .. vim.fn.fnameescape(dir))
@@ -145,9 +153,13 @@ map("n", "<A-h>", function()
 end, { desc = "terminal toggleable horizontal term" })
 
 -- from the terminal: just toggle, no lcd (avoids the error)
-map("t", "<A-h>", function()
+map("t", "<C-\\>", function()
   require("nvchad.term").toggle { pos = "sp", id = "htoggleTerm" }
 end, { desc = "terminal toggleable horizontal term" })
+
+-- <S-Esc>: escape terminal-mode to normal mode without closing the terminal
+-- (separate from <C-\> above, which is bound to toggling the terminal closed)
+map("t", "<S-Esc>", "<C-\\><C-n>", { desc = "terminal escape to normal mode" })
 
 --  
 map({ "n", "t" }, "<A-f>", function()

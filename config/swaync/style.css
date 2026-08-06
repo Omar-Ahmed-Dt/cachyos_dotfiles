@@ -1,0 +1,411 @@
+/* =========================================================
+ * Everforest Dark Medium — SwayNC
+ * ========================================================= */
+
+:root {
+    /* Main surfaces */
+    --cc-bg: rgba(45, 53, 59, 0.97);
+
+    --noti-bg: 45, 53, 59;
+    --noti-bg-alpha: 0.96;
+
+    --noti-bg-darker: rgb(45, 53, 59);
+    --noti-bg-hover: rgb(61, 72, 77);
+    --noti-bg-focus: rgba(71, 82, 88, 0.75);
+
+    /* Borders */
+    --noti-border-color: rgba(219, 188, 127, 0.75);
+    --border: 1px solid var(--noti-border-color);
+    --border-radius: 12px;
+
+    /* Close button */
+    --noti-close-bg: rgb(71, 82, 88);
+    --noti-close-bg-hover: rgb(230, 126, 128);
+
+    /* Text */
+    --text-color: rgb(211, 198, 170);
+    --text-color-disabled: rgb(133, 146, 137);
+
+    /* Selected/accent elements */
+    --bg-selected: rgb(167, 192, 128);
+
+    /* Sizes */
+    --notification-icon-size: 24px;
+    --notification-group-icon-size: 12px;
+
+    --font-size-body: 13px;
+    --font-size-summary: 14px;
+
+    /* Shadow */
+    --notification-shadow:
+        0 0 0 1px rgba(45, 53, 59, 0.7),
+        0 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+/* Global font */
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 9px;
+}
+
+/* Transparent outer windows */
+notificationwindow,
+blankwindow,
+.blank-window,
+.floating-notifications {
+    background: transparent;
+}
+
+/* =========================================================
+ * Notifications
+ * ========================================================= */
+
+.notification {
+    background: #2d353b;
+    border: 1px solid var(--noti-border-color);
+    border-radius: 14px;
+    color: #d3c6aa;
+}
+
+.notification:hover {
+    background: #343f44;
+}
+
+.notification.low,
+.notification.normal,
+.notification.critical {
+    border: 1px solid var(--noti-border-color);
+}
+
+.notification-default-action {
+    background: transparent;
+    color: #d3c6aa;
+}
+
+.notification-default-action:hover {
+    background: #343f44;
+}
+
+/* Notification title */
+.summary {
+    color: #dbbc7f;
+    font-weight: bold;
+    font-size: var(--font-size-summary);
+}
+
+/* Notification body */
+.body {
+    color: #d3c6aa;
+    font-size: var(--font-size-body);
+}
+
+/* Notification timestamp */
+.time {
+    color: #7a8478;
+}
+
+/* Notification image */
+.image {
+    border-radius: 8px;
+}
+
+/* Close button */
+.close-button {
+    background: #475258;
+    color: #d3c6aa;
+    border: none;
+    border-radius: 999px;
+}
+
+.close-button:hover {
+    background: #e67e80;
+    color: #2d353b;
+}
+
+/* Alternative notification actions */
+.notification-action > button {
+    background: #343f44;
+    color: #d3c6aa;
+    border: 1px solid #475258;
+    border-radius: 8px;
+}
+
+.notification-action > button:hover {
+    background: #a7c080;
+    color: #2d353b;
+}
+
+/* Inline reply */
+.inline-reply-entry {
+    background: #2d353b;
+    color: #d3c6aa;
+    caret-color: #dbbc7f;
+    border: 1px solid #475258;
+}
+
+.inline-reply-button {
+    background: #343f44;
+    color: #d3c6aa;
+    border: 1px solid #475258;
+}
+
+.inline-reply-button:hover {
+    background: #a7c080;
+    color: #2d353b;
+}
+
+/* =========================================================
+ * Control Center
+ * ========================================================= */
+
+.control-center {
+    background: rgba(45, 53, 59, 0.97);
+    color: #d3c6aa;
+
+    border: 1px solid #475258;
+    border-radius: 16px;
+
+    box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.3),
+        0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.control-center-list {
+    background: transparent;
+}
+
+.control-center-list-placeholder {
+    color: #7a8478;
+}
+
+/* Notification group headings */
+.notification-group-header,
+.notification-group-headers,
+.notification-group-buttons {
+    color: #d3c6aa;
+}
+
+.notification-group-icon {
+    color: #dbbc7f;
+}
+
+/* =========================================================
+ * General widgets
+ * ========================================================= */
+
+.widget {
+    margin: 8px;
+    padding: 10px;
+
+    color: #d3c6aa;
+    background: #2d353b;
+
+    border: 1px solid #475258;
+    border-radius: 12px;
+}
+
+/* =========================================================
+ * Title widget
+ * ========================================================= */
+
+.widget-title {
+    color: #d3c6aa;
+}
+
+.widget-title > label {
+    color: #dbbc7f;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.widget-title > button {
+    background: #343f44;
+    color: #d3c6aa;
+
+    border: 1px solid #475258;
+    border-radius: 8px;
+}
+
+.widget-title > button:hover {
+    background: #e67e80;
+    color: #2d353b;
+}
+
+/* =========================================================
+ * Do Not Disturb widget
+ * ========================================================= */
+
+.widget-dnd {
+    color: #d3c6aa;
+}
+
+.widget-dnd > switch {
+    background: #475258;
+    border: none;
+    border-radius: 999px;
+}
+
+.widget-dnd > switch:checked {
+    background: #a7c080;
+}
+
+.widget-dnd > switch slider {
+    background: #d3c6aa;
+    border-radius: 999px;
+}
+
+/* Generic switch fallback */
+switch {
+    background: #475258;
+    border-radius: 999px;
+}
+
+switch:checked {
+    background: #a7c080;
+}
+
+switch slider {
+    background: #d3c6aa;
+    border-radius: 999px;
+}
+
+/* =========================================================
+ * MPRIS music widget
+ * ========================================================= */
+
+.widget-mpris {
+    background: transparent;
+    border: none;
+}
+
+.widget-mpris-player {
+    background: #2d353b;
+    color: #d3c6aa;
+
+    border: 1px solid #475258;
+    border-radius: 12px;
+}
+
+.widget-mpris-title {
+    color: #dbbc7f;
+    font-weight: bold;
+}
+
+.widget-mpris-subtitle {
+    color: #9da9a0;
+}
+
+.widget-mpris button {
+    background: #343f44;
+    color: #d3c6aa;
+    border: none;
+    border-radius: 8px;
+}
+
+.widget-mpris button:hover {
+    background: #a7c080;
+    color: #2d353b;
+}
+
+/* =========================================================
+ * Volume and brightness sliders
+ * ========================================================= */
+
+.widget-volume,
+.widget-backlight {
+    color: #d3c6aa;
+}
+
+scale trough {
+    min-height: 6px;
+
+    background: #475258;
+    border: none;
+    border-radius: 999px;
+}
+
+scale highlight {
+    min-height: 6px;
+
+    background: #a7c080;
+    border: none;
+    border-radius: 999px;
+}
+
+scale slider {
+    min-width: 16px;
+    min-height: 16px;
+
+    background: #dbbc7f;
+    border: 2px solid #2d353b;
+    border-radius: 999px;
+}
+
+/* =========================================================
+ * Buttons grid and menu buttons
+ * ========================================================= */
+
+.widget-buttons-grid > flowbox > flowboxchild > button,
+.widget-menubar > box > button {
+    background: #343f44;
+    color: #d3c6aa;
+
+    border: 1px solid #475258;
+    border-radius: 10px;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover,
+.widget-menubar > box > button:hover {
+    background: #475258;
+    color: #dbbc7f;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
+    background: #a7c080;
+    color: #2d353b;
+    border-color: #83c092;
+}
+
+/* =========================================================
+ * Calendar
+ * ========================================================= */
+
+.widget-calendar {
+    background: #2d353b;
+    color: #d3c6aa;
+}
+
+calendar {
+    background: transparent;
+    color: #d3c6aa;
+}
+
+calendar:selected {
+    background: #dbbc7f;
+    color: #2d353b;
+    border-radius: 6px;
+}
+
+calendar.header {
+    color: #dbbc7f;
+}
+
+calendar.button {
+    color: #7fbbb3;
+}
+
+/* =========================================================
+ * Progress bars inside notifications
+ * ========================================================= */
+
+progressbar trough {
+    background: #475258;
+    border: none;
+    border-radius: 999px;
+}
+
+progressbar progress {
+    background: #dbbc7f;
+    border: none;
+    border-radius: 999px;
+}

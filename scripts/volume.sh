@@ -1,36 +1,39 @@
 #!/usr/bin/env bash
-# PipeWire-native volume control using wpctl
 
-SINK="@DEFAULT_AUDIO_SINK@"   # Automatically follows current default sink
-STEP="5%"                     # Volume step
+SINK="@DEFAULT_AUDIO_SINK@"
 
 case "$1" in
-    up)
-        wpctl set-volume "$SINK" "$STEP"+ > /dev/null
-        ;;
-    down)
-        wpctl set-volume "$SINK" "$STEP"- > /dev/null
-        ;;
-    mute|toggle)
-        wpctl set-mute "$SINK" toggle > /dev/null
-        ;;
-    *)
-        echo "Usage: $0 {up|down|mute}"
-        exit 1
-        ;;
+    up)   wpctl set-volume -l 1.0 "$SINK" 5%+ ;;
+    down) wpctl set-volume "$SINK" 5%- ;;
+    mute) wpctl set-mute "$SINK" toggle ;;
 esac
 
-# ----------------------------
-# Get volume info
-# ----------------------------
+INFO=$(wpctl get-volume "$SINK")
+PERCENT=$(awk '{printf "%.0f", $2 * 100}' <<< "$INFO")
 
-VOL_INFO=$(wpctl get-volume "$SINK")
-VOL=$(awk '{print $2}' <<< "$VOL_INFO")
-VOL_PCT=$(printf "%.0f" "$(echo "$VOL * 100" | bc -l)")
-
-# Check mute state
-if grep -q '\[MUTED\]' <<< "$VOL_INFO"; then
-    notify-send -u low -t 1000 -r 999 "🔇 Muted"
+if [[ "$INFO" == *"[MUTED]"* ]]; then
+    notify-send \
+        --app-name="Volume" \
+        --urgency=low \
+        --expire-time=1000 \
+        --transient \
+        --icon="audio-volume-muted-symbolic" \
+        --hint="int:value:${PERCENT}" \
+        --hint="string:synchronous:volume" \
+        "Volume muted"
 else
-    notify-send -u low -t 1000 -r 999 "🔊 Volume: ${VOL_PCT}%"
+    ICON="audio-volume-high-symbolic"
+    (( PERCENT < 66 )) && ICON="audio-volume-medium-symbolic"
+    (( PERCENT < 33 )) && ICON="audio-volume-low-symbolic"
+    (( PERCENT == 0 )) && ICON="audio-volume-muted-symbolic"
+
+    notify-send \
+        --app-name="Volume" \
+        --urgency=low \
+        --expire-time=1000 \
+        --transient \
+        --icon="$ICON" \
+        --hint="int:value:${PERCENT}" \
+        --hint="string:synchronous:volume" \
+        "Volume: ${PERCENT}%"
 fi

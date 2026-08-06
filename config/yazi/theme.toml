@@ -3,7 +3,7 @@
 [flavor]
 
 # ya pkg add bennyyip/gruvbox-dark
-dark = "gruvbox-dark"
+# dark = "gruvbox-dark"
 # light = "gruvbox-dark"
 
 # Dracula
@@ -35,7 +35,7 @@ dark = "gruvbox-dark"
 # dark = "nord"
 
 # ya pkg add Chromium-3-Oxide/everforest-medium
-# dark = "everforest-medium"
+dark = "everforest-medium"
 
 # ya pkg add AdithyanA2005/nord
 # dark = "synthwave84"

@@ -7,8 +7,8 @@ local M = {}
 
 M.base46 = {
   -- THEMES
-  -- theme = "seoul256_dark",
-  theme = "gruvbox",
+  theme = "seoul256_dark",
+  -- theme = "gruvbox",
   -- theme = "gruvchad",
   -- theme = "catppuccin",
   -- theme = "everforest",

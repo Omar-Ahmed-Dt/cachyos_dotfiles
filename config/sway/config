@@ -102,12 +102,14 @@ bindsym $mod+Shift+Return     exec thunar
 # bindsym $mod+p                exec obsidian
 bindsym $mod+Escape           exec $scripts/power.sh
 bindsym $mod+Shift+b          exec $scripts/browser.sh
-bindsym $mod+Right            exec $scripts/volume.sh up
-bindsym XF86AudioRaiseVolume  exec $scripts/volume.sh up
-bindsym $mod+Left             exec $scripts/volume.sh down
-bindsym XF86AudioLowerVolume  exec $scripts/volume.sh down
-bindsym XF86AudioMute         exec $scripts/volume.sh toggle
-bindsym XF86AudioMicMute      exec $scripts/mic.sh toggle
+bindsym --locked $mod+Right   exec $scripts/volume.sh up
+bindsym --locked XF86AudioRaiseVolume exec $scripts/volume.sh up
+bindsym --locked $mod+Left    exec $scripts/volume.sh down
+bindsym --locked XF86AudioLowerVolume exec $scripts/volume.sh down
+bindsym --locked XF86AudioMute exec $scripts/volume.sh mute
+bindsym --locked XF86AudioMicMute exec $scripts/mic.sh toggle
+bindsym --locked $mod+Up exec $scripts/mic.sh up
+bindsym --locked $mod+Down exec $scripts/mic.sh down
 bindsym Print                 exec $scripts/screenshot.sh
 bindsym $mod+m                exec thunderbird
 bindsym $mod+y                exec $scripts/ytdmenu.sh
@@ -124,8 +126,8 @@ bindsym $mod+period           exec rofimoji 2> /dev/null
 bindsym $mod+v                exec $scripts/clip.sh 
 # ~/scripts/cliphist-fuzzel-img.sh https://github.com/sentriz/cliphist
 bindsym $mod+w                exec $scripts/websearch.sh
-bindsym XF86MonBrightnessUp   exec brightnessctl set 5%+
-bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+bindsym --locked XF86MonBrightnessUp   exec $scripts/brightness.sh up
+bindsym --locked XF86MonBrightnessDown exec $scripts/brightness.sh down
 bindsym $mod+Ctrl+h move left
 bindsym $mod+Ctrl+l move right
 bindsym $mod+Ctrl+j move down
@@ -138,7 +140,10 @@ exec_always --no-startup-id wl-paste --type text --watch cliphist store
 exec_always --no-startup-id wl-paste --type image --watch cliphist store
 exec_always --no-startup-id wl-paste --primary --watch cliphist store
 # exec thunar --daemon &
-exec dunst
+# exec dunst
+exec swaync
+bindsym $mod+Shift+n exec swaync-client -t -sw
+# bindsym $mod+Shift+d exec swaync-client -d -sw
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 # exec gammastep -O 3250
