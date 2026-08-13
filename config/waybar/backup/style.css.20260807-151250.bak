@@ -1,5 +1,4 @@
 /* ── Everforest Dark — floating pill bar ─────────────────────────────────── */
-/* https://everforest.vercel.app/ */
 
 @define-color bg0 #2d353b;
 @define-color bg1 #343f44;
@@ -16,18 +15,15 @@
 @define-color aqua #83c092;
 @define-color blue #7fbbb3;
 @define-color purple #d699b6;
-@define-color gray #829181;
 @define-color grey0 #7a8478;
 @define-color grey1 #859289;
 @define-color grey2 #9da9a0;
 
-/* @define-color module_text #000000; */
-/* @define-color module_text #272E33; */
-@define-color module_text #2E383C;
+@define-color module_text #000000;
 
 * {
   font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
-  font-size: 9.5px;
+  font-size: 10px;
   font-weight: 600;
   min-height: 0;
 }
@@ -146,7 +142,7 @@ window#waybar {
                              · cpu · memory · backlight · pulseaudio · tray ─ */
 
 #custom-weather {
-  background: @gray;
+  background: @orange;
   color: @module_text;
 }
 

@@ -122,7 +122,7 @@ keymap = [
 
     # ── Shell & Misc ─────────────────────────────────────────────────────────────
     { on = ["s"],  run = 'shell "$SHELL" --block --confirm', desc = "Open shell in the current directory" },
-    { on = ["S"], run = 'shell --orphan --confirm -- kitty --working-directory "$PWD" -e "$SHELL"', desc = "Open shell in separate terminal" },
+    { on = ["S"], run = 'shell --orphan --confirm -- foot --working-directory "$PWD" "$SHELL"', desc = "Open shell in separate terminal" },
     { on = ["B"],  run = 'suspend', desc = "suspend" },
     { on = ["o", "o"],    run = '''shell 'swayimg -g' --confirm --orphan''' , desc = "Open swayimg" },
     {

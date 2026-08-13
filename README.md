@@ -15,7 +15,7 @@ These are my dotfiles. I'm trying to do better. Also, my window manager dots cha
  - swaylock
 
 **Terminal**
- - kitty
+ - foot
 
 **Editor**
  -  [nvim](https://nvchad.com/docs/quickstart/install/)

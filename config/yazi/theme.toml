@@ -74,12 +74,12 @@ sep_right = { open = "", close = "" }
 
 [icon]
 
-append_exts = [
-	{ name = "blend1", text = "󰂫", fg = "#ea7600" },
-]
+# append_exts = [
+# 	{ name = "blend1", text = "󰂫 ", fg = "#ea7600" },
+# ]
 
 dirs  = []
-
+#
 conds = [
 	# Special files
 	{ if = "orphan", text = "" },
@@ -98,5 +98,5 @@ conds = [
     { if = "!dir", text = "" },
 ]
 
-[mgr]
-cwd = { fg = "lightyellow", bold = true }
+# [mgr]
+# cwd = { fg = "lightyellow", bold = true }

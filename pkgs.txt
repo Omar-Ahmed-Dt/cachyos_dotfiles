@@ -11,6 +11,7 @@ audacity
 audacity-plugins
 autotiling
 awesome-terminal-fonts
+aws-cli
 base
 base-devel
 bash-completion
@@ -105,6 +106,7 @@ fsarchiver
 fuzzel
 gammastep
 ghostscript
+ghostty
 gimp
 git
 git-delta
@@ -145,7 +147,7 @@ jfsutils
 just
 kalker
 kdenlive
-kitty
+kind
 kooha
 kube-linter
 kubebuilder
@@ -281,6 +283,7 @@ splix
 strace
 sudo
 sway
+sway-audio-idle-inhibit-git
 swaybg
 swayidle
 swayimg
@@ -308,6 +311,7 @@ tree
 trivy
 ttf-bitstream-vera
 ttf-dejavu
+ttf-iosevkaterm-nerd
 ttf-jetbrains-mono-nerd
 ttf-liberation
 ttf-meslo-nerd

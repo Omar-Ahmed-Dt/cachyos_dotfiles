@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 EDITOR="nvim"
-TERMINAL="kitty"
+TERMINAL="foot"
 
 actions=(
   configs
@@ -10,6 +10,7 @@ actions=(
   waybar_configs
   waybar_colors
   kitty
+  foot
   swayimg
   yazi_configs
   yazi_keymaps
@@ -25,6 +26,7 @@ case "$selected" in
   waybar_configs)  $EDITOR "$HOME/.config/waybar/config.jsonc" ;;
   waybar_colors)   $EDITOR "$HOME/.config/waybar/style.css" ;;
   kitty)           $EDITOR "$HOME/.config/kitty/kitty.conf" ;;
+  foot)            $EDITOR "$HOME/.config/foot/foot.ini" ;;
   swayimg)         $EDITOR "$HOME/.config/swayimg/init.lua" ;;
   yazi_configs)    $EDITOR "$HOME/.config/yazi/yazi.toml" ;;
   yazi_keymaps)    $EDITOR "$HOME/.config/yazi/keymap.toml" ;;

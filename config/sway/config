@@ -4,11 +4,8 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term kitty
+set $term foot
 set $scripts ~/scripts
-set $screen_timeout 120
-set $lock_timeout 300
-set $total_timeout 420
 
 # Workspaces:
 set $WS1 "1:  "
@@ -44,6 +41,7 @@ input type:touchpad {
 bindsym $mod+Return exec $term
 bindsym $mod+c kill
 bindsym $mod+d exec fuzzel --placeholder "Application..."
+# bindsym $mod+d exec fuzzel --placeholder "Application..." --config ~/.config/fuzzel/fuzzel-everforest.ini
 floating_modifier $mod normal
 bindsym $mod+Shift+r reload
 bindsym $mod+$left focus left
@@ -113,8 +111,8 @@ bindsym --locked $mod+Down exec $scripts/mic.sh down
 bindsym Print                 exec $scripts/screenshot.sh
 bindsym $mod+m                exec thunderbird
 bindsym $mod+y                exec $scripts/ytdmenu.sh
-bindsym $mod+n                exec kitty -e nvim
-bindsym Shift+Return          exec kitty -e yazi
+bindsym $mod+n                exec $term nvim
+bindsym Shift+Return          exec $term yazi
 bindsym ctrl+space            exec mpc toggle 
 bindsym ctrl+XF86AudioPrev    exec mpc prev
 bindsym ctrl+XF86AudioNext    exec mpc next
@@ -157,7 +155,6 @@ exec --no-startup-id dropbox-cli start -i
 # pacman -S mate-polkit
 exec /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
 
-
 exec swayidle -w \
     timeout $lock_timeout 'swaylock -f' \
     timeout $total_timeout 'swaymsg "output * power off"' \
@@ -167,6 +164,9 @@ exec swayidle -w \
     before-sleep 'swaylock -f' \
     lock 'swaylock -f' \
     unlock 'pkill -xu "$USER" -SIGUSR1 swaylock'
+
+# Don't let swayidle lock/sleep while audio is actively playing
+exec sway-audio-idle-inhibit --no-mic
 
 # exec swayidle -w \
 #     timeout $lock_timeout 'swaylock -f' \
