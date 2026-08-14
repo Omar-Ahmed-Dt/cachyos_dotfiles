@@ -53,6 +53,7 @@ chwd
 claude-code
 cli-visualizer
 cliphist
+colloid-everforest-gtk-theme-git
 copyq
 cpupower
 cryptsetup
@@ -83,6 +84,8 @@ efibootmgr
 efitools
 envycontrol
 ethtool
+everforest-gtk-theme-git
+everforest-icon-theme-git
 evolution
 evolution-ews
 evsieve
@@ -261,6 +264,7 @@ python-pyqt5
 python-reportlab
 qemu-base
 qemu-full
+qogir-icon-theme
 qwen-code-bin
 rebuild-detector
 reflector
@@ -353,6 +357,9 @@ wofi
 wpa_supplicant
 wtype
 xclip
+xcursor-retrosmart
+xcursor-themes
+xcursor-vanilla-dmz
 xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-desktop-portal-termfilechooser

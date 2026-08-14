@@ -24,7 +24,7 @@ case "$OPT" in
         ;;
     suspend)
         if [ "$(confirm suspend)" = "Yes" ]; then
-            systemctl suspend
+            swaylock -f && systemctl suspend
         fi
         ;;
     reboot)

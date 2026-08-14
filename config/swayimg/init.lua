@@ -1,5 +1,5 @@
 -- ~/.config/swayimg/init.lua
--- Swayimg Lua config — Gruvbox dark theme with vim-style keybindings
+-- Swayimg Lua config — Everforest dark theme with vim-style keybindings
 
 --------------------------------------------------------------------------------
 -- General
@@ -19,14 +19,14 @@ swayimg.imagelist.enable_recursive(false)
 swayimg.imagelist.enable_adjacent(false)
 
 --------------------------------------------------------------------------------
--- Font (Gruvbox)
+-- Font (Everforest)
 --------------------------------------------------------------------------------
 swayimg.text.set_font("monospace")
 swayimg.text.set_size(13)
 swayimg.text.set_padding(10)
-swayimg.text.set_foreground(0xffebdbb2)   -- gruvbox fg
-swayimg.text.set_background(0xcc282828)   -- gruvbox bg0 semi-transparent
-swayimg.text.set_shadow(0xff1d2021)       -- gruvbox bg0_h
+swayimg.text.set_foreground(0xffd3c6aa)   -- everforest fg
+swayimg.text.set_background(0xcc2d353b)   -- everforest bg0 semi-transparent
+swayimg.text.set_shadow(0xff232a2e)       -- everforest bg0_h
 swayimg.text.set_timeout(0.001)           -- hidden by default; toggle with i
 swayimg.text.set_status_timeout(3)
 
@@ -36,8 +36,8 @@ swayimg.text.set_status_timeout(3)
 swayimg.viewer.set_default_scale("optimal")  -- 100% or less to fit window, never zooms in
 swayimg.viewer.set_default_position("center")
 swayimg.viewer.set_drag_button("MouseLeft")
-swayimg.viewer.set_window_background(0xff282828)
-swayimg.viewer.set_image_chessboard(20, 0xff333333, 0xff4c4c4c)
+swayimg.viewer.set_window_background(0xff2d353b)
+swayimg.viewer.set_image_chessboard(20, 0xff343f44, 0xff475258)
 swayimg.viewer.enable_centering(true)
 swayimg.viewer.enable_loop(false)
 swayimg.viewer.limit_preload(3)
@@ -60,24 +60,24 @@ swayimg.viewer.set_text("bottomleft", {
 swayimg.slideshow.set_timeout(5)
 swayimg.slideshow.set_default_scale("fit")
 swayimg.slideshow.set_default_position("center")
-swayimg.slideshow.set_window_background(0xff282828)
+swayimg.slideshow.set_window_background(0xff2d353b)
 swayimg.slideshow.limit_history(0)
 swayimg.slideshow.set_text("topright", {
   "{list.index} of {list.total}",
 })
 
 --------------------------------------------------------------------------------
--- Gallery mode (Gruvbox)
+-- Gallery mode (Everforest)
 --------------------------------------------------------------------------------
 swayimg.gallery.set_aspect("fill")
 swayimg.gallery.set_thumb_size(110)
 swayimg.gallery.set_padding_size(8)
-swayimg.gallery.set_border_size(2)
-swayimg.gallery.set_border_color(0xfffabd2f)       -- gruvbox yellow
+swayimg.gallery.set_border_size(3)
+swayimg.gallery.set_border_color(0xffdbbc7f)       -- everforest yellow
 swayimg.gallery.set_selected_scale(1.10)
-swayimg.gallery.set_selected_color(0xff504945)      -- gruvbox bg2
-swayimg.gallery.set_unselected_color(0xff3c3836)    -- gruvbox bg1
-swayimg.gallery.set_window_color(0xff282828)        -- gruvbox bg0
+swayimg.gallery.set_selected_color(0xff3d484d)      -- everforest bg2
+swayimg.gallery.set_unselected_color(0xff343f44)    -- everforest bg1
+swayimg.gallery.set_window_color(0xff2d353b)        -- everforest bg0
 swayimg.gallery.limit_cache(500)
 swayimg.gallery.enable_preload(true)
 swayimg.gallery.enable_pstore(true)

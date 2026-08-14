@@ -18,36 +18,36 @@ map i recolor
 map p print
 map gg goto top
 
-# colors: gruvbox dark
-set default-bg                  "#282828"
-set default-fg                  "#3C3836"
+# colors: everforest dark
+set default-bg                  "#2D353B"
+set default-fg                  "#343F44"
 
-set statusbar-fg                "#EBDBB2"
-set statusbar-bg                "#504945"
+set statusbar-fg                "#D3C6AA"
+set statusbar-bg                "#3D484D"
 
-set inputbar-bg                 "#282828"
-set inputbar-fg                 "#8EC07C"
+set inputbar-bg                 "#2D353B"
+set inputbar-fg                 "#A7C080"
 
-set notification-bg             "#282828"
-set notification-fg             "#8EC07C"
+set notification-bg             "#2D353B"
+set notification-fg             "#A7C080"
 
-set notification-error-bg       "#282828"
-set notification-error-fg       "#CC241D"
+set notification-error-bg       "#2D353B"
+set notification-error-fg       "#E67E80"
 
-set notification-warning-bg     "#282828"
-set notification-warning-fg     "#D79921"
+set notification-warning-bg     "#2D353B"
+set notification-warning-fg     "#DBBC7F"
 
-set highlight-color             "#D79921"
-set highlight-active-color      "#458588"
+set highlight-color              "#DBBC7F"
+set highlight-active-color      "#7FBBB3"
 
-set completion-bg               "#3C3836"
-set completion-fg               "#83A598"
+set completion-bg               "#343F44"
+set completion-fg               "#7FBBB3"
 
-set completion-highlight-fg     "#FBF1C7"
-set completion-highlight-bg     "#458588"
+set completion-highlight-fg     "#D3C6AA"
+set completion-highlight-bg     "#7FBBB3"
 
-set recolor-lightcolor          "#282828"
-set recolor-darkcolor           "#EBDBB2"
+set recolor-lightcolor          "#2D353B"
+set recolor-darkcolor           "#D3C6AA"
 
 # set recolor                     "true"
 set recolor-keephue             "true"

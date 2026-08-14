@@ -83,3 +83,4 @@ PROMPT2='%B%F{$gb_red}\ %f%b'
 # ===============================
 local return_status="%B%F{$gb_red}%(?..%?)%f%b"
 RPROMPT='${return_status}'
+

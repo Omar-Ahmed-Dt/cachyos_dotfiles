@@ -75,7 +75,7 @@ sep_right = { open = "", close = "" }
 [icon]
 
 # append_exts = [
-# 	{ name = "blend1", text = "󰂫 ", fg = "#ea7600" },
+# 	{ name = "blend1", text = "󰂫 ", fg = "#e69875" },
 # ]
 
 dirs  = []
@@ -92,7 +92,7 @@ conds = [
 	{ if = "dummy", text = "" },
 
 	# Fallback
-	{ if = "dir",  text = "󰝰", fg = "lightyellow" },
+	{ if = "dir",  text = "󰝰", fg = "#dbbc7f" },
 	{ if = "exec", text = "" },
 	# { if = "!dir", text = "" },
     { if = "!dir", text = "" },

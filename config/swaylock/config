@@ -15,32 +15,30 @@ indicator-thickness=8
 ignore-empty-password
 show-failed-attempts
 
-# Gruvbox Dark Theme
+# Everforest Dark Theme (medium)
 # Colors reference:
-#   bg       #282828    fg       #ebdbb2
-#   red      #cc241d    green    #98971a
-#   yellow   #d79921    blue     #458588
-#   orange   #d65d0e    aqua     #689d6a
-#   bright-red    #fb4934   bright-green  #b8bb26
-#   bright-yellow #fabd2f   bright-blue   #83a598
-#   bright-orange #fe8019   bright-aqua   #8ec07c
+#   bg0      #2d353b    fg       #d3c6aa
+#   red      #e67e80    green    #a7c080
+#   yellow   #dbbc7f    blue     #7fbbb3
+#   orange   #e69875    aqua     #83c092
+#   bg1      #343f44    bg3      #4f585e
 
-# Background (dark gruvbox bg)
-color=282828ff
+# Background (dark everforest bg0)
+color=2d353bff
 
 # Ring: idle / cleared / verifying / wrong / caps-lock
-ring-color=504945ff
-ring-clear-color=689d6aff
-ring-ver-color=458588ff
-ring-wrong-color=cc241dff
-ring-caps-lock-color=d79921ff
+ring-color=4f585eff
+ring-clear-color=83c092ff
+ring-ver-color=7fbbb3ff
+ring-wrong-color=e67e80ff
+ring-caps-lock-color=dbbc7fff
 
 # Inside of the ring
-inside-color=1d2021ff
-inside-clear-color=282828ff
-inside-ver-color=282828ff
-inside-wrong-color=282828ff
-inside-caps-lock-color=282828ff
+inside-color=232a2eff
+inside-clear-color=2d353bff
+inside-ver-color=2d353bff
+inside-wrong-color=2d353bff
+inside-caps-lock-color=2d353bff
 
 # Line between ring and inside
 line-color=00000000
@@ -50,25 +48,25 @@ line-wrong-color=00000000
 line-caps-lock-color=00000000
 
 # Key highlight when typing
-key-hl-color=b8bb26ff
-bs-hl-color=fb4934ff
-caps-lock-key-hl-color=fabd2fff
-caps-lock-bs-hl-color=fe8019ff
+key-hl-color=a7c080ff
+bs-hl-color=e67e80ff
+caps-lock-key-hl-color=dbbc7fff
+caps-lock-bs-hl-color=e69875ff
 
 # Text on the indicator
-text-color=ebdbb2ff
-text-clear-color=8ec07cff
-text-ver-color=83a598ff
-text-wrong-color=fb4934ff
-text-caps-lock-color=fabd2fff
+text-color=d3c6aaff
+text-clear-color=83c092ff
+text-ver-color=7fbbb3ff
+text-wrong-color=e67e80ff
+text-caps-lock-color=dbbc7fff
 
 # Separator
 separator-color=00000000
 
 # Layout / keyboard indicator
-layout-bg-color=282828cc
-layout-border-color=504945ff
-layout-text-color=ebdbb2ff
+layout-bg-color=2d353bcc
+layout-border-color=4f585eff
+layout-text-color=d3c6aaff
 
 # Font
 font=monospace

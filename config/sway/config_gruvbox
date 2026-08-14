@@ -131,7 +131,6 @@ bindsym $mod+Ctrl+h move left
 bindsym $mod+Ctrl+l move right
 bindsym $mod+Ctrl+j move down
 bindsym $mod+Ctrl+k move up
-bindsym $mod+u exec $scripts/configs.sh
 
 # Autostart
 exec_always dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
@@ -181,18 +180,18 @@ exec sway-audio-idle-inhibit --no-mic
 #     lock 'swaylock -f' \
 #     unlock 'pkill -xu "$USER" -SIGUSR1 swaylock'
 
-# Everforest Theme
-set $bg         #272e33
-set $bg_soft    #2e383c
-set $bg_alt     #374145
-set $fg         #d3c6aa
-set $fg_dim     #859289
-set $red        #e67e80
-set $green      #a7c080
-set $yellow     #dbbc7f
-set $blue       #7fbbb3
-set $purple     #d699b6
-set $aqua       #83c092
+# Gruvbox Theme
+set $bg         #1d2021
+set $bg_soft    #282828
+set $bg_alt     #32302f
+set $fg         #ebdbb2
+set $fg_dim     #a89984
+set $red        #cc241d
+set $green      #98971a
+set $yellow     #d79921
+set $blue       #458588
+set $purple     #b16286
+set $aqua       #689d68
 
 # border style
 gaps inner 3

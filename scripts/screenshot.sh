@@ -23,17 +23,17 @@ file="$DIR/screenshot_$timestamp.png"
 
 region_shot_to_clip() {
   grim -g "$(slurp)" - | wl-copy
-  notify-send "Screenshot" "Area copied to clipboard"
+  notify-send -t 1000 "Screenshot" "Area copied to clipboard"
 }
 
 region_shot_to_save() {
   grim -g "$(slurp)" "$file"
-  notify-send "Screenshot saved" "$file"
+  notify-send -t 1000 "Screenshot saved" "$file"
 }
 
 region_shot_to_both() {
   grim -g "$(slurp)" - | tee "$file" | wl-copy
-  notify-send "Screenshot" "Area copied and saved to $file"
+  notify-send -t 1000 "Screenshot" "Area copied and saved to $file"
 }
 
 window_rect() {
@@ -47,32 +47,32 @@ window_rect() {
 
 window_shot_to_clip() {
   grim -g "$(window_rect)" - | wl-copy
-  notify-send "Screenshot" "Window copied to clipboard"
+  notify-send -t 1000 "Screenshot" "Window copied to clipboard"
 }
 
 window_shot_to_save() {
   grim -g "$(window_rect)" "$file"
-  notify-send "Screenshot saved" "$file"
+  notify-send -t 1000 "Screenshot saved" "$file"
 }
 
 window_shot_to_both() {
   grim -g "$(window_rect)" - | tee "$file" | wl-copy
-  notify-send "Screenshot" "Window copied and saved to $file"
+  notify-send -t 1000 "Screenshot" "Window copied and saved to $file"
 }
 
 full_shot_to_clip() {
   grim - | wl-copy
-  notify-send "Screenshot" "Full screen copied to clipboard"
+  notify-send -t 1000 "Screenshot" "Full screen copied to clipboard"
 }
 
 full_shot_to_save() {
   grim "$file"
-  notify-send "Screenshot saved" "$file"
+  notify-send -t 1000 "Screenshot saved" "$file"
 }
 
 full_shot_to_both() {
   grim - | tee "$file" | wl-copy
-  notify-send "Screenshot" "Full screen copied and saved to $file"
+  notify-send -t 1000 "Screenshot" "Full screen copied and saved to $file"
 }
 
 case "${MENU:-}" in
