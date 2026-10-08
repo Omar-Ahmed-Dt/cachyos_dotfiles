@@ -9,7 +9,7 @@ case "$choice" in
                 notify-send -t 1000 "Notes" "Copied to clipboard"
                 ;;
             "Edit")
-                kitty -e nvim ~/dmnote
+                foot nvim ~/dmnote
                 ;;
         esac
         ;;

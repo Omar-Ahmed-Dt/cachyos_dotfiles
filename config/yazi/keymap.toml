@@ -126,22 +126,23 @@ keymap = [
     { on = ["B"],  run = 'suspend', desc = "suspend" },
     { on = ["o", "o"],    run = '''shell 'swayimg -g' --confirm --orphan''' , desc = "Open swayimg" },
     {
-        on = [ "o", "p" ],
-        run = '''
-          shell -- if [ "$#" -eq 1 ]; then
+    on = [ "o", "p" ],
+    run = '''
+        shell -- set -- %s; if [ "$#" -eq 1 ]; then
             dragon-drop --and-exit --on-top "$@"
-          else
+        else
             dragon-drop --on-top "$@"
-          fi
-        ''',
-        desc = "Pick up",
+        fi
+    ''',
+    desc = "Pick up",
     },
     { on = ["o", "c"],    run = "plugin open-with-cmd", desc = "Open with custom command" },
     # hovered file
-    { on = ["o", "v"], run = "shell -- ~/scripts/tomp4.sh %h",                 desc ="Convert file to mp4" },
+    { on = ["o", "v"], run = "shell -- ~/scripts/tomp3.sh %h",                 desc ="Convert file to mp3" },
+    { on = ["o", "V"], run = "shell -- ~/scripts/tomp4.sh %h",                 desc ="Convert file to mp4" },
     # { on = ["o", "v"], run = "shell --block -- ~/scripts/tomp4.sh %h",                 desc = "Convert hovered to mp4" },
     # selected files
-    { on = ["o", "V"], run = "shell -- ~/scripts/tomp4.sh %s",                 desc = "Convert selected files to mp4" },
+    # { on = ["o", "V"], run = "shell -- ~/scripts/tomp4.sh %s",                 desc = "Convert selected files to mp4" },
     { on = ["o", "g"], run = "shell --block -- lazygit", desc = "Open lazygit" },
     { on = ["."],  run = "hidden toggle",                    desc = "Toggle hidden files" },
     { on = ["~"],  run = "help",                             desc = "Open help" },

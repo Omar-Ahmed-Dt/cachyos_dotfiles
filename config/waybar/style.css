@@ -124,7 +124,8 @@ window#waybar {
 }
 
 #scratchpad {
-  background: @bg2;
+  /* background: @bg2; */
+  background: @purple;
   color: @module_text;
 }
 
@@ -136,10 +137,59 @@ window#waybar {
 
 #clock {
   background: @bg4;
-  color: white;
+  color: @fg;
   font-weight: 700;
   border-radius: 6px;
-  padding: 1px 10px;
+  padding: 1px 12px;
+  letter-spacing: 0.3px;
+}
+
+/* ── Tooltips (e.g. clock's date/calendar popup) ─────────────────────────── */
+
+tooltip {
+  background: @bg1;
+  border: 1px solid @grey1;
+  border-radius: 12px;
+}
+
+tooltip label {
+  color: @fg;
+  padding: 14px 18px;
+  font-size: 13px;
+}
+
+/* Calendar widget inside the clock tooltip */
+calendar {
+  background: @bg1;
+  color: @fg;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 13px;
+}
+
+/* GTK3 marks "today" via :indeterminate (not a .today class) and the
+   actively selected day via :selected — waybar's clock defaults the
+   selection to today, so style both the same for a solid highlight. */
+calendar:selected,
+calendar:indeterminate {
+  background: @green;
+  color: @bg0;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+calendar.header {
+  color: @yellow_bright;
+  font-weight: 700;
+}
+
+calendar.button {
+  color: @fg;
+}
+
+calendar.highlight {
+  color: @aqua;
+  font-weight: 700;
 }
 
 /* ── RIGHT SIDE — spectrum: weather · pacman · uptime · nettraf · battery

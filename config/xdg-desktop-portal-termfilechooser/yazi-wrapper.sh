@@ -14,7 +14,7 @@ if [ "$debug" = 1 ]; then
 fi
 
 cmd="yazi"
-termcmd="${TERMCMD:-kitty --title 'termfilechooser'}"
+termcmd="${TERMCMD:-foot --title 'termfilechooser'}"
 
 if [ -z "$path" ] || [ ! -e "$path" ]; then
     path="$HOME"

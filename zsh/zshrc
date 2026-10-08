@@ -177,45 +177,27 @@ alias gsh="~/scripts/gsh.sh"
 alias rf='source ~/.config/fish/config.fish'
 alias rkeys="~/scripts/keys.sh"
 alias cat="lolcat"
-# alias prop="xprop | grep WM_CLASS"
 alias prop="wlprop | jq -r '.app_id'"
 alias dl="~/scripts/dlfile.sh"
 alias dlmv="~/scripts/mvdragon.sh"
 alias dlcp="~/scripts/cpdrag.sh"
 alias phn="~/scripts/scrcpy.sh"
-# alias pipes="pipes.sh"
 alias st="speedtest-cli --simple --secure"
-# alias stm="nload -u m -m wlp3s0"
-# alias win="~/scripts/windows.sh"
-# alias swm="~/scripts/switch.sh"
-# alias mega="megabasterd"
 alias ping="ping -c 20"
 alias dr='~/scripts/dr.sh'
 alias mm='~/scripts/mount_manager.sh'
 alias rr='~/scripts/rsync.sh'
-# alias topdf='~/scripts/build-latex.sh'
-# alias gif='~/scripts/gif.sh'
 alias bat='bat --theme gruvbox-dark'
-# alias rm='trash-put -ir'
 alias te='trash-empty -vi'
-# alias dbls='~/scripts/dbdb.sh'
-# alias db='~/scripts/dbrowse.sh'
 alias khal='khal calendar'
 alias k='kubectl'
 alias h='helm'
-# alias tg='tgpt'
-# alias dp='dropbox start -i'
 alias mx='ncpamixer -t i'
 alias gv='cd .config/nvim'
 alias tf="terraform"
-# alias glow='glow -l'
-# alias y='yazi'
 alias gd='cd ~/Documents/GitHub/'
 alias np='ncmpcpp'
 alias xk='wlprop | jq -r '.pid' | xargs kill -9'
-# alias icat='kitten icat'
-# alias si='swayimg -g'
-# alias swayimg='env -u SWAYSOCK swayimg'
 alias si='swayimg -g'
 alias sir='swayimg -gr'
 alias cl='claude'
@@ -299,8 +281,6 @@ f() {
     [ -z "$term" ] && echo "Usage: f <pattern>" && return 1
     doas find / -iname "*$term*" 2>/dev/null
 }
-
-# topdf() { local f="${1%.tex}"; latexmk -pdf "$1" && latexmk -c && qpdf --linearize --replace-input "$f.pdf" || { latexmk -C "$1"; return 1; }; }
 
 topdf() {
   if [[ -z "$1" ]]; then

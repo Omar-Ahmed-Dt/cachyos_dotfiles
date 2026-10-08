@@ -15,7 +15,7 @@ else
     OUTPUT="$DIR/$NAME.%(ext)s"
 fi
 
-kitty -e yt-dlp \
+foot yt-dlp \
 -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4]" \
 --merge-output-format mp4 \
 "$URL" -o "$OUTPUT" && notify-send -i ~/logo/download.png "Video download completed"

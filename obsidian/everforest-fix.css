@@ -1,0 +1,7 @@
+/* Fix inline icons/images inside lists in Everforest */
+.markdown-rendered li img,
+.markdown-source-view .cm-line img {
+    display: inline-block !important;
+    margin: 0 0.2em !important;
+    vertical-align: middle;
+}

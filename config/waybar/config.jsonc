@@ -49,9 +49,8 @@
         "format": "<span style=\"italic\">{}</span>"
     },
     "sway/scratchpad": {
-        "format": "{icon} {count}",
+        "format": " {count}",
         "show-empty": false,
-        "format-icons": ["", "  "],
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
     },
@@ -68,7 +67,7 @@
     },
     "clock": {
         "format": "{:%a %I:%M %p}",
-        "tooltip-format": "{:%Y %B}\n{calendar}",
+        "tooltip-format": "<span size='150%' weight='bold'>{0:%A}</span>\n<span size='300%' weight='bold'>{0:%d}</span>  <span size='180%'>{0:%B %Y}</span>\n\n{calendar}",
         "format-alt": "{:%Y-%m-%d}"
     },
     "memory": {
@@ -171,3 +170,4 @@
         "on-click": "pkill -RTMIN+9 waybar"
     }
 }
+

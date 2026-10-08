@@ -114,6 +114,8 @@ gimp
 git
 git-delta
 glances
+gnome-clocks
+gnome-keyring
 go
 google-chrome
 google-cloud-cli
@@ -195,6 +197,7 @@ mdcat
 meld
 mesa-utils
 micro
+miraclecast-git
 mkdocs-charts-plugin
 mkinitcpio
 modemmanager
@@ -202,6 +205,8 @@ mpc
 mpd
 mpv
 mtools
+mtr
+mysql-workbench
 nano
 nano-syntax-highlighting
 ncmpcpp
@@ -242,6 +247,7 @@ papirus-icon-theme
 paru
 pavucontrol
 pcmanfm
+percona-server-clients
 perl
 pipewire-alsa
 pipewire-pulse
@@ -278,6 +284,7 @@ rofimoji
 rsync
 s-nail
 samba
+scrcpy
 sg3_utils
 smartmontools
 sof-firmware
@@ -287,6 +294,7 @@ splix
 strace
 sudo
 sway
+sway-alttab-gui-bin
 sway-audio-idle-inhibit-git
 swaybg
 swayidle
@@ -349,6 +357,7 @@ wayland-protocols
 wf-recorder
 wget
 which
+win2xcur
 wireplumber
 wl-clipboard
 wl-screenrec-git

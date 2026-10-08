@@ -14,12 +14,9 @@ M.base46 = {
   -- theme = "gruvbox",
   -- theme = "gruvchad",
   -- theme = "catppuccin",
-  -- theme = "everforest_soft",   -- custom, low contrast  (lua/themes/everforest_soft.lua)
-  -- theme = "everforest_medium", -- custom, official default contrast (lua/themes/everforest_medium.lua)
-  -- theme = "everforest_hard",   -- custom, high contrast (lua/themes/everforest_hard.lua)
   -- theme = "nord",
   -- theme = "tomorrow_night",
-    --
+
   transparency = true,
 
   hl_override = {

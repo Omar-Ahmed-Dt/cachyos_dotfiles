@@ -15,4 +15,4 @@ else
     OUTPUT="$DIR/$NAME.%(ext)s"
 fi
 
-kitty -e yt-dlp --extract-audio --audio-format mp3 "$URL" -o "$OUTPUT" && notify-send -i ~/logo/download.png "Download completed"
+foot yt-dlp --extract-audio --audio-format mp3 "$URL" -o "$OUTPUT" && notify-send -i ~/logo/download.png "Download completed"

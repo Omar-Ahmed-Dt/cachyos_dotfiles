@@ -29,13 +29,13 @@
 # dark = "kanagawa-dragon"
 
 # ya pkg add matt-dong-123/gruvbox-material
-# dark = "gruvbox-material"
+dark = "gruvbox-material"
 
 # ya pack -a AdithyanA2005/nord
 # dark = "nord"
 
 # ya pkg add Chromium-3-Oxide/everforest-medium
-dark = "everforest-medium"
+# dark = "everforest-medium"
 
 # ya pkg add AdithyanA2005/nord
 # dark = "synthwave84"

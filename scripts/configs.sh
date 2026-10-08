@@ -19,13 +19,13 @@ actions=(
 selected=$(printf '%s\n' "${actions[@]}" | fuzzel -d -p "Edit ")
 
 case "$selected" in
-  configs)         $TERMINAL $EDITOR "$HOME/scripts/configs.sh" ;;
-  zsh)             $TERMINAL $EDITOR "$HOME/.zshrc" ;;
-  sway)            $TERMINAL $EDITOR "$HOME/.config/sway/config" ;;
-  waybar_configs)  $TERMINAL $EDITOR "$HOME/.config/waybar/config.jsonc" ;;
-  waybar_colors)   $TERMINAL $EDITOR "$HOME/.config/waybar/style.css" ;;
-  foot)            $TERMINAL $EDITOR "$HOME/.config/foot/foot.ini" ;;
-  swayimg)         $TERMINAL $EDITOR "$HOME/.config/swayimg/init.lua" ;;
-  yazi_configs)    $TERMINAL $EDITOR "$HOME/.config/yazi/yazi.toml" ;;
-  yazi_keymaps)    $TERMINAL $EDITOR "$HOME/.config/yazi/keymap.toml" ;;
+  configs)         $EDITOR "$HOME/scripts/configs.sh" ;;
+  zsh)             $EDITOR "$HOME/.zshrc" ;;
+  sway)            $EDITOR "$HOME/.config/sway/config" ;;
+  waybar_configs)  $EDITOR "$HOME/.config/waybar/config.jsonc" ;;
+  waybar_colors)   $EDITOR "$HOME/.config/waybar/style.css" ;;
+  foot)            $EDITOR "$HOME/.config/foot/foot.ini" ;;
+  swayimg)         $EDITOR "$HOME/.config/swayimg/init.lua" ;;
+  yazi_configs)    $EDITOR "$HOME/.config/yazi/yazi.toml" ;;
+  yazi_keymaps)    $EDITOR "$HOME/.config/yazi/keymap.toml" ;;
 esac
