@@ -58,29 +58,29 @@ local user_color="$gb_green"
 # ===============================
 # Git prompt config oh-my-zsh
 # ===============================
-ZSH_THEME_GIT_PROMPT_PREFIX=" %B%F{$gb_orange} %F{$gb_yellow}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%f%b "
+ZSH_THEME_GIT_PROMPT_PREFIX=" %F{$gb_orange} %F{$gb_yellow}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%f "
 ZSH_THEME_GIT_PROMPT_DIRTY=""
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
 # ===============================
 # LEFT PROMPT
-# bold path + depth + branch + symbol
+# path + depth + branch + symbol
 # ===============================
-PROMPT='%B%F{$user_color}$(_fishy_collapsed_wd)%f%b \
-%B%F{$gb_aqua}$(_git_repo_depth)%f%b\
-%B%F{$gb_yellow}$(git_prompt_info)%f%b\
-%B%F{$gb_fg}%(!.#. )%f%b '
+PROMPT='%F{$user_color}$(_fishy_collapsed_wd)%f \
+%F{$gb_aqua}$(_git_repo_depth)%f\
+%F{$gb_yellow}$(git_prompt_info)%f\
+%F{$gb_fg}%(!.#. )%f '
 
 # ===============================
 # CONTINUATION PROMPT
 # ===============================
-PROMPT2='%B%F{$gb_red}\ %f%b'
+PROMPT2='%F{$gb_red}\ %f'
 
 # ===============================
 # RIGHT PROMPT
 # exit status only
 # ===============================
-local return_status="%B%F{$gb_red}%(?..%?)%f%b"
+local return_status="%F{$gb_red}%(?..%?)%f"
 RPROMPT='${return_status}'
 

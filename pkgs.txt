@@ -222,6 +222,7 @@ noisetorch
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
+noutube-bin
 npm
 nss-mdns
 nvidia-580xx-dkms

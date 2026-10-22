@@ -19,6 +19,7 @@ application/x-extension-xht=userapp-Waterfox-XWSRU3.desktop
 inode/directory=thunar.desktop
 text/plain=userapp-foot -e nvim-5B1WT3.desktop
 image/webp=swayimg.desktop
+x-scheme-handler/noutube=noutube.desktop
 
 [Added Associations]
 image/png=org.xfce.ristretto.desktop;gimp.desktop;swayimg.desktop;userapp-kitty -e swayimg-L6TQM3.desktop;

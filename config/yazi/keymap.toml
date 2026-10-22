@@ -72,7 +72,7 @@ keymap = [
     # { on = ["c", "p"], run = "plugin clipboard -- --action=paste --notify-unknown-display-server",          desc = "Paste files from system clipboard" },
 
     # ── Search & Filter ──────────────────────────────────────────────────────────
-    { on = ["/", "/"], run = "find --smart",          desc = "Find within current directory" },
+    { on = ["/", "g"], run = "find --smart",          desc = "Find within current directory" },
     { on = ["n"], run = "find_arrow",                 desc = "Next match" },
     { on = ["N"], run = "find_arrow --previous",      desc = "Prev match" },
     { on = ["/", "f"], run = "filter --smart",        desc = "Filter" },
