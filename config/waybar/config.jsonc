@@ -152,8 +152,8 @@
     },
     "custom/mpd": {
         // "exec": "mpc current",
-        // "exec": "sh -c 'basename \"$(mpc -f \"%file%\" current)\"'",
-        "exec": "sh -c 'song=$(basename \"$(mpc -f \"%file%\" current)\"); if mpc status | grep -q \"\\[playing\\]\"; then icon=\"\"; else icon=\"\"; fi; echo \"$icon  $song\"'",
+        "exec": "sh -c 'basename \"$(mpc -f \"%file%\" current)\"'",
+        // "exec": "sh -c 'song=$(basename \"$(mpc -f \"%file%\" current)\"); if mpc status | grep -q \"\\[playing\\]\"; then icon=\"\"; else icon=\"\"; fi; echo \"$icon  $song\"'",
         "interval": 2,
         "return-type": "text",
         "on-click": "mpc prev",
