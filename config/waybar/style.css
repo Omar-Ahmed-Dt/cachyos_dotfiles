@@ -7,7 +7,8 @@
 @define-color bg3 #475258;
 @define-color bg4 #4f585e;
 
-@define-color fg #d3c6aa;
+/* @define-color fg #d3c6aa; */
+@define-color fg #ebdbb2;
 @define-color red #e67e80;
 @define-color orange #e69875;
 @define-color yellow #dbbc7f;
@@ -20,6 +21,7 @@
 @define-color grey0 #7a8478;
 @define-color grey1 #859289;
 @define-color grey2 #9da9a0;
+@define-color white #ffffff;
 
 /* @define-color module_text #000000; */
 /* @define-color module_text #272E33; */
@@ -257,7 +259,8 @@ calendar.highlight {
 }
 
 #pulseaudio.muted {
-  background: @bg2;
+  /* background: @bg2; */
+  background: @yellow;
   color: @module_text;
 }
 

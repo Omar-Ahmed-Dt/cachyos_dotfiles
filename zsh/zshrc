@@ -2,9 +2,9 @@
 # -------------------------------------------------------
 # Colorscript
 # -------------------------------------------------------
-if [[ -x "$HOME/github/shell-color-scripts/colorscript.sh" ]]; then
-  "$HOME/github/shell-color-scripts/colorscript.sh" -r
-fi
+# if [[ -x "$HOME/github/shell-color-scripts/colorscript.sh" ]]; then
+#   "$HOME/github/shell-color-scripts/colorscript.sh" -r
+# fi
 #
 # pokemon-colorscripts --no-title -r --no-title
 

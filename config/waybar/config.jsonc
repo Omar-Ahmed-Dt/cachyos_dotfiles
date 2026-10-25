@@ -115,10 +115,12 @@
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon}  {format_source}",
-        "format-bluetooth-muted": " {icon}  {format_source}",
-        "format-muted": " {format_source}",
+        // "format-bluetooth-muted": "Mute {volume}% {icon}  {format_source}",
+        // "format-muted": "Mute {volume}% {icon} {format_source}",
+        "format-bluetooth-muted": "Mute {volume}% {icon}  {format_source}",
+        "format-muted": "Mute {volume}% {icon} {format_source}",
         "format-source": "{volume}% ",
-        "format-source-muted": " ",
+        "format-source-muted": "{volume}%  ",
         "format-icons": {
             "headphone": " ",
             "hands-free": "",
@@ -149,7 +151,9 @@
         "on-click": "pkill -RTMIN+8 waybar"
     },
     "custom/mpd": {
-        "exec": "mpc current",
+        // "exec": "mpc current",
+        // "exec": "sh -c 'basename \"$(mpc -f \"%file%\" current)\"'",
+        "exec": "sh -c 'song=$(basename \"$(mpc -f \"%file%\" current)\"); if mpc status | grep -q \"\\[playing\\]\"; then icon=\"\"; else icon=\"\"; fi; echo \"$icon  $song\"'",
         "interval": 2,
         "return-type": "text",
         "on-click": "mpc prev",

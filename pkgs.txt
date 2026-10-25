@@ -140,6 +140,7 @@ htop-vim
 hwdetect
 hwinfo
 hyprpicker
+icat
 immich-go
 imv
 inetutils
