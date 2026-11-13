@@ -1,76 +1,65 @@
-/* ── Everforest Dark — floating pill bar ─────────────────────────────────── */
-/* https://everforest.vercel.app/ */
+/* ── dwm default bar — colors from dwm's config.def.h ────────────────────── */
 
-@define-color bg0 #2d353b;
-@define-color bg1 #343f44;
-@define-color bg2 #3d484d;
-@define-color bg3 #475258;
-@define-color bg4 #4f585e;
-
-/* @define-color fg #d3c6aa; */
-@define-color fg #ebdbb2;
-@define-color red #e67e80;
-@define-color orange #e69875;
-@define-color yellow #dbbc7f;
-@define-color yellow_bright #e6c88c;
-@define-color green #a7c080;
-@define-color aqua #83c092;
-@define-color blue #7fbbb3;
-@define-color purple #d699b6;
-@define-color gray #829181;
-@define-color grey0 #7a8478;
-@define-color grey1 #859289;
-@define-color grey2 #9da9a0;
-@define-color white #ffffff;
-
-/* @define-color module_text #000000; */
-/* @define-color module_text #272E33; */
-@define-color module_text #2E383C;
+@define-color gray1 #2f383e; /* bar background (foot everforest background) */
+@define-color gray2 #4b565c; /* unfocused border (everforest grey) */
+@define-color gray3 #d3c6aa; /* normal text (foot foreground) */
+@define-color gray4 #2f383e; /* selected text — dark on the green highlight */
+@define-color cyan  #a7c080; /* selected background (everforest green) */
+@define-color red   #e67e80; /* urgent background (everforest red) */
 
 * {
   font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
   font-size: 9.5px;
-  font-weight: 600;
+  font-weight: bold;
+  color: @gray3;
   min-height: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
+/* Flat, full-width bar like dwm — no rounding, no float margins */
 window#waybar {
-  background: @bg0;
-  border-radius: 12px;
-  margin: 4px 8px 0 8px;
-  border: 1px solid @grey1;
+  background: @gray1;
+  color: @gray3;
 }
 
-/* ── Workspaces ───────────────────────────────────────────────────────────── */
-
-#workspaces {
-  background: transparent;
-  margin: 0 2px;
-}
+/* ── Tags (workspaces) ────────────────────────────────────────────────────── */
 
 #workspaces button {
-  padding: 0 5px;
-  border-radius: 6px;
-  margin: 2px 1px;
-  color: white;
+  padding: 0 6px;
+  margin: 0;
+  color: @gray3;
   background: transparent;
 }
 
+/* GTK themes add hover styling to buttons; dwm has none */
+#workspaces button:hover {
+  background: transparent;
+  color: @gray3;
+}
+
+/* Inset shadow draws a 1px border without changing the bar's height */
 #workspaces button.focused {
-  background: @green;
-  color: @bg0;
-  font-weight: 700;
+  background: transparent;
+  color: @gray3;
+  box-shadow: inset 0 0 0 1px @cyan;
 }
 
 #workspaces button.urgent {
   background: @red;
-  color: white;
+  color: @gray4;
 }
 
-/* ── Shared module base ───────────────────────────────────────────────────── */
+/* Layout symbol slot, e.g. sway's resize mode */
+#mode {
+  padding: 0 6px;
+  color: @gray3;
+}
+
+/* ── Status text ──────────────────────────────────────────────────────────── */
 
 #custom-cpu,
-#custom-pacman,
 #custom-mpd,
 #clock,
 #pulseaudio,
@@ -84,235 +73,67 @@ window#waybar {
 #custom-uptime,
 #custom-nettraf,
 #tray,
-#mode,
 #idle_inhibitor,
 #mpd,
 #language,
 #scratchpad,
 #power-profiles-daemon {
-  padding: 1px 7px;
-  border-radius: 6px;
-  margin: 2px 1px;
-}
-
-/* ── LEFT SIDE — spectrum: mpd · power · idle · language ─────────────────── */
-
-#custom-mpd {
-  background: @red;
-  color: @module_text;
-}
-
-#power-profiles-daemon,
-#power-profiles-daemon.performance,
-#power-profiles-daemon.balanced,
-#power-profiles-daemon.power-saver {
-  background: @orange;
-  color: @module_text;
-}
-
-#idle_inhibitor {
-  background: @yellow;
-  color: @module_text;
-}
-
-#idle_inhibitor.activated {
-  background: @yellow_bright;
-  color: @module_text;
-}
-
-#language {
-  background: @green;
-  color: @module_text;
-}
-
-#scratchpad {
-  /* background: @bg2; */
-  background: @purple;
-  color: @module_text;
-}
-
-#scratchpad.empty {
+  padding: 0 4px;
+  margin: 0;
+  color: @gray3;
   background: transparent;
 }
 
-/* ── CENTER — clock ───────────────────────────────────────────────────────── */
-
-#clock {
-  background: @bg4;
-  color: @fg;
-  font-weight: 700;
-  border-radius: 6px;
-  padding: 1px 12px;
-  letter-spacing: 0.3px;
+#custom-sep {
+  padding: 0 2px;
+  color: @gray3;
 }
 
 /* ── Tooltips (e.g. clock's date/calendar popup) ─────────────────────────── */
 
 tooltip {
-  background: @bg1;
-  border: 1px solid @grey1;
-  border-radius: 12px;
+  background: @gray1;
+  border: 1px solid @gray2;
 }
 
 tooltip label {
-  color: @fg;
-  padding: 14px 18px;
-  font-size: 13px;
+  color: @gray3;
+  padding: 10px 14px;
 }
 
-/* Calendar widget inside the clock tooltip */
 calendar {
-  background: @bg1;
-  color: @fg;
-  border-radius: 8px;
-  padding: 8px;
-  font-size: 13px;
+  background: @gray1;
+  color: @gray3;
+  padding: 6px;
 }
 
 /* GTK3 marks "today" via :indeterminate (not a .today class) and the
    actively selected day via :selected — waybar's clock defaults the
-   selection to today, so style both the same for a solid highlight. */
+   selection to today, so style both the same. */
 calendar:selected,
 calendar:indeterminate {
-  background: @green;
-  color: @bg0;
-  border-radius: 6px;
-  font-weight: 700;
+  background: @cyan;
+  color: @gray4;
 }
 
-calendar.header {
-  color: @yellow_bright;
-  font-weight: 700;
-}
-
-calendar.button {
-  color: @fg;
-}
-
+calendar.header,
 calendar.highlight {
-  color: @aqua;
-  font-weight: 700;
+  color: @cyan;
 }
 
-/* ── RIGHT SIDE — spectrum: weather · pacman · uptime · nettraf · battery
-                             · cpu · memory · backlight · pulseaudio · tray ─ */
-
-#custom-weather {
-  background: @gray;
-  color: @module_text;
-}
-
-#custom-pacman {
-  background: @yellow;
-  color: @module_text;
-}
-
-/* #custom-uptime { */
-/*   background: @yellow; */
-/*   color: @module_text; */
-/* } */
-
-#custom-nettraf {
-  background: @green;
-  color: @module_text;
-}
-
-#battery {
-  background: @aqua;
-  color: @module_text;
-}
-
-#battery.charging,
-#battery.plugged {
-  background: @green;
-  color: @module_text;
-}
-
-#battery.critical {
-  background: @red;
-  color: @module_text;
-}
-
-#battery.warning {
-  background: @yellow;
-  color: @module_text;
-}
-
-#custom-cpu {
-  background: @blue;
-  color: @module_text;
-}
-
-#memory {
-  background: @purple;
-  color: @module_text;
-}
-
-#backlight {
-  background: @orange;
-  color: @module_text;
-}
-
-#pulseaudio {
-  background: @yellow;
-  color: @module_text;
-}
-
-#pulseaudio.muted {
-  /* background: @bg2; */
-  background: @yellow;
-  color: @module_text;
-}
+/* ── Tray — tint icons with the text color ────────────────────────────────── */
+/* Only icons with a -symbolic variant in the icon theme can be recolored;
+   apps that ship their own pixmaps keep their original colors. */
 
 #tray {
-  background: @bg1;
-  border-radius: 8px;
+  -gtk-icon-style: symbolic;
 }
 
-/* ── Misc ─────────────────────────────────────────────────────────────────── */
-
-#network {
-  background: @blue;
-  color: @module_text;
+#tray > * {
+  color: @gray3;
+  -gtk-icon-style: symbolic;
 }
 
-#network.disconnected {
-  background: @red;
-  color: @module_text;
-}
-
-#temperature {
-  background: @orange;
-  color: @module_text;
-}
-
-#temperature.critical {
-  background: @red;
-  color: @module_text;
-}
-
-#cpu {
-  background: @blue;
-  color: @module_text;
-}
-
-#mpd {
-  background: @aqua;
-  color: @module_text;
-}
-
-#mpd.paused {
-  background: @bg3;
-  color: @module_text;
-}
-
-#mpd.stopped {
-  background: @bg2;
-  color: @module_text;
-}
-
-#mode {
-  background: @yellow;
-  color: @module_text;
-  font-weight: 700;
+#tray > .needs-attention {
+  color: @red;
 }

@@ -1,0 +1,112 @@
+/* ── Floating pill bar ───────────────────────────────────────────────────── */
+
+* {
+  font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
+  font-size: 9.5px;
+  font-weight: 600;
+  min-height: 0;
+}
+
+window#waybar {
+  border-radius: 12px;
+  margin: 4px 8px 0 8px;
+}
+
+/* ── Workspaces ───────────────────────────────────────────────────────────── */
+
+#workspaces {
+  margin: 0 2px;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  border-radius: 6px;
+  margin: 2px 1px;
+  /* transparent border keeps button size stable when focus moves */
+  border: 1px solid transparent;
+}
+
+#workspaces button.focused {
+  border-color: currentColor;
+  font-weight: 700;
+}
+
+/* ── Shared module base ───────────────────────────────────────────────────── */
+
+#custom-cpu,
+#custom-pacman,
+#custom-mpd,
+#clock,
+#pulseaudio,
+#backlight,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#custom-weather,
+#custom-uptime,
+#custom-nettraf,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd,
+#language,
+#scratchpad,
+#power-profiles-daemon {
+  padding: 1px 7px;
+  border-radius: 6px;
+  margin: 2px 1px;
+}
+
+/* ── CENTER — clock ───────────────────────────────────────────────────────── */
+
+#clock {
+  font-weight: 700;
+  padding: 1px 12px;
+  letter-spacing: 0.3px;
+}
+
+/* ── Tooltips (e.g. clock's date/calendar popup) ─────────────────────────── */
+
+tooltip {
+  border-radius: 12px;
+}
+
+tooltip label {
+  padding: 14px 18px;
+  font-size: 13px;
+}
+
+/* Calendar widget inside the clock tooltip */
+calendar {
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 13px;
+}
+
+/* GTK3 marks "today" via :indeterminate (not a .today class) and the
+   actively selected day via :selected — waybar's clock defaults the
+   selection to today, so style both the same. */
+calendar:selected,
+calendar:indeterminate {
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+calendar.header,
+calendar.highlight {
+  font-weight: 700;
+}
+
+/* ── Misc ─────────────────────────────────────────────────────────────────── */
+
+#custom-sep {
+  font-weight: bold;
+  padding: 0 2px;
+  opacity: 0.5;
+}
+
+#mode {
+  font-weight: 700;
+}

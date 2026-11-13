@@ -1,0 +1,328 @@
+/* ── Everforest Dark — floating pill bar ─────────────────────────────────── */
+/* https://everforest.vercel.app/ */
+
+@define-color bg0 #2d353b;
+@define-color bg1 #343f44;
+@define-color bg2 #3d484d;
+@define-color bg3 #475258;
+@define-color bg4 #4f585e;
+
+/* @define-color fg #d3c6aa; */
+@define-color fg #ebdbb2;
+@define-color red #e67e80;
+@define-color orange #e69875;
+@define-color yellow #dbbc7f;
+@define-color yellow_bright #e6c88c;
+@define-color green #a7c080;
+@define-color aqua #83c092;
+@define-color blue #7fbbb3;
+@define-color purple #d699b6;
+@define-color gray #829181;
+@define-color grey0 #7a8478;
+@define-color grey1 #859289;
+@define-color grey2 #9da9a0;
+@define-color white #ffffff;
+
+/* @define-color module_text #000000; */
+/* @define-color module_text #272E33; */
+@define-color module_text #2E383C;
+
+* {
+  font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
+  font-size: 9.5px;
+  font-weight: 600;
+  min-height: 0;
+}
+
+window#waybar {
+  background: @bg0;
+  border-radius: 12px;
+  margin: 4px 8px 0 8px;
+  border: 1px solid @grey1;
+}
+
+/* ── Workspaces ───────────────────────────────────────────────────────────── */
+
+#workspaces {
+  background: transparent;
+  margin: 0 2px;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  border-radius: 6px;
+  margin: 2px 1px;
+  color: white;
+  background: transparent;
+}
+
+#workspaces button.focused {
+  background: @green;
+  color: @bg0;
+  font-weight: 700;
+}
+
+#workspaces button.urgent {
+  background: @red;
+  color: white;
+}
+
+/* ── Shared module base ───────────────────────────────────────────────────── */
+
+#custom-cpu,
+#custom-pacman,
+#custom-mpd,
+#clock,
+#pulseaudio,
+#backlight,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#custom-weather,
+#custom-uptime,
+#custom-nettraf,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd,
+#language,
+#scratchpad,
+#power-profiles-daemon {
+  padding: 1px 7px;
+  border-radius: 6px;
+  margin: 2px 1px;
+}
+
+/* ── LEFT SIDE — spectrum: mpd · power · idle · language ─────────────────── */
+
+#custom-mpd {
+  background: @red;
+  color: @module_text;
+}
+
+#power-profiles-daemon,
+#power-profiles-daemon.performance,
+#power-profiles-daemon.balanced,
+#power-profiles-daemon.power-saver {
+  background: @orange;
+  color: @module_text;
+}
+
+#idle_inhibitor {
+  background: @yellow;
+  color: @module_text;
+}
+
+#idle_inhibitor.activated {
+  background: @yellow_bright;
+  color: @module_text;
+}
+
+#language {
+  background: @green;
+  color: @module_text;
+}
+
+#scratchpad {
+  /* background: @bg2; */
+  background: @purple;
+  color: @module_text;
+}
+
+#scratchpad.empty {
+  background: transparent;
+}
+
+/* ── CENTER — clock ───────────────────────────────────────────────────────── */
+
+#clock {
+  background: transparent;
+  border: none;
+  color: @fg;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 1px 12px;
+  letter-spacing: 0.3px;
+}
+
+/* ── Tooltips (e.g. clock's date/calendar popup) ─────────────────────────── */
+
+tooltip {
+  background: @bg1;
+  border: 1px solid @grey1;
+  border-radius: 12px;
+}
+
+tooltip label {
+  color: @fg;
+  padding: 14px 18px;
+  font-size: 13px;
+}
+
+/* Calendar widget inside the clock tooltip */
+calendar {
+  background: @bg1;
+  color: @fg;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 13px;
+}
+
+/* GTK3 marks "today" via :indeterminate (not a .today class) and the
+   actively selected day via :selected — waybar's clock defaults the
+   selection to today, so style both the same for a solid highlight. */
+calendar:selected,
+calendar:indeterminate {
+  background: @green;
+  color: @bg0;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+calendar.header {
+  color: @yellow_bright;
+  font-weight: 700;
+}
+
+calendar.button {
+  color: @fg;
+}
+
+calendar.highlight {
+  color: @aqua;
+  font-weight: 700;
+}
+
+/* ── RIGHT SIDE — spectrum: weather · pacman · uptime · nettraf · battery
+                             · cpu · memory · backlight · pulseaudio · tray ─ */
+
+#custom-weather {
+  background: transparent;
+  border: none;
+  color: @fg;
+  /* background: @gray; */
+  /* color: @module_text; */
+}
+
+#custom-sep {
+  color: @grey1;
+  font-weight: bold;
+  padding: 0 2px;
+}
+
+#custom-pacman {
+  background: @yellow;
+  color: @module_text;
+}
+
+/* #custom-uptime { */
+/*   background: @yellow; */
+/*   color: @module_text; */
+/* } */
+
+#custom-nettraf {
+  background: @green;
+  color: @module_text;
+}
+
+#battery {
+  background: @aqua;
+  color: @module_text;
+}
+
+#battery.charging,
+#battery.plugged {
+  background: @green;
+  color: @module_text;
+}
+
+#battery.critical {
+  background: @red;
+  color: @module_text;
+}
+
+#battery.warning {
+  background: @yellow;
+  color: @module_text;
+}
+
+#custom-cpu {
+  background: @blue;
+  color: @module_text;
+}
+
+#memory {
+  background: @purple;
+  color: @module_text;
+}
+
+#backlight {
+  background: @orange;
+  color: @module_text;
+}
+
+#pulseaudio {
+  background: @yellow;
+  color: @module_text;
+}
+
+#pulseaudio.muted {
+  /* background: @bg2; */
+  background: @yellow;
+  color: @module_text;
+}
+
+#tray {
+  background: @bg1;
+  border-radius: 8px;
+}
+
+/* ── Misc ─────────────────────────────────────────────────────────────────── */
+
+#network {
+  background: @blue;
+  color: @module_text;
+}
+
+#network.disconnected {
+  background: @red;
+  color: @module_text;
+}
+
+#temperature {
+  background: @orange;
+  color: @module_text;
+}
+
+#temperature.critical {
+  background: @red;
+  color: @module_text;
+}
+
+#cpu {
+  background: @blue;
+  color: @module_text;
+}
+
+#mpd {
+  background: @aqua;
+  color: @module_text;
+}
+
+#mpd.paused {
+  background: @bg3;
+  color: @module_text;
+}
+
+#mpd.stopped {
+  background: @bg2;
+  color: @module_text;
+}
+
+#mode {
+  background: @yellow;
+  color: @module_text;
+  font-weight: 700;
+}

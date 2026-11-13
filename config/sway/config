@@ -102,6 +102,7 @@ bindsym $mod+Shift+s          exec grim -g "$(slurp)" - | wl-copy && notify-send
 bindsym $mod+b                exec waterfox 
 bindsym $mod+Shift+Return     exec thunar
 # bindsym $mod+p                exec obsidian
+bindsym $mod+p                exec pkill -SIGUSR1 waybar
 bindsym $mod+Escape           exec $scripts/power.sh
 bindsym $mod+Shift+b          exec $scripts/browser.sh
 bindsym --locked $mod+Right   exec $scripts/volume.sh up
