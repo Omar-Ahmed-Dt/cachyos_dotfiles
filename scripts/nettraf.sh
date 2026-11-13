@@ -16,7 +16,7 @@ update() {
 rx=$(update /sys/class/net/[ew]*/statistics/rx_bytes)
 tx=$(update /sys/class/net/[ew]*/statistics/tx_bytes)
 
-printf " %3sB  %3sB\\n" $(numfmt --to=iec $rx) $(numfmt --to=iec $tx)
+printf "<span color='#7fbbb3'></span> %3sB <span color='#7fbbb3'></span> %3sB\\n" $(numfmt --to=iec $rx) $(numfmt --to=iec $tx)
 
 # bits
 # update() {

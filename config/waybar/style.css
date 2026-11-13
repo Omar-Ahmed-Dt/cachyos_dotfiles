@@ -2,15 +2,16 @@
 
 @define-color gray1 #2f383e; /* bar background (foot everforest background) */
 @define-color gray2 #4b565c; /* unfocused border (everforest grey) */
-@define-color gray3 #d3c6aa; /* normal text (foot foreground) */
+@define-color gray3 #ebdbb2; /* normal text (foot foreground) */
 @define-color gray4 #2f383e; /* selected text — dark on the green highlight */
 @define-color cyan  #a7c080; /* selected background (everforest green) */
 @define-color red   #e67e80; /* urgent background (everforest red) */
 
 * {
   font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
-  font-size: 9.5px;
-  font-weight: bold;
+  /* font-size: 9.5px; */
+  font-size: 10px;
+  font-weight: 400;
   color: @gray3;
   min-height: 0;
   border: none;
@@ -39,15 +40,24 @@ window#waybar {
   color: @gray3;
 }
 
-/* Inset shadow draws a 1px border without changing the bar's height */
-#workspaces button.focused {
-  background: transparent;
-  color: @gray3;
-  box-shadow: inset 0 0 0 1px @cyan;
+/* Filled highlight like dwm's selected tag. The `*` rule sets color on the
+   inner label too, so the label needs its own selector to pick up @gray4. */
+#workspaces button.focused,
+#workspaces button.focused:hover {
+  background: @cyan;
+  color: @gray4;
+}
+
+#workspaces button.focused label {
+  color: @gray4;
 }
 
 #workspaces button.urgent {
   background: @red;
+  color: @gray4;
+}
+
+#workspaces button.urgent label {
   color: @gray4;
 }
 
@@ -87,8 +97,8 @@ window#waybar {
 #custom-sep {
   padding: 0 2px;
   color: @gray3;
+  font-weight: 400;
 }
-
 /* ── Tooltips (e.g. clock's date/calendar popup) ─────────────────────────── */
 
 tooltip {
