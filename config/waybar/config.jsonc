@@ -21,17 +21,17 @@
         "clock",
         "custom/sep",
         "custom/weather",
-        "custom/mpd",
+        "mpd"
     ],
     "modules-right": [
         // "custom/pacman",
         // "custom/uptime",
         // "custom/sep",
-        "custom/nettraf",
+        "network",
         "custom/sep",
         "battery",
         "custom/sep",
-        "custom/cpu",
+        "cpu",
         "custom/sep",
         "memory",
         // "backlight",
@@ -41,19 +41,12 @@
         "tray"
     ],
     "sway/language": {
-        "format": "{shortDescription}"
+        "format": "<span color='#e69875'> </span> {shortDescription}",
+        "tooltip-format": "{long}",
+        "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
     },
     "sway/workspaces": {
         "disable-scroll": false
-    },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": " ",
-            "unlocked": " "
-        }
     },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>  <b>•</b>"
@@ -81,8 +74,7 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "memory": {
-        // "format": " {used}G",
-        "format": "<span color='#d699b6'></span> {used}G",
+        "format": "<span color='#d699b6'> </span> {used}G",
         "tooltip": false
     },
     "backlight": {
@@ -98,15 +90,12 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity}% <span color='#a7c080'>{icon}</span>",
-        "format-full": "{capacity}% <span color='#a7c080'>{icon}</span>",
-        "format-charging": "{capacity}% <span color='#a7c080'></span>",
-        "format-plugged": "{capacity}% <span color='#a7c080'></span>",
-        "format-alt": "{time} <span color='#a7c080'>{icon}</span>",
-        "format-icons": [" ", " ", " ", " ", " "]
-    },
-    "battery#bat2": {
-        "bat": "BAT2"
+        "format": "<span color='#a7c080'>{icon}</span>{capacity}%",
+        "format-full": "<span color='#a7c080'>{icon}</span>{capacity}%",
+        "format-charging": "<span color='#a7c080'></span> {capacity}%",
+        "format-plugged": "<span color='#a7c080'></span> {capacity}%",
+        "format-alt": "<span color='#a7c080'>{icon}</span>{time}",
+        "format-icons": ["  ", "  ", "  ", "  ", "  "]
     },
 
     "power-profiles-daemon": {
@@ -123,30 +112,31 @@
 
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% <span color='#7fbbb3'>{icon}</span> {format_source}",
-        "format-bluetooth": "{volume}% <span color='#7fbbb3'>{icon}</span> <span color='#7fbbb3'></span> {format_source}",
+        "format": "<span color='#7fbbb3'>{icon}</span> {volume}% {format_source}",
+        "format-bluetooth": "<span color='#7fbbb3'>{icon}</span> <span color='#7fbbb3'></span> {volume}% {format_source}",
         // "format-bluetooth-muted": "Mute {volume}% {icon}  {format_source}",
         // "format-muted": "Mute {volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "Mute {volume}% <span color='#e67e80'>{icon}</span> <span color='#e67e80'></span> {format_source}",
-        "format-muted": "Mute {volume}% <span color='#e67e80'>{icon}</span> {format_source}",
-        "format-source": "{volume}% <span color='#7fbbb3'></span>",
-        "format-source-muted": "{volume}% <span color='#e67e80'></span> ",
+        "format-bluetooth-muted": "<span color='#e67e80'>{icon}</span> <span color='#e67e80'></span> Mute {volume}% {format_source}",
+        "format-muted": "<span color='#e67e80'>{icon}</span> Mute {volume}% {format_source}",
+        "format-source": "<span color='#7fbbb3'> </span> {volume}%",
+        "format-source-muted": "<span color='#e67e80'> </span> {volume}%",
         "format-icons": {
             "headphone": " ",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": " ",
+            "headset": " ",
             "phone": " ",
             "portable": " ",
             "car": " ",
-            "default": ["", " ", " "]
+            "default": [" ", " ", "  "]
         },
         "on-click": "pavucontrol"
     },
 
-    "custom/nettraf": {
-        "exec": "~/scripts/nettraf.sh",
+    "network": {
         "interval": 2,
-        "tooltip": false
+        "format": "<span color='#7fbbb3'></span> {bandwidthDownBytes} <span color='#7fbbb3'></span> {bandwidthUpBytes}",
+        "format-disconnected": "<span color='#e67e80'></span> offline",
+        "tooltip-format": "{ifname}: {ipaddr}"
     },
     // "custom/uptime": {
     //     "exec": "~/scripts/uptime.sh",
@@ -164,21 +154,20 @@
         "signal": 8,
         "on-click": "pkill -RTMIN+8 waybar"
     },
-    "custom/mpd": {
-        // "exec": "mpc current",
-        "exec": "sh -c 'basename \"$(mpc -f \"%file%\" current)\"'",
-        "interval": 2,
-        "return-type": "text",
-        "format": "<b>•</b> {}",
+    "mpd": {
+        "format": "<b>•</b> {filename}",
+        "format-paused": "<b>•</b> {filename} (paused)",
+        "format-stopped": "",
+        "format-disconnected": "",
+        "tooltip": false,
         "on-click": "mpc prev",
         "on-click-middle": "mpc toggle",
         "on-click-right": "mpc next"
     },
-    "custom/cpu": {
-        "exec": "~/scripts/cpu_average.sh",
-        "format": "{}",
-        "interval": 1,
-        "return-type": "text"
+    "cpu": {
+        "format": "<span color='#e69875'> </span> {usage}%",
+        "interval": 2,
+        "tooltip": false
     }
     // "custom/pacman": {
     //     "exec": "~/scripts/pacman.sh",

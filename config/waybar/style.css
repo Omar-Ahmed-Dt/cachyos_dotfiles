@@ -85,6 +85,7 @@ window#waybar {
 #tray,
 #idle_inhibitor,
 #mpd,
+#network,
 #language,
 #scratchpad,
 #power-profiles-daemon {
@@ -145,5 +146,15 @@ calendar.highlight {
 }
 
 #tray > .needs-attention {
+  color: @red;
+}
+
+/* ── Battery states ───────────────────────────────────────────────────────── */
+
+#battery.warning:not(.charging) {
+  color: #dbbc7f;
+}
+
+#battery.critical:not(.charging) {
   color: @red;
 }
