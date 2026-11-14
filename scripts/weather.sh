@@ -31,4 +31,33 @@ case "$iconval" in
     *)   icon=" " ;;
 esac
 
-printf "<span color='%s'>%s</span> %s°%s\n" '#dbbc7f' "$icon" "$Temp" "$symbol"
+text=$(printf "<span color='%s'>%s</span> %s°%s" '#dbbc7f' "$icon" "$Temp" "$symbol")
+
+# 7-day forecast for the tooltip (Open-Meteo, free, no key)
+lat=$(printf '%s\n' "$data" | jq -r '.coord.lat')
+lon=$(printf '%s\n' "$data" | jq -r '.coord.lon')
+[ "$unit" = "metric" ] && tunit="celsius" || tunit="fahrenheit"
+fc=$(curl -fsS --max-time 10 "https://api.open-meteo.com/v1/forecast?latitude=$lat&longitude=$lon&daily=weather_code,temperature_2m_max,temperature_2m_min&temperature_unit=$tunit&timezone=auto&forecast_days=7")
+
+if [ -n "$fc" ]; then
+    tooltip=$(printf '%s\n' "$fc" | jq -r --arg s "$symbol" '
+        def wmo: if . == 0 then "  Clear"
+            elif . <= 2 then "  Partly cloudy"
+            elif . == 3 then "  Overcast"
+            elif . <= 48 then "  Fog"
+            elif . <= 57 then "  Drizzle"
+            elif . <= 67 then "  Rain"
+            elif . <= 77 then "  Snow"
+            elif . <= 82 then "  Showers"
+            elif . <= 86 then "  Snow showers"
+            else "  Thunderstorm" end;
+        .daily as $d
+        | [range(0; $d.time | length) as $i
+            | ($d.time[$i] + "T00:00:00Z" | fromdateiso8601 | strftime("%a %d")) as $day
+            | "<tt>\($day)  \($d.temperature_2m_max[$i] | round | tostring | .[:3] | " " * (3 - length) + .)° / \($d.temperature_2m_min[$i] | round | tostring | " " * (3 - length) + .)°\($s)</tt>  \($d.weather_code[$i] | wmo)"]
+        | "<span font_size=\"13pt\">" + join("\n") + "</span>"')
+else
+    tooltip="<span font_size=\"13pt\">Forecast unavailable</span>"
+fi
+
+jq -cn --arg text "$text" --arg tooltip "$tooltip" '{text: $text, tooltip: $tooltip}'

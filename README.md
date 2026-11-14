@@ -1,6 +1,6 @@
 # Dotfiles 🛠
 
-These are my dotfiles. I'm trying to do better. Also, my window manager dots change all the time. I do upload everything here.
+These are my dotfiles. My window manager dots change all the time. I do upload everything here.
 
 **Operating System**
  - [CachyOS Linux](https://cachyos.org/download/)
@@ -57,7 +57,7 @@ These are my dotfiles. I'm trying to do better. Also, my window manager dots cha
  - bindsym func in sway  
 
 **Browser**
- - waterfox flatpak 
+ - waterfox-bin
 
 **Color Temperature**
  - gammastep
@@ -99,4 +99,5 @@ These are my dotfiles. I'm trying to do better. Also, my window manager dots cha
 | mic up | super + equal | 
 | mic mute | super + Backspace | 
 | clipmenu | super + v | 
+| pkill waybar | super + p | 
 

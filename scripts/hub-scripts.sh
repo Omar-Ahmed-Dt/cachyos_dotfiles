@@ -5,8 +5,7 @@ case "$choice" in
         action=$(printf "Copy\nEdit" | fuzzel -d -i -p "Notes: ")
         case "$action" in
             "Copy")
-                cat ~/dmnote | fuzzel --dmenu | wl-copy 
-                notify-send -t 1000 "Notes" "Copied to clipboard"
+                cat ~/dmnote | fuzzel --dmenu | wl-copy && notify-send -t 1000 "Notes" "Copied to clipboard"
                 ;;
             "Edit")
                 foot nvim ~/dmnote

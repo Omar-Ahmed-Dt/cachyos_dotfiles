@@ -18,9 +18,11 @@
         "sway/language"
     ],
     "modules-center": [
+        "custom/sep",
         "clock",
         "custom/sep",
         "custom/weather",
+        "custom/sep",
         "mpd"
     ],
     "modules-right": [
@@ -70,7 +72,8 @@
     },
     "clock": {
         "format": "{:%a %I:%M %p}",
-        "tooltip-format": "<span size='150%' weight='bold'>{0:%A}</span>\n<span size='300%' weight='bold'>{0:%d}</span>  <span size='180%'>{0:%B %Y}</span>\n\n{calendar}",
+        // "format": "{:%a %H:%M}",
+        "tooltip-format": "<span font_size='13pt'><span size='150%' weight='bold'>{0:%A}</span>\n<span size='300%' weight='bold'>{0:%d}</span>  <span size='180%'>{0:%B %Y}</span>\n\n{calendar}</span>",
         "format-alt": "{:%Y-%m-%d}"
     },
     "memory": {
@@ -114,16 +117,14 @@
         // "scroll-step": 1, // %, can be a float
         "format": "<span color='#7fbbb3'>{icon}</span> {volume}% {format_source}",
         "format-bluetooth": "<span color='#7fbbb3'>{icon}</span> <span color='#7fbbb3'></span> {volume}% {format_source}",
-        // "format-bluetooth-muted": "Mute {volume}% {icon}  {format_source}",
-        // "format-muted": "Mute {volume}% {icon} {format_source}",
         "format-bluetooth-muted": "<span color='#e67e80'>{icon}</span> <span color='#e67e80'></span> Mute {volume}% {format_source}",
         "format-muted": "<span color='#e67e80'>{icon}</span> Mute {volume}% {format_source}",
         "format-source": "<span color='#7fbbb3'> </span> {volume}%",
         "format-source-muted": "<span color='#e67e80'> </span> {volume}%",
         "format-icons": {
             "headphone": " ",
-            "hands-free": " ",
-            "headset": " ",
+            "hands-free": " ",
+            "headset": " ",
             "phone": " ",
             "portable": " ",
             "car": " ",
@@ -149,14 +150,17 @@
     },
     "custom/weather": {
         "exec": "~/scripts/weather.sh",
+        "return-type": "json",
         "interval": 3600,
-        "tooltip": false,
+        "tooltip": true,
         "signal": 8,
         "on-click": "pkill -RTMIN+8 waybar"
     },
     "mpd": {
-        "format": "<b>•</b> {filename}",
-        "format-paused": "<b>•</b> {filename} (paused)",
+        // "format": "<b>•</b> {filename}",
+        // "format-paused": "<b>•</b> {filename} (paused)",
+        "format": "<span color='#d699b6'></span> {filename} <b>•</b>",
+        "format-paused": "<span color='#d699b6'></span> {filename} (paused) <b>•</b>",
         "format-stopped": "",
         "format-disconnected": "",
         "tooltip": false,

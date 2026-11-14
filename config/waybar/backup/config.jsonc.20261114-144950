@@ -1,0 +1,184 @@
+// icons: 
+// https://cheatography.com/davechild/cheat-sheets/font-awesome/
+
+{
+    "layer": "top",
+    "position": "top",
+    "height": 22,
+    "spacing": 0,
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode",
+        "sway/scratchpad",
+        "custom/sep",
+        "power-profiles-daemon",
+        "custom/sep",
+        "idle_inhibitor",
+        "custom/sep",
+        "sway/language"
+    ],
+    "modules-center": [
+        "custom/sep",
+        "clock",
+        "custom/sep",
+        "custom/weather",
+        "custom/sep",
+        "mpd"
+    ],
+    "modules-right": [
+        // "custom/pacman",
+        // "custom/uptime",
+        // "custom/sep",
+        "network",
+        "custom/sep",
+        "battery",
+        "custom/sep",
+        "cpu",
+        "custom/sep",
+        "memory",
+        // "backlight",
+        "custom/sep",
+        "pulseaudio",
+        "custom/sep",
+        "tray"
+    ],
+    "sway/language": {
+        "format": "<span color='#e69875'> </span> {shortDescription}",
+        "tooltip-format": "{long}",
+        "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
+    },
+    "sway/workspaces": {
+        "disable-scroll": false
+    },
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>  <b>•</b>"
+    },
+    "sway/scratchpad": {
+        "format": "<b>•</b>  {count}",
+        "show-empty": false,
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+    "idle_inhibitor": {
+        "format": "<span color='#83c092'>{icon}</span>",
+        "format-icons": {
+            "activated": " ",
+            "deactivated": " "
+        }
+    },
+    "tray": {
+        "icon-size": 12,
+        "spacing": 4
+    },
+    "clock": {
+        "format": "{:%a %I:%M %p}",
+        "tooltip-format": "<span size='150%' weight='bold'>{0:%A}</span>\n<span size='300%' weight='bold'>{0:%d}</span>  <span size='180%'>{0:%B %Y}</span>\n\n{calendar}",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "memory": {
+        "format": "<span color='#d699b6'> </span> {used}G",
+        "tooltip": false
+    },
+    "backlight": {
+        "format": "  {percent}%",
+        // "format": "{icon} {percent}%",
+        // "format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"]
+        // "format-icons": [" ", " ", " ", " ", ""]
+        // "format-icons": [" ", " ", " ", " ", " "]
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "<span color='#a7c080'>{icon}</span>{capacity}%",
+        "format-full": "<span color='#a7c080'>{icon}</span>{capacity}%",
+        "format-charging": "<span color='#a7c080'></span> {capacity}%",
+        "format-plugged": "<span color='#a7c080'></span> {capacity}%",
+        "format-alt": "<span color='#a7c080'>{icon}</span>{time}",
+        "format-icons": ["  ", "  ", "  ", "  ", "  "]
+    },
+
+    "power-profiles-daemon": {
+        "format": "<span color='#dbbc7f'>{icon}</span>",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": " ",
+            "performance": " ",
+            "balanced": " ",
+            "power-saver": " "
+        }
+    },
+
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "<span color='#7fbbb3'>{icon}</span> {volume}% {format_source}",
+        "format-bluetooth": "<span color='#7fbbb3'>{icon}</span> <span color='#7fbbb3'></span> {volume}% {format_source}",
+        // "format-bluetooth-muted": "Mute {volume}% {icon}  {format_source}",
+        // "format-muted": "Mute {volume}% {icon} {format_source}",
+        "format-bluetooth-muted": "<span color='#e67e80'>{icon}</span> <span color='#e67e80'></span> Mute {volume}% {format_source}",
+        "format-muted": "<span color='#e67e80'>{icon}</span> Mute {volume}% {format_source}",
+        "format-source": "<span color='#7fbbb3'> </span> {volume}%",
+        "format-source-muted": "<span color='#e67e80'> </span> {volume}%",
+        "format-icons": {
+            "headphone": " ",
+            "hands-free": " ",
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
+            "default": [" ", " ", "  "]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "network": {
+        "interval": 2,
+        "format": "<span color='#7fbbb3'></span> {bandwidthDownBytes} <span color='#7fbbb3'></span> {bandwidthUpBytes}",
+        "format-disconnected": "<span color='#e67e80'></span> offline",
+        "tooltip-format": "{ifname}: {ipaddr}"
+    },
+    // "custom/uptime": {
+    //     "exec": "~/scripts/uptime.sh",
+    //     "interval": 60,
+    //     "tooltip": false
+    // },
+    "custom/sep": {
+        "format": "•",
+        "tooltip": false
+    },
+    "custom/weather": {
+        "exec": "~/scripts/weather.sh",
+        "interval": 3600,
+        "tooltip": false,
+        "signal": 8,
+        "on-click": "pkill -RTMIN+8 waybar"
+    },
+    "mpd": {
+        // "format": "<b>•</b> {filename}",
+        // "format-paused": "<b>•</b> {filename} (paused)",
+        "format": "{filename}",
+        "format-paused": "{filename} (paused)",
+        "format-stopped": "",
+        "format-disconnected": "",
+        "tooltip": false,
+        "on-click": "mpc prev",
+        "on-click-middle": "mpc toggle",
+        "on-click-right": "mpc next"
+    },
+    "cpu": {
+        "format": "<span color='#e69875'> </span> {usage}%",
+        "interval": 2,
+        "tooltip": false
+    }
+    // "custom/pacman": {
+    //     "exec": "~/scripts/pacman.sh",
+    //     "interval": 3600,
+    //     "tooltip": false,
+    //     "signal": 9,
+    //     "on-click": "pkill -RTMIN+9 waybar"
+    // }
+}
+
