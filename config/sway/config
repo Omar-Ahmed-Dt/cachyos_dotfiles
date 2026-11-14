@@ -97,7 +97,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+Shift+s          exec grim -g "$(slurp)" - | wl-copy && notify-send -t 1000 "Screenshot" "Area copied to clipboard"
+bindsym $mod+Shift+s exec sh -c 'geometry=$(slurp) && [ -n "$geometry" ] && grim -g "$geometry" - | wl-copy && notify-send -t 1000 "Screenshot" "Area copied to clipboard"'
 # bindsym $mod+b                exec flatpak run net.waterfox.waterfox
 bindsym $mod+b                exec waterfox 
 bindsym $mod+Shift+Return     exec thunar
@@ -277,3 +277,6 @@ for_window [app_id="mpv"] inhibit_idle fullscreen
 # for_window [class="net.waterfox.waterfox"] inhibit_idle fullscreen
 
 
+
+# Refresh waybar weather after resume
+exec $scripts/resume-refresh.sh
