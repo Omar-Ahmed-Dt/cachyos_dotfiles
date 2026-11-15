@@ -1,11 +1,11 @@
 /* ── dwm default bar — colors from dwm's config.def.h ────────────────────── */
 
-@define-color gray1 #2f383e; /* bar background (foot everforest background) */
-@define-color gray2 #4b565c; /* unfocused border (everforest grey) */
-@define-color gray3 #ebdbb2; /* normal text (foot foreground) */
-@define-color gray4 #eeeeee; /* selected text (dwm col_gray4) */
-@define-color cyan  #005577; /* selected background (dwm col_cyan blue) */
-@define-color red   #e67e80; /* urgent background (everforest red) */
+@define-color gray1 #2f383e;
+@define-color gray2 #4b565c;
+@define-color gray3 #ebdbb2;
+@define-color gray4 #eeeeee;
+@define-color cyan  #005577;
+@define-color red   #e67e80;
 
 * {
   font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;

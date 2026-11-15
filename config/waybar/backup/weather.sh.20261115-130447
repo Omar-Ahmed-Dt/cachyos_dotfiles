@@ -1,0 +1,63 @@
+#!/bin/sh
+
+key="d9bb0961c0b0d9fae76fe7bb6429e3e5"
+cityid="347497"
+lang="en"
+unit="metric"
+
+if [ "$unit" = "metric" ]; then
+    symbol="C"
+else
+    symbol="F"
+fi
+
+data=$(curl -fsS --max-time 10 --retry 10 --retry-delay 3 --retry-all-errors "https://api.openweathermap.org/data/2.5/weather?id=$cityid&appid=$key&units=$unit&lang=$lang") || exit 1
+
+Temp=$(printf '%s\n' "$data" | jq -r '.main.temp | round')
+iconval=$(printf '%s\n' "$data" | jq -r '.weather[0].icon')
+
+case "$iconval" in
+    01d) icon=" " ;;  # Clear sky (day)
+    01n) icon=" " ;;  # Clear sky (night)
+    02d) icon=" " ;;  # Few clouds (day)
+    02n) icon=" " ;;  # Few clouds (night)
+    03*) icon=" " ;;  # Scattered clouds
+    04*) icon=" " ;;  # Broken clouds
+    09*) icon=" " ;;  # Shower rain
+    10*) icon=" " ;;  # Rain
+    11*) icon=" " ;;  # Thunderstorm
+    13*) icon=" " ;;  # Snow
+    50*) icon=" " ;;  # Mist
+    *)   icon=" " ;;
+esac
+
+text=$(printf "<span color='%s'>%s</span> %s°%s" '#dbbc7f' "$icon" "$Temp" "$symbol")
+
+# 7-day forecast for the tooltip (Open-Meteo, free, no key)
+lat=$(printf '%s\n' "$data" | jq -r '.coord.lat')
+lon=$(printf '%s\n' "$data" | jq -r '.coord.lon')
+[ "$unit" = "metric" ] && tunit="celsius" || tunit="fahrenheit"
+fc=$(curl -fsS --max-time 10 "https://api.open-meteo.com/v1/forecast?latitude=$lat&longitude=$lon&daily=weather_code,temperature_2m_max,temperature_2m_min&temperature_unit=$tunit&timezone=auto&forecast_days=7")
+
+if [ -n "$fc" ]; then
+    tooltip=$(printf '%s\n' "$fc" | jq -r --arg s "$symbol" '
+        def wmo: if . == 0 then "  Clear"
+            elif . <= 2 then "  Partly cloudy"
+            elif . == 3 then "  Overcast"
+            elif . <= 48 then "  Fog"
+            elif . <= 57 then "  Drizzle"
+            elif . <= 67 then "  Rain"
+            elif . <= 77 then "  Snow"
+            elif . <= 82 then "  Showers"
+            elif . <= 86 then "  Snow showers"
+            else "  Thunderstorm" end;
+        .daily as $d
+        | [range(0; $d.time | length) as $i
+            | ($d.time[$i] + "T00:00:00Z" | fromdateiso8601 | strftime("%a %d")) as $day
+            | "<tt>\($day)  \($d.temperature_2m_max[$i] | round | tostring | .[:3] | " " * (3 - length) + .)° / \($d.temperature_2m_min[$i] | round | tostring | " " * (3 - length) + .)°\($s)</tt>  \($d.weather_code[$i] | wmo)"]
+        | "<span font_size=\"10pt\">" + join("\n") + "</span>"')
+else
+    tooltip="<span font_size=\"10pt\">Forecast unavailable</span>"
+fi
+
+jq -cn --arg text "$text" --arg tooltip "$tooltip" '{text: $text, tooltip: $tooltip}'

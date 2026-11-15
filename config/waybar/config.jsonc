@@ -73,8 +73,13 @@
     "clock": {
         "format": "{:%a %I:%M %p}",
         // "format": "{:%a %H:%M}",
-        "tooltip-format": "<span font_size='13pt'><span size='150%' weight='bold'>{0:%A}</span>\n<span size='300%' weight='bold'>{0:%d}</span>  <span size='180%'>{0:%B %Y}</span>\n\n{calendar}</span>",
-        "format-alt": "{:%Y-%m-%d}"
+        "tooltip-format": "<span font_size='10pt'><span size='150%' weight='bold'>{0:%A}</span>\n<span size='300%' weight='bold'>{0:%d}</span>  <span size='180%'>{0:%B %Y}</span>\n\n{calendar}</span>",
+        "format-alt": "{:%Y-%m-%d}",
+        "calendar": {
+            "format": {
+                "today": "<span background='#a7c080' color='#2d353b'><b>{}</b></span>"
+            }
+        }
     },
     "memory": {
         "format": "<span color='#d699b6'> </span> {used}G",

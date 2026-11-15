@@ -54,10 +54,11 @@ if [ -n "$fc" ]; then
         .daily as $d
         | [range(0; $d.time | length) as $i
             | ($d.time[$i] + "T00:00:00Z" | fromdateiso8601 | strftime("%a %d")) as $day
+            | (if $i == 0 then "<span background=\"#a7c080\" color=\"#2d353b\"><b>\($day)</b></span>" else $day end) as $day
             | "<tt>\($day)  \($d.temperature_2m_max[$i] | round | tostring | .[:3] | " " * (3 - length) + .)° / \($d.temperature_2m_min[$i] | round | tostring | " " * (3 - length) + .)°\($s)</tt>  \($d.weather_code[$i] | wmo)"]
-        | "<span font_size=\"13pt\">" + join("\n") + "</span>"')
+        | "<span font_size=\"10pt\">" + join("\n") + "</span>"')
 else
-    tooltip="<span font_size=\"13pt\">Forecast unavailable</span>"
+    tooltip="<span font_size=\"10pt\">Forecast unavailable</span>"
 fi
 
 jq -cn --arg text "$text" --arg tooltip "$tooltip" '{text: $text, tooltip: $tooltip}'
