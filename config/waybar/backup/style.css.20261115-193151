@@ -1,0 +1,160 @@
+/* ── dwm default bar — colors from dwm's config.def.h ────────────────────── */
+
+@define-color gray1 #2f383e;
+@define-color gray2 #4b565c;
+@define-color gray3 #ebdbb2;
+@define-color gray4 #eeeeee;
+@define-color cyan  #005577;
+@define-color red   #e67e80;
+
+* {
+  font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
+  /* font-size: 9.5px; */
+  font-size: 10px;
+  font-weight: 400;
+  color: @gray3;
+  min-height: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Flat, full-width bar like dwm — no rounding, no float margins */
+window#waybar {
+  background: @gray1;
+  color: @gray3;
+}
+
+/* ── Tags (workspaces) ────────────────────────────────────────────────────── */
+
+#workspaces button {
+  padding: 0 6px;
+  margin: 0;
+  color: @gray3;
+  background: transparent;
+}
+
+/* GTK themes add hover styling to buttons; dwm has none */
+#workspaces button:hover {
+  background: transparent;
+  color: @gray3;
+}
+
+/* Filled highlight like dwm's selected tag. The `*` rule sets color on the
+   inner label too, so the label needs its own selector to pick up @gray4. */
+#workspaces button.focused,
+#workspaces button.focused:hover {
+  background: @cyan;
+  color: @gray4;
+}
+
+#workspaces button.focused label {
+  color: @gray4;
+}
+
+#workspaces button.urgent {
+  background: @red;
+  color: @gray4;
+}
+
+#workspaces button.urgent label {
+  color: @gray4;
+}
+
+/* Layout symbol slot, e.g. sway's resize mode */
+#mode {
+  padding: 0 6px;
+  color: @gray3;
+}
+
+/* ── Status text ──────────────────────────────────────────────────────────── */
+
+#custom-cpu,
+#custom-mpd,
+#clock,
+#pulseaudio,
+#backlight,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#custom-weather,
+#custom-uptime,
+#custom-nettraf,
+#tray,
+#idle_inhibitor,
+#mpd,
+#network,
+#language,
+#scratchpad,
+#power-profiles-daemon {
+  padding: 0 4px;
+  margin: 0;
+  color: @gray3;
+  background: transparent;
+}
+
+#custom-sep {
+  padding: 0 2px;
+  color: @gray3;
+  font-weight: 400;
+}
+/* ── Tooltips (e.g. clock's date/calendar popup) ─────────────────────────── */
+
+tooltip {
+  background: @gray1;
+  border: 1px solid @gray2;
+}
+
+tooltip label {
+  color: @gray3;
+  padding: 10px 14px;
+}
+
+calendar {
+  background: @gray1;
+  color: @gray3;
+  padding: 6px;
+}
+
+/* GTK3 marks "today" via :indeterminate (not a .today class) and the
+   actively selected day via :selected — waybar's clock defaults the
+   selection to today, so style both the same. */
+calendar:selected,
+calendar:indeterminate {
+  background: @cyan;
+  color: @gray4;
+}
+
+calendar.header,
+calendar.highlight {
+  color: @cyan;
+}
+
+/* ── Tray — tint icons with the text color ────────────────────────────────── */
+/* Only icons with a -symbolic variant in the icon theme can be recolored;
+   apps that ship their own pixmaps keep their original colors. */
+
+#tray {
+  -gtk-icon-style: symbolic;
+}
+
+#tray > * {
+  color: @gray3;
+  -gtk-icon-style: symbolic;
+}
+
+#tray > .needs-attention {
+  color: @red;
+}
+
+/* ── Battery states ───────────────────────────────────────────────────────── */
+
+#battery.warning:not(.charging) {
+  color: #dbbc7f;
+}
+
+#battery.critical:not(.charging) {
+  color: @red;
+}

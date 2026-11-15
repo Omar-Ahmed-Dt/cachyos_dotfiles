@@ -4,7 +4,7 @@
 @define-color gray2 #4b565c;
 @define-color gray3 #ebdbb2;
 @define-color gray4 #eeeeee;
-@define-color cyan  #005577;
+@define-color green #a7c080; /* everforest green — selection */
 @define-color red   #e67e80;
 
 * {
@@ -41,15 +41,15 @@ window#waybar {
 }
 
 /* Filled highlight like dwm's selected tag. The `*` rule sets color on the
-   inner label too, so the label needs its own selector to pick up @gray4. */
+   inner label too, so the label needs its own selector to pick up @gray1. */
 #workspaces button.focused,
 #workspaces button.focused:hover {
-  background: @cyan;
-  color: @gray4;
+  background: @green;
+  color: @gray1;
 }
 
 #workspaces button.focused label {
-  color: @gray4;
+  color: @gray1;
 }
 
 #workspaces button.urgent {
@@ -123,13 +123,13 @@ calendar {
    selection to today, so style both the same. */
 calendar:selected,
 calendar:indeterminate {
-  background: @cyan;
-  color: @gray4;
+  background: @green;
+  color: @gray1;
 }
 
 calendar.header,
 calendar.highlight {
-  color: @cyan;
+  color: @green;
 }
 
 /* ── Tray — tint icons with the text color ────────────────────────────────── */
