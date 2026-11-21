@@ -1,3 +1,4 @@
+# cd ~/.config/swaylock/pkg && makepkg -fi
 # Use the current screen's screenshot as background
 screenshots
 
@@ -15,16 +16,8 @@ indicator-thickness=8
 ignore-empty-password
 show-failed-attempts
 
-# Everforest Dark Theme (medium)
-# Colors reference:
-#   bg0      #2d353b    fg       #d3c6aa
-#   red      #e67e80    green    #a7c080
-#   yellow   #dbbc7f    blue     #7fbbb3
-#   orange   #e69875    aqua     #83c092
-#   bg1      #343f44    bg3      #4f585e
-
 # Background (dark everforest bg0)
-color=2d353bff
+color=2e383cff
 
 # Ring: idle / cleared / verifying / wrong / caps-lock
 ring-color=4f585eff
@@ -34,11 +27,11 @@ ring-wrong-color=e67e80ff
 ring-caps-lock-color=dbbc7fff
 
 # Inside of the ring
-inside-color=232a2eff
-inside-clear-color=2d353bff
-inside-ver-color=2d353bff
-inside-wrong-color=2d353bff
-inside-caps-lock-color=2d353bff
+inside-color=272e33ff
+inside-clear-color=2e383cff
+inside-ver-color=2e383cff
+inside-wrong-color=2e383cff
+inside-caps-lock-color=2e383cff
 
 # Line between ring and inside
 line-color=00000000
@@ -64,7 +57,7 @@ text-caps-lock-color=dbbc7fff
 separator-color=00000000
 
 # Layout / keyboard indicator
-layout-bg-color=2d353bcc
+layout-bg-color=2e383ccc
 layout-border-color=4f585eff
 layout-text-color=d3c6aaff
 

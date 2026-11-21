@@ -1,13 +1,5 @@
 local map = vim.keymap.set
 
--- Markdown preview in browser with Ctrl+P
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "markdown",
-  callback = function()
-    map("n", "<C-p>", "<cmd>MarkdownPreviewToggle<CR>", { desc = "markdown preview in browser", buffer = true })
-  end,
-})
-
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jj", "<ESC>")
 map("i", "<C-b>", "<ESC>^i", { desc = "move beginning of line" })

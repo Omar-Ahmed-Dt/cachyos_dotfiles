@@ -18,11 +18,11 @@
         "sway/language"
     ],
     "modules-center": [
-        "custom/sep",
+        // "custom/sep",
         "clock",
         "custom/sep",
         "custom/weather",
-        "custom/sep",
+        // "custom/sep",
         "mpd"
     ],
     "modules-right": [
@@ -77,7 +77,7 @@
         "format-alt": "{:%Y-%m-%d}",
         "calendar": {
             "format": {
-                "today": "<span background='#a7c080' color='#2d353b'><b>{}</b></span>"
+                "today": "<span background='#a7c080' color='#2e383c'><b>{}</b></span>"
             }
         }
     },
@@ -162,10 +162,8 @@
         "on-click": "pkill -RTMIN+8 waybar"
     },
     "mpd": {
-        // "format": "<b>•</b> {filename}",
-        // "format-paused": "<b>•</b> {filename} (paused)",
-        "format": "<span color='#d699b6'></span> {filename} <b>•</b>",
-        "format-paused": "<span color='#d699b6'></span> {filename} (paused) <b>•</b>",
+        "format": "• <span color='#d699b6'></span> {filename}",
+        "format-paused": "• <span color='#d699b6'></span> {filename} (paused)",
         "format-stopped": "",
         "format-disconnected": "",
         "tooltip": false,

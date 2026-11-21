@@ -1,0 +1,32 @@
+# Local build of swaylock-effects that ignores the space key in the password.
+
+pkgname=swaylock-effects
+pkgver=1.8.1
+pkgrel=1.1
+pkgdesc="A fancier screen locker for Wayland (space key ignored)"
+arch=('x86_64' 'aarch64')
+url="https://github.com/hboetes/swaylock-effects"
+license=('MIT')
+depends=('libxkbcommon' 'cairo' 'gdk-pixbuf2' 'pam')
+makedepends=('git' 'meson' 'ninja' 'scdoc' 'wayland' 'wayland-protocols')
+provides=('swaylock')
+conflicts=('swaylock')
+backup=('etc/pam.d/swaylock')
+source=("git+$url.git#tag=v$pkgver"
+        "ignore-space.patch")
+sha256sums=('SKIP' 'SKIP')
+
+prepare() {
+	cd "$pkgname"
+	patch -Np1 -i ../ignore-space.patch
+}
+
+build() {
+	arch-meson "$pkgname" build -Dfingerprint=disabled
+	meson compile -C build
+}
+
+package() {
+	meson install -C build --destdir "$pkgdir"
+	install -Dm644 "$pkgname/LICENSE" -t "$pkgdir/usr/share/licenses/$pkgname"
+}

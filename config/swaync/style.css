@@ -4,30 +4,30 @@
 
 :root {
     /* Main surfaces */
-    --cc-bg: rgba(45, 53, 59, 0.97);
+    --cc-bg: alpha(#2e383c, 0.97);
 
     --noti-bg: 45, 53, 59;
     --noti-bg-alpha: 0.96;
 
-    --noti-bg-darker: rgb(45, 53, 59);
-    --noti-bg-hover: rgb(61, 72, 77);
-    --noti-bg-focus: rgba(71, 82, 88, 0.75);
+    --noti-bg-darker: #2e383c;
+    --noti-bg-hover: #374145;
+    --noti-bg-focus: alpha(#4f585e, 0.75);
 
     /* Borders */
-    --noti-border-color: rgba(219, 188, 127, 0.75);
+    --noti-border-color: alpha(#dbbc7f, 0.75);
     --border: 1px solid var(--noti-border-color);
     --border-radius: 12px;
 
     /* Close button */
-    --noti-close-bg: rgb(71, 82, 88);
-    --noti-close-bg-hover: rgb(230, 126, 128);
+    --noti-close-bg: #4f585e;
+    --noti-close-bg-hover: #e67e80;
 
     /* Text */
-    --text-color: rgb(211, 198, 170);
-    --text-color-disabled: rgb(133, 146, 137);
+    --text-color: #d3c6aa;
+    --text-color-disabled: #859289;
 
     /* Selected/accent elements */
-    --bg-selected: rgb(167, 192, 128);
+    --bg-selected: #a7c080;
 
     /* Sizes */
     --notification-icon-size: 24px;
@@ -38,8 +38,8 @@
 
     /* Shadow */
     --notification-shadow:
-        0 0 0 1px rgba(45, 53, 59, 0.7),
-        0 4px 12px rgba(0, 0, 0, 0.45);
+        0 0 0 1px alpha(#2e383c, 0.7),
+        0 4px 12px alpha(#000000, 0.45);
 }
 
 /* Global font */
@@ -61,14 +61,14 @@ blankwindow,
  * ========================================================= */
 
 .notification {
-    background: #2d353b;
+    background: #2e383c;
     border: 1px solid var(--noti-border-color);
     border-radius: 14px;
     color: #d3c6aa;
 }
 
 .notification:hover {
-    background: #343f44;
+    background: #374145;
 }
 
 .notification.low,
@@ -83,7 +83,7 @@ blankwindow,
 }
 
 .notification-default-action:hover {
-    background: #343f44;
+    background: #374145;
 }
 
 /* Notification title */
@@ -101,7 +101,7 @@ blankwindow,
 
 /* Notification timestamp */
 .time {
-    color: #7a8478;
+    color: #859289;
 }
 
 /* Notification image */
@@ -111,7 +111,7 @@ blankwindow,
 
 /* Close button */
 .close-button {
-    background: #475258;
+    background: #4f585e;
     color: #d3c6aa;
     border: none;
     border-radius: 999px;
@@ -119,39 +119,39 @@ blankwindow,
 
 .close-button:hover {
     background: #e67e80;
-    color: #2d353b;
+    color: #2e383c;
 }
 
 /* Alternative notification actions */
 .notification-action > button {
-    background: #343f44;
+    background: #374145;
     color: #d3c6aa;
-    border: 1px solid #475258;
+    border: 1px solid #4f585e;
     border-radius: 8px;
 }
 
 .notification-action > button:hover {
     background: #a7c080;
-    color: #2d353b;
+    color: #2e383c;
 }
 
 /* Inline reply */
 .inline-reply-entry {
-    background: #2d353b;
+    background: #2e383c;
     color: #d3c6aa;
     caret-color: #dbbc7f;
-    border: 1px solid #475258;
+    border: 1px solid #4f585e;
 }
 
 .inline-reply-button {
-    background: #343f44;
+    background: #374145;
     color: #d3c6aa;
-    border: 1px solid #475258;
+    border: 1px solid #4f585e;
 }
 
 .inline-reply-button:hover {
     background: #a7c080;
-    color: #2d353b;
+    color: #2e383c;
 }
 
 /* =========================================================
@@ -159,15 +159,15 @@ blankwindow,
  * ========================================================= */
 
 .control-center {
-    background: rgba(45, 53, 59, 0.97);
+    background: alpha(#2e383c, 0.97);
     color: #d3c6aa;
 
-    border: 1px solid #475258;
+    border: 1px solid #4f585e;
     border-radius: 16px;
 
     box-shadow:
-        0 0 0 1px rgba(0, 0, 0, 0.3),
-        0 8px 24px rgba(0, 0, 0, 0.5);
+        0 0 0 1px alpha(#000000, 0.3),
+        0 8px 24px alpha(#000000, 0.5);
 }
 
 .control-center-list {
@@ -175,7 +175,7 @@ blankwindow,
 }
 
 .control-center-list-placeholder {
-    color: #7a8478;
+    color: #859289;
 }
 
 /* Notification group headings */
@@ -198,9 +198,9 @@ blankwindow,
     padding: 10px;
 
     color: #d3c6aa;
-    background: #2d353b;
+    background: #2e383c;
 
-    border: 1px solid #475258;
+    border: 1px solid #4f585e;
     border-radius: 12px;
 }
 
@@ -219,16 +219,16 @@ blankwindow,
 }
 
 .widget-title > button {
-    background: #343f44;
+    background: #374145;
     color: #d3c6aa;
 
-    border: 1px solid #475258;
+    border: 1px solid #4f585e;
     border-radius: 8px;
 }
 
 .widget-title > button:hover {
     background: #e67e80;
-    color: #2d353b;
+    color: #2e383c;
 }
 
 /* =========================================================
@@ -240,7 +240,7 @@ blankwindow,
 }
 
 .widget-dnd > switch {
-    background: #475258;
+    background: #4f585e;
     border: none;
     border-radius: 999px;
 }
@@ -256,7 +256,7 @@ blankwindow,
 
 /* Generic switch fallback */
 switch {
-    background: #475258;
+    background: #4f585e;
     border-radius: 999px;
 }
 
@@ -279,10 +279,10 @@ switch slider {
 }
 
 .widget-mpris-player {
-    background: #2d353b;
+    background: #2e383c;
     color: #d3c6aa;
 
-    border: 1px solid #475258;
+    border: 1px solid #4f585e;
     border-radius: 12px;
 }
 
@@ -296,7 +296,7 @@ switch slider {
 }
 
 .widget-mpris button {
-    background: #343f44;
+    background: #374145;
     color: #d3c6aa;
     border: none;
     border-radius: 8px;
@@ -304,7 +304,7 @@ switch slider {
 
 .widget-mpris button:hover {
     background: #a7c080;
-    color: #2d353b;
+    color: #2e383c;
 }
 
 /* =========================================================
@@ -319,7 +319,7 @@ switch slider {
 scale trough {
     min-height: 6px;
 
-    background: #475258;
+    background: #4f585e;
     border: none;
     border-radius: 999px;
 }
@@ -337,7 +337,7 @@ scale slider {
     min-height: 16px;
 
     background: #dbbc7f;
-    border: 2px solid #2d353b;
+    border: 2px solid #2e383c;
     border-radius: 999px;
 }
 
@@ -347,22 +347,22 @@ scale slider {
 
 .widget-buttons-grid > flowbox > flowboxchild > button,
 .widget-menubar > box > button {
-    background: #343f44;
+    background: #374145;
     color: #d3c6aa;
 
-    border: 1px solid #475258;
+    border: 1px solid #4f585e;
     border-radius: 10px;
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button:hover,
 .widget-menubar > box > button:hover {
-    background: #475258;
+    background: #4f585e;
     color: #dbbc7f;
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked {
     background: #a7c080;
-    color: #2d353b;
+    color: #2e383c;
     border-color: #83c092;
 }
 
@@ -371,7 +371,7 @@ scale slider {
  * ========================================================= */
 
 .widget-calendar {
-    background: #2d353b;
+    background: #2e383c;
     color: #d3c6aa;
 }
 
@@ -382,7 +382,7 @@ calendar {
 
 calendar:selected {
     background: #dbbc7f;
-    color: #2d353b;
+    color: #2e383c;
     border-radius: 6px;
 }
 
@@ -399,7 +399,7 @@ calendar.button {
  * ========================================================= */
 
 progressbar trough {
-    background: #475258;
+    background: #4f585e;
     border: none;
     border-radius: 999px;
 }

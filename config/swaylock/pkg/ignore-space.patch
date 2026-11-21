@@ -1,0 +1,11 @@
+--- a/password.c
++++ b/password.c
+@@ -146,6 +146,8 @@
+ 		schedule_indicator_clear(state);
+ 		break;
+ 	case XKB_KEY_Caps_Lock:
++	case XKB_KEY_space:
++	case XKB_KEY_KP_Space:
+ 	case XKB_KEY_Shift_L:
+ 	case XKB_KEY_Shift_R:
+ 	case XKB_KEY_Control_L:

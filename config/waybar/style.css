@@ -1,9 +1,9 @@
 /* ── dwm default bar — colors from dwm's config.def.h ────────────────────── */
 
-@define-color gray1 #2f383e;
-@define-color gray2 #4b565c;
-@define-color gray3 #ebdbb2;
-@define-color gray4 #eeeeee;
+@define-color gray1 #2e383c;
+@define-color gray2 #4f585e;
+@define-color gray3 #d3c6aa;
+@define-color gray4 #d3c6aa;
 @define-color green #a7c080; /* everforest green — selection */
 @define-color red   #e67e80;
 
@@ -40,16 +40,13 @@ window#waybar {
   color: @gray3;
 }
 
-/* Filled highlight like dwm's selected tag. The `*` rule sets color on the
-   inner label too, so the label needs its own selector to pick up @gray1. */
+/* Underline-only highlight for the focused tag; an inset shadow draws the
+   line without changing the button's height. */
 #workspaces button.focused,
 #workspaces button.focused:hover {
-  background: @green;
-  color: @gray1;
-}
-
-#workspaces button.focused label {
-  color: @gray1;
+  background: transparent;
+  box-shadow: inset 0 -2px @green;
+  color: @gray3;
 }
 
 #workspaces button.urgent {
@@ -123,8 +120,8 @@ calendar {
    selection to today, so style both the same. */
 calendar:selected,
 calendar:indeterminate {
-  background: @green;
-  color: @gray1;
+  background: transparent;
+  color: @green;
 }
 
 calendar.header,

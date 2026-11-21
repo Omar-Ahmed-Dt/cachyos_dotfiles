@@ -74,8 +74,20 @@ return {
         opts = {
             ensure_installed = {
                 "lua", "json", "http", "bash", "terraform", "hcl", "go", "gomod",
+                "markdown", "markdown_inline", "yaml", "html", "latex",
             },
         },
+    },
+    -- formatting (format on save for go/lua/markdown)
+    {
+        "stevearc/conform.nvim",
+        event = "BufWritePre",
+        opts = require "configs.conform",
+    },
+    -- load which-key at startup so its popup works for every prefix (z, ], [ ...)
+    {
+        "folke/which-key.nvim",
+        event = "VeryLazy",
     },
     -- REST client (with hererocks to fix Lua 5.4 vs 5.1 mismatch)
     {
@@ -132,6 +144,7 @@ return {
                 "dockerfile-language-server",
                 -- markdown
                 "markdownlint",
+                "marksman",
             },
         },
     },

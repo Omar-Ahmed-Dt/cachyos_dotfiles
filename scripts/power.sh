@@ -16,11 +16,10 @@ OPT="$(menu)"
 
 case "$OPT" in
     lock)
-        [ "$(confirm exit)" = "Yes" ] && swaylock 
+        [ "$(confirm lock)" = "Yes" ] && swaylock -f
         ;;
     exit)
         [ "$(confirm exit)" = "Yes" ] && swaymsg exit
-        # [ "$(confirm exit)" = "Yes" ] && pkill sway
         ;;
     suspend)
         if [ "$(confirm suspend)" = "Yes" ]; then

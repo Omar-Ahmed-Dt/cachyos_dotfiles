@@ -4,19 +4,20 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term foot
+set $term footclient
 set $scripts ~/scripts
 
 # Workspaces:
-set $WS1 "1:  "
-set $WS2 "2:  "
-set $WS3 "3:  "
-set $WS4 "4:  "
-set $WS5 "5:  "
-set $WS6 "6:  "
-set $WS7 "7:  "
-set $WS8 "8:  "
-set $WS9 "9:  "
+set $WS1  "1 "
+set $WS2  "2 "
+set $WS3  "3 "
+set $WS4  "4 "
+set $WS5  "5 "
+set $WS6  "6 "
+set $WS7  "7 "
+set $WS8  "8 "
+set $WS9  "9 "
+set $WS10 "10 "
 
 input type:keyboard {
     xkb_layout us,ara
@@ -29,19 +30,10 @@ input type:touchpad {
     natural_scroll enabled
 }
 
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
-# Recommends: rofi-wayland
-# set $rofi_cmd rofi \
-#         -terminal '$term'
-# set $menu $rofi_cmd -show drun -matching fuzzy -sorting-method fzf 
-
 ### Key bindings
 bindsym $mod+Return exec $term
 bindsym $mod+c kill
 bindsym $mod+d exec fuzzel --placeholder "Application..."
-# bindsym $mod+d exec fuzzel --placeholder "Application..." --config ~/.config/fuzzel/fuzzel-everforest.ini
 floating_modifier $mod normal
 bindsym $mod+Shift+r reload
 bindsym $mod+$left focus left
@@ -68,6 +60,7 @@ bindsym $mod+6 workspace $WS6
 bindsym $mod+7 workspace $WS7
 bindsym $mod+8 workspace $WS8
 bindsym $mod+9 workspace $WS9
+bindsym $mod+0 workspace $WS10
 
 bindsym $mod+Shift+1 move container to workspace $WS1
 bindsym $mod+Shift+2 move container to workspace $WS2
@@ -78,30 +71,24 @@ bindsym $mod+Shift+6 move container to workspace $WS6
 bindsym $mod+Shift+7 move container to workspace $WS7
 bindsym $mod+Shift+8 move container to workspace $WS8
 bindsym $mod+Shift+9 move container to workspace $WS9
-# bindsym $mod+Tab focus prev
+bindsym $mod+Shift+0 move container to workspace $WS10
 
-# Windows-like Alt+Tab
-# install sway-alttab-gui-bin
-# exec --no-startup-id sway-alttab-gui daemon --mode all
-# bindsym Mod1+Tab exec sway-alttab-gui show
 workspace_auto_back_and_forth yes
 bindsym Mod1+Tab workspace back_and_forth
 
 bindsym $mod+s mode "resize"
 mode "resize" {
-        bindsym Shift+j resize shrink width 2 px or 2 ppt
-        bindsym k       resize grow height 2 px or 2 ppt
-        bindsym j       resize shrink height 2 px or 2 ppt
-        bindsym Shift+k resize grow width 2 px or 2 ppt
+        bindsym $left  resize shrink width 2 px or 2 ppt
+        bindsym $down  resize shrink height 2 px or 2 ppt
+        bindsym $up    resize grow height 2 px or 2 ppt
+        bindsym $right resize grow width 2 px or 2 ppt
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
 
 bindsym $mod+Shift+s exec sh -c 'geometry=$(slurp) && [ -n "$geometry" ] && grim -g "$geometry" - | wl-copy && notify-send -t 1000 "Screenshot" "Area copied to clipboard"'
-# bindsym $mod+b                exec flatpak run net.waterfox.waterfox
 bindsym $mod+b                exec waterfox 
 bindsym $mod+Shift+Return     exec thunar
-# bindsym $mod+p                exec obsidian
 bindsym $mod+BackSpace                exec pkill -SIGUSR1 waybar
 bindsym $mod+Escape           exec $scripts/power.sh
 bindsym $mod+Shift+b          exec $scripts/browser.sh
@@ -116,20 +103,18 @@ bindsym --locked $mod+Down exec $scripts/mic.sh down
 bindsym Print                 exec $scripts/screenshot.sh
 bindsym $mod+m                exec thunderbird
 bindsym $mod+y                exec $scripts/ytdmenu.sh
-# bindsym $mod+n                exec $term nvim
-bindsym $mod+n                exec foot -e sh -c 'sleep 0.1; exec nvim'
+bindsym $mod+n                exec $term sh -c 'sleep 0.1; exec nvim'
 bindsym Shift+Return          exec $term yazi
 bindsym ctrl+space            exec mpc toggle 
 bindsym ctrl+XF86AudioPrev    exec mpc prev
 bindsym ctrl+XF86AudioNext    exec mpc next
 bindsym ctrl+BackSpace        exec mpc stop
 bindsym $mod+o                exec $scripts/hub-scripts.sh
-# bindsym $mod+e                exec $scripts/ocr.sh
 bindsym $mod+e                exec $scripts/ocr_us.sh
 bindsym $mod+period           exec rofimoji 2> /dev/null
 bindsym $mod+v                exec $scripts/clip.sh 
-# ~/scripts/cliphist-fuzzel-img.sh https://github.com/sentriz/cliphist
 bindsym $mod+w                exec $scripts/websearch.sh
+bindsym $mod+grave            exec $scripts/dropterm.sh
 bindsym --locked XF86MonBrightnessUp   exec $scripts/brightness.sh up
 bindsym --locked XF86MonBrightnessDown exec $scripts/brightness.sh down
 bindsym $mod+Ctrl+h move left
@@ -138,28 +123,23 @@ bindsym $mod+Ctrl+j move down
 bindsym $mod+Ctrl+k move up
 
 # Autostart
-exec_always dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-exec_always autotiling # which autotiling
-exec_always --no-startup-id wl-paste --type text --watch cliphist store
-exec_always --no-startup-id wl-paste --type image --watch cliphist store
-exec_always --no-startup-id wl-paste --primary --watch cliphist store
-# exec thunar --daemon &
-# exec dunst
+exec_always dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway XDG_SESSION_TYPE=wayland
+exec $scripts/sway-systemd.sh
+exec autotiling
+exec --no-startup-id wl-paste --type text --watch cliphist store
+exec --no-startup-id wl-paste --type image --watch cliphist store
 exec swaync
 bindsym $mod+Shift+n exec swaync-client -t -sw
-# bindsym $mod+Shift+d exec swaync-client -d -sw
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
-# exec gammastep -O 3250
-exec gammastep -O 4000
 exec swaybg -i ~/.cache/wallpaper.jpg -m fill
 exec --no-startup-id dropbox-cli start -i
-# Wacom Tablet
-# exec_always systemctl --user restart wacom-setup.service
-# exec_always systemctl --user restart wacom-pad.service
+exec /usr/lib/mate-polkit/polkit-mate-authentication-agent-1
 
-# pacman -S mate-polkit
-exec /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
+# Idle timeouts (seconds)
+set $lock_timeout   300
+set $screen_timeout 30
+set $total_timeout  600
 
 exec swayidle -w \
     timeout $lock_timeout 'swaylock -f' \
@@ -172,20 +152,9 @@ exec swayidle -w \
     unlock 'pkill -xu "$USER" -SIGUSR1 swaylock'
 
 # Don't let swayidle lock/sleep while audio is actively playing
-exec sway-audio-idle-inhibit --no-mic
+exec sway-audio-idle-inhibit
 
-# exec swayidle -w \
-#     timeout $lock_timeout 'swaylock -f' \
-#     timeout $total_timeout 'swaymsg "output * power off"' \
-#               resume 'swaymsg "output * power on"' \
-#     timeout $screen_timeout 'pgrep -xu "$USER" swaylock >/dev/null && swaymsg "output * power off"' \
-#          resume 'pgrep -xu "$USER" swaylock >/dev/null && swaymsg "output * power on"' \
-#     before-sleep 'swaylock -f' \
-#     after-resume 'pkill -RTMIN+8 waybar; pkill -RTMIN+9 waybar' \
-#     lock 'swaylock -f' \
-#     unlock 'pkill -xu "$USER" -SIGUSR1 swaylock'
-
-# Everforest Theme
+# Theme colors (switch with ~/scripts/theme.sh)
 set $bg         #272e33
 set $bg_soft    #2e383c
 set $bg_alt     #374145
@@ -219,6 +188,9 @@ client.background       $bg
 
 
 # Rules
+assign [app_id="waterfox"] workspace $WS1
+assign [app_id="md.obsidian.Obsidian"] workspace $WS3
+for_window [app_id="dropterm"] floating enable, resize set width 80 ppt height 60 ppt, move scratchpad, scratchpad show
 for_window [app_id="mpv"] floating enable, move position center
 for_window [app_id="lxqt-policykit-agent"] {     floating enable     move position center }
 for_window [app_id="swayimg"] floating disable
@@ -251,9 +223,6 @@ for_window [app_id="floating_shell_portrait"] floating enable, sticky enable
 for_window [app_id="floating_shell"] floating enable, sticky enable
 
 # Float known tools
-for_window [class="Blueman-manager"] floating enable
-for_window [class="Nm-connection-editor"] floating enable
-for_window [class="Pavucontrol"] floating enable
 for_window [class="Lxappearance"] floating enable
 # for_window [class="Thunar" title="File Operation Progress"] floating enable
 for_window [app_id="virt-manager"] floating enable
@@ -271,12 +240,9 @@ for_window [app_id="pavucontrol"] floating enable
 for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
 for_window [class="network-manager-gnome"] floating enable
 for_window [app_id="nm-connection-editor"] floating enable
+for_window [app_id="md.obsidian.Obsidian"] opacity 0.9
 
 # Add an inhibit-idle rule so your screen doesn't lock during video playback:
-for_window [app_id="mpv"] inhibit_idle fullscreen
-# for_window [class="net.waterfox.waterfox"] inhibit_idle fullscreen
+for_window [app_id="mpv"] inhibit_idle visible
+for_window [app_id="waterfox"] inhibit_idle fullscreen
 
-
-
-# Refresh waybar weather after resume
-exec $scripts/resume-refresh.sh

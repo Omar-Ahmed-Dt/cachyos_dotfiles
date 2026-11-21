@@ -13,6 +13,7 @@ vim.lsp.enable({
   "eslint",
   "gopls",
   "emmet_language_server",
+  "marksman",
 })
 
 -- =========================

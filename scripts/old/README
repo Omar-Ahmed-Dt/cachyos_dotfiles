@@ -1,0 +1,3 @@
+Scripts moved here on 2026-11-21: nothing referenced them, and each needs a
+tool that isn't installed (dmenu, xdotool, sxiv, feh, cmus, mocp, i3-msg, xclip).
+Move one back to ~/scripts if you still want it.

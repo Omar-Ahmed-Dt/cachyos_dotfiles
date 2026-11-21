@@ -12,7 +12,16 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.spelllang = "en"
     vim.opt_local.wrap = true
     vim.opt_local.linebreak = true
-    vim.opt_local.textwidth = 80
+    vim.opt_local.textwidth = 0 -- soft wrap only; prettier handles formatting
+    vim.opt_local.conceallevel = 2
+
+    -- move by visual line on wrapped text
+    vim.keymap.set("n", "j", "gj", { buffer = true })
+    vim.keymap.set("n", "k", "gk", { buffer = true })
+
+    if vim.bo.filetype == "markdown" then
+      vim.keymap.set("n", "<C-p>", "<cmd>MarkdownPreviewToggle<CR>", { desc = "markdown preview in browser", buffer = true })
+    end
 
     local ok, cmp = pcall(require, "cmp")
     if ok then

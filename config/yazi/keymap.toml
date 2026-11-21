@@ -21,6 +21,8 @@ keymap = [
     { on = ["'"], run = "plugin augment-command.first-file", desc = "Jump to first file" },
     { on = [ "<C-u>" ], run = "arrow -50%",                  desc = "Move up half page" },
     { on = [ "<C-d>" ], run = "arrow 50%",                   desc = "Move down half page" },
+    { on = ["<C-k>"], run = "seek -5", desc = "Scroll preview up" },
+    { on = ["<C-j>"], run = "seek 5",  desc = "Scroll preview down" },
 
     # History
     { on = "<C-o>",     run = "back",                        desc = "Go back to previous directory" },

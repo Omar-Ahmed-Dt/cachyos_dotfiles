@@ -58,6 +58,15 @@ local colors = {
   bright_purple = "#d3869b",
   bright_aqua   = "#8ec07c",
   bright_orange = "#fe8019",
+
+  -- Dimmed background variants for heading backgrounds
+  red_bg    = "#3c1f1e",
+  green_bg  = "#2e3518",
+  yellow_bg = "#3c3219",
+  blue_bg   = "#2b3339",
+  purple_bg = "#3b2e35",
+  aqua_bg   = "#2b3530",
+  orange_bg = "#3c2e1e",
 }
 
 local function set_highlights()
